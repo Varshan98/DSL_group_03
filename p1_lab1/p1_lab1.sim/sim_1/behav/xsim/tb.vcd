@@ -1,0 +1,34 @@
+$date
+   Thu Feb 27 12:44:48 2025
+$end
+
+$version
+  2024.2.0
+  $dumpfile ("tb.vcd") 
+$end
+
+$timescale
+  1ps
+$end
+
+$scope module tb $end
+$var reg 1 ! sw $end
+$var wire 1 " led $end
+$scope module uut $end
+$var wire 1 # sw $end
+$var wire 1 " led $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+
+#0
+$dumpvars
+0!
+1"
+0#
+$end
+
+#1000
+1!
+0"
+1#
