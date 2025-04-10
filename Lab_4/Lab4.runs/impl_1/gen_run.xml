@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1743678052">
-  <File Type="ROUTE-PWR" Name="chua_uart_rng_power_routed.rpt"/>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1744257104">
   <File Type="PA-TCL" Name="chua_uart_rng.tcl"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="chua_uart_rng_methodology_drc_opted.rpt"/>
-  <File Type="INIT-TIMING" Name="chua_uart_rng_timing_summary_init.rpt"/>
-  <File Type="ROUTE-PWR-SUM" Name="chua_uart_rng_power_summary_routed.pb"/>
-  <File Type="OPT-RQA-PB" Name="chua_uart_rng_rqa_opted.pb"/>
   <File Type="REPORTS-TCL" Name="chua_uart_rng_reports.tcl"/>
-  <File Type="OPT-TIMING" Name="chua_uart_rng_timing_summary_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="chua_uart_rng_timing_summary_init.rpt"/>
   <File Type="OPT-DCP" Name="chua_uart_rng_opt.dcp"/>
   <File Type="OPT-DRC" Name="chua_uart_rng_drc_opted.rpt"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="chua_uart_rng_methodology_drc_opted.rpt"/>
   <File Type="OPT-HWDEF" Name="chua_uart_rng.hwdef"/>
+  <File Type="OPT-TIMING" Name="chua_uart_rng_timing_summary_opted.rpt"/>
+  <File Type="OPT-RQA-PB" Name="chua_uart_rng_rqa_opted.pb"/>
   <File Type="PWROPT-DCP" Name="chua_uart_rng_pwropt.dcp"/>
   <File Type="PWROPT-DRC" Name="chua_uart_rng_drc_pwropted.rpt"/>
   <File Type="PWROPT-TIMING" Name="chua_uart_rng_timing_summary_pwropted.rpt"/>
@@ -22,16 +20,12 @@
   <File Type="PLACE-CTRL" Name="chua_uart_rng_control_sets_placed.rpt"/>
   <File Type="PLACE-SIMILARITY" Name="chua_uart_rng_incremental_reuse_placed.rpt"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="chua_uart_rng_incremental_reuse_pre_placed.rpt"/>
-  <File Type="BG-BIN" Name="chua_uart_rng.bin"/>
   <File Type="PLACE-TIMING" Name="chua_uart_rng_timing_summary_placed.rpt"/>
-  <File Type="ROUTE-PWR-RPX" Name="chua_uart_rng_power_routed.rpx"/>
   <File Type="PLACE-RQA-PB" Name="chua_uart_rng_rqa_placed.pb"/>
   <File Type="POSTPLACE-PWROPT-DCP" Name="chua_uart_rng_postplace_pwropt.dcp"/>
-  <File Type="BITSTR-MSK" Name="chua_uart_rng.msk"/>
   <File Type="POSTPLACE-PWROPT-TIMING" Name="chua_uart_rng_timing_summary_postplace_pwropted.rpt"/>
   <File Type="PHYSOPT-DCP" Name="chua_uart_rng_physopt.dcp"/>
   <File Type="PHYSOPT-DRC" Name="chua_uart_rng_drc_physopted.rpt"/>
-  <File Type="BITSTR-RBT" Name="chua_uart_rng.rbt"/>
   <File Type="PHYSOPT-TIMING" Name="chua_uart_rng_timing_summary_physopted.rpt"/>
   <File Type="ROUTE-ERROR-DCP" Name="chua_uart_rng_routed_error.dcp"/>
   <File Type="ROUTE-DCP" Name="chua_uart_rng_routed.dcp"/>
@@ -42,7 +36,9 @@
   <File Type="ROUTE-METHODOLOGY-DRC" Name="chua_uart_rng_methodology_drc_routed.rpt"/>
   <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="chua_uart_rng_methodology_drc_routed.rpx"/>
   <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="chua_uart_rng_methodology_drc_routed.pb"/>
-  <File Type="ROUTE-RQS-PB" Name="chua_uart_rng_rqs_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="chua_uart_rng_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="chua_uart_rng_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="chua_uart_rng_power_routed.rpx"/>
   <File Type="ROUTE-STATUS" Name="chua_uart_rng_route_status.rpt"/>
   <File Type="ROUTE-STATUS-PB" Name="chua_uart_rng_route_status.pb"/>
   <File Type="ROUTE-TIMINGSUMMARY" Name="chua_uart_rng_timing_summary_routed.rpt"/>
@@ -53,15 +49,19 @@
   <File Type="ROUTE-BUS-SKEW" Name="chua_uart_rng_bus_skew_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW-PB" Name="chua_uart_rng_bus_skew_routed.pb"/>
   <File Type="ROUTE-BUS-SKEW-RPX" Name="chua_uart_rng_bus_skew_routed.rpx"/>
+  <File Type="ROUTE-RQS-PB" Name="chua_uart_rng_rqs_routed.pb"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="chua_uart_rng_postroute_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="chua_uart_rng_postroute_physopt_bb.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-TIMING" Name="chua_uart_rng_timing_summary_postroute_physopted.rpt"/>
   <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="chua_uart_rng_timing_summary_postroute_physopted.pb"/>
   <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="chua_uart_rng_timing_summary_postroute_physopted.rpx"/>
   <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="chua_uart_rng_bus_skew_postroute_physopted.rpt"/>
-  <File Type="BG-BIT" Name="chua_uart_rng.bit"/>
   <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="chua_uart_rng_bus_skew_postroute_physopted.pb"/>
   <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="chua_uart_rng_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BG-BIT" Name="chua_uart_rng.bit"/>
+  <File Type="BG-BIN" Name="chua_uart_rng.bin"/>
+  <File Type="BITSTR-MSK" Name="chua_uart_rng.msk"/>
+  <File Type="BITSTR-RBT" Name="chua_uart_rng.rbt"/>
   <File Type="BITSTR-NKY" Name="chua_uart_rng.nky"/>
   <File Type="BITSTR-BMM" Name="chua_uart_rng_bd.bmm"/>
   <File Type="BITSTR-MMI" Name="chua_uart_rng.mmi"/>
@@ -115,14 +115,20 @@
   </FileSet>
   <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
     <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/chua_uart_rng.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
     <Config>
       <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024">
-      <Desc>Default settings for Implementation.</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024"/>
     <Step Id="init_design"/>
     <Step Id="opt_design"/>
     <Step Id="power_opt_design"/>
