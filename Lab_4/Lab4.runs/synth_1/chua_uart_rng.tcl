@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.runs/synth_1/chua_uart_rng.tcl"
+  variable script "C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.runs/synth_1/chua_uart_rng.tcl"
   variable category "vivado_synth"
 }
 
@@ -56,21 +56,22 @@ if {$::dispatch::connected} {
 }
 
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param chipscope.maxJobs 1
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a35tcpg236-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir {D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.cache/wt} [current_project]
-set_property parent.project_path {D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.xpr} [current_project]
+set_property webtalk.parent_dir {C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.cache/wt} [current_project]
+set_property parent.project_path {C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.xpr} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo {d:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.cache/ip} [current_project]
+set_property ip_output_repo {c:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.cache/ip} [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_verilog -library xil_defaultlib {{D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/sources_1/new/PRNG.v}}
+read_verilog -library xil_defaultlib {{C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.srcs/sources_1/new/PRNG.v}}
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -80,12 +81,12 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc {{D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/constrs_1/imports/Cmod-A7-Constraint/Cmod-A7-Master.xdc}}
-set_property used_in_implementation false [get_files {{D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/constrs_1/imports/Cmod-A7-Constraint/Cmod-A7-Master.xdc}}]
+read_xdc {{C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.srcs/constrs_1/imports/Cmod-A7-Constraint/Cmod-A7-Master.xdc}}
+set_property used_in_implementation false [get_files {{C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.srcs/constrs_1/imports/Cmod-A7-Constraint/Cmod-A7-Master.xdc}}]
 
 set_param ips.enableIPCacheLiteLoad 1
 
-read_checkpoint -auto_incremental -incremental {D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/utils_1/imports/synth_1/chua_uart_rng.dcp}
+read_checkpoint -auto_incremental -incremental {C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.srcs/utils_1/imports/synth_1/chua_uart_rng.dcp}
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }

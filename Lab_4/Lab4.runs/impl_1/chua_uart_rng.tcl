@@ -1,5 +1,5 @@
 namespace eval ::optrace {
-  variable script "D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.runs/impl_1/chua_uart_rng.tcl"
+  variable script "C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.runs/impl_1/chua_uart_rng.tcl"
   variable category "vivado_impl"
 }
 
@@ -112,15 +112,15 @@ OPTRACE "create in-memory project" START { }
   set_param project.singleFileAddWarning.threshold 0
 OPTRACE "create in-memory project" END { }
 OPTRACE "set parameters" START { }
-  set_property webtalk.parent_dir {D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.cache/wt} [current_project]
-  set_property parent.project_path {D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.xpr} [current_project]
-  set_property ip_output_repo {{D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.cache/ip}} [current_project]
+  set_property webtalk.parent_dir {C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.cache/wt} [current_project]
+  set_property parent.project_path {C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.xpr} [current_project]
+  set_property ip_output_repo {{C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.cache/ip}} [current_project]
   set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
-  add_files -quiet {{D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.runs/synth_1/chua_uart_rng.dcp}}
+  add_files -quiet {{C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.runs/synth_1/chua_uart_rng.dcp}}
 OPTRACE "read constraints: implementation" START { }
-  read_xdc {{D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/constrs_1/imports/Cmod-A7-Constraint/Cmod-A7-Master.xdc}}
+  read_xdc {{C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.srcs/constrs_1/imports/Cmod-A7-Constraint/Cmod-A7-Master.xdc}}
 OPTRACE "read constraints: implementation" END { }
 OPTRACE "read constraints: implementation_pre" START { }
 OPTRACE "read constraints: implementation_pre" END { }
