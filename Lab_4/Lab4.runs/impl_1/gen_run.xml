@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1744257104">
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1744266920">
   <File Type="PA-TCL" Name="chua_uart_rng.tcl"/>
   <File Type="REPORTS-TCL" Name="chua_uart_rng_reports.tcl"/>
   <File Type="INIT-TIMING" Name="chua_uart_rng_timing_summary_init.rpt"/>

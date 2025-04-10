@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-| Date         : Thu Apr 10 11:53:27 2025
+| Date         : Thu Apr 10 14:37:40 2025
 | Host         : Suriya running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file chua_uart_rng_control_sets_placed.rpt
 | Design       : chua_uart_rng
@@ -77,8 +77,8 @@ Table of Contents
 |  clk_IBUF_BUFG | uart_tx_inst/bit_index[3]_i_1_n_0           | rst_IBUF         |                1 |              4 |         4.00 |
 |  clk_IBUF_BUFG | uart_tx_inst/E[0]                           | rst_IBUF         |                1 |              8 |         8.00 |
 |  clk_IBUF_BUFG | random_value                                | rst_IBUF         |                2 |              8 |         4.00 |
-|  clk_IBUF_BUFG | uart_tx_inst/baud_counter1                  | rst_IBUF         |                2 |              9 |         4.50 |
 |  clk_IBUF_BUFG | uart_tx_inst/baud_counter[8]_i_1_n_0        | rst_IBUF         |                5 |              9 |         1.80 |
+|  clk_IBUF_BUFG | uart_tx_inst/baud_counter1                  | rst_IBUF         |                2 |              9 |         4.50 |
 |  clk_IBUF_BUFG | uart_tx_inst/FSM_sequential_state_reg[0][0] | rst_IBUF         |                5 |             23 |         4.60 |
 |  clk_IBUF_BUFG |                                             | rst_IBUF         |               30 |            118 |         3.93 |
 +----------------+---------------------------------------------+------------------+------------------+----------------+--------------+

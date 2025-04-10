@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1744257104" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/chua_uart_rng.dcp">
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1744266920" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/chua_uart_rng.dcp">
   <File Type="PA-TCL" Name="chua_uart_rng.tcl"/>
   <File Type="REPORTS-TCL" Name="chua_uart_rng_reports.tcl"/>
   <File Type="RDS-RDS" Name="chua_uart_rng.vds"/>
