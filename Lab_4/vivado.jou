@@ -3,120 +3,30 @@
 # SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
 # IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
 # SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-# Start of session at: Thu Apr 10 12:09:32 2025
-# Process ID         : 20676
-# Current directory  : C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4
-# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent36932 C:\Users\Jing Ting.LENOVO-T14\Downloads\DSL\Lab4\Lab4.xpr
-# Log file           : C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/vivado.log
-# Journal file       : C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4\vivado.jou
-# Running On         : Lenovo-T14
+# Start of session at: Mon Apr 14 22:51:33 2025
+# Process ID         : 167604
+# Current directory  : D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent141644 D:\SUTD\Term 8\DSL\Projects\DSL_group_03\Lab_4\Lab4.xpr
+# Log file           : D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/vivado.log
+# Journal file       : D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4\vivado.jou
+# Running On         : Suriya
 # Platform           : Windows Server 2016 or Windows 10
-# Operating System   : 22631
-# Processor Detail   : AMD Ryzen 7 PRO 4750U with Radeon Graphics
-# CPU Frequency      : 1697 MHz
-# CPU Physical cores : 8
-# CPU Logical cores  : 16
-# Host memory        : 33528 MB
-# Swap memory        : 4831 MB
-# Total Virtual      : 38360 MB
-# Available Virtual  : 15362 MB
+# Operating System   : 26100
+# Processor Detail   : 11th Gen Intel(R) Core(TM) i7-1185G7 @ 3.00GHz
+# CPU Frequency      : 2995 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 16859 MB
+# Swap memory        : 15136 MB
+# Total Virtual      : 31996 MB
+# Available Virtual  : 9715 MB
 #-----------------------------------------------------------
 start_gui
-open_project {C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.xpr}
+open_project {D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.xpr}
 update_compile_order -fileset sources_1
-reset_run synth_1
-launch_runs synth_1
-wait_on_run synth_1
-launch_runs impl_1
-wait_on_run impl_1
-open_run impl_1
-launch_runs impl_1 -to_step write_bitstream
-wait_on_run impl_1
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream
-wait_on_run impl_1
-open_hw_manager
-connect_hw_server -allow_non_jtag
-open_hw_target
-set_property PROGRAM.FILE {C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.runs/impl_1/chua_uart_rng.bit} [get_hw_devices xc7a35t_0]
-current_hw_device [get_hw_devices xc7a35t_0]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.runs/impl_1/chua_uart_rng.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-close_hw_manager
-file mkdir C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.srcs/sim_1/new
-file mkdir C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.srcs/sim_1/new
-file mkdir C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.srcs/sim_1/new
-file mkdir C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.srcs/sim_1/new
-file mkdir C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.srcs/sim_1/new
-set_property SOURCE_SET sources_1 [get_filesets sim_1]
-file mkdir C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.srcs/sim_1/new
-file mkdir {C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.srcs/sim_1/new}
-close [ open {C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.srcs/sim_1/new/testbench.v} w ]
-add_files -fileset sim_1 {{C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.srcs/sim_1/new/testbench.v}}
-update_compile_order -fileset sim_1
-launch_simulation
-update_compile_order -fileset sim_1
 launch_simulation
 source tb_chua_uart_rng.tcl
 close_sim
-launch_simulation
-source tb_chua_uart_rng.tcl
-close_sim
-launch_simulation
-source tb_chua_uart_rng.tcl
-close_sim
-launch_simulation
-source tb_chua_uart_rng.tcl
-current_wave_config {Untitled 4}
-add_wave {{/tb_chua_uart_rng/uut/rng_inst/rnd}} 
-close_sim
-launch_simulation
-source tb_chua_uart_rng.tcl
-current_wave_config {Untitled 5}
-add_wave {{/tb_chua_uart_rng/uut/rng_inst/rnd}} 
-current_wave_config {Untitled 5}
-log_wave {/tb_chua_uart_rng/uut/rng_inst/rnd} 
-current_wave_config {Untitled 5}
-add_wave {{/tb_chua_uart_rng/uut/rng_inst/rnd}} 
-close_sim
-launch_simulation
-source tb_chua_uart_rng.tcl
-current_wave_config {Untitled 6}
-add_wave {{/tb_chua_uart_rng/uut/uart_tx_inst/tx_data}} 
-close_sim
-launch_simulation
-source tb_chua_uart_rng.tcl
-current_wave_config {Untitled 7}
-add_wave {{/tb_chua_uart_rng/uut/rng_inst/rnd}} 
-close_sim
-launch_simulation
-source tb_chua_uart_rng.tcl
-close_sim
-launch_simulation
-source tb_chua_uart_rng.tcl
-close_sim
-launch_simulation
-source tb_chua_uart_rng.tcl
-close_sim
-launch_simulation
-source tb_chua_uart_rng.tcl
-close_sim
-launch_simulation
-source tb_chua_uart_rng.tcl
-close_sim
-launch_simulation
-source tb_chua_uart_rng.tcl
-relaunch_sim
-relaunch_sim
-relaunch_sim
-relaunch_sim
-close_sim
-launch_simulation
-launch_simulation
 launch_simulation
 source tb_chua_uart_rng.tcl
 close_sim

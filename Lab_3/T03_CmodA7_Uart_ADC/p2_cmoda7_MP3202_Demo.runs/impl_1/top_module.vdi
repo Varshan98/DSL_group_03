@@ -3,60 +3,60 @@
 # SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
 # IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
 # SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-# Start of session at: Thu Mar 27 17:12:54 2025
-# Process ID         : 15572
-# Current directory  : C:/Users/Jing Ting.LENOVO-T14/Downloads/Colab_DSL_Practice25-0865141e546e601a029f7c385b6bd2fd61b6fdb0/Demo_Code/T03_CmodA7_Uart_ADC/p2_cmoda7_MP3202_Demo.runs/impl_1
+# Start of session at: Mon Apr 14 21:36:41 2025
+# Process ID         : 85668
+# Current directory  : D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_3/T03_CmodA7_Uart_ADC/p2_cmoda7_MP3202_Demo.runs/impl_1
 # Command line       : vivado.exe -log top_module.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source top_module.tcl -notrace
-# Log file           : C:/Users/Jing Ting.LENOVO-T14/Downloads/Colab_DSL_Practice25-0865141e546e601a029f7c385b6bd2fd61b6fdb0/Demo_Code/T03_CmodA7_Uart_ADC/p2_cmoda7_MP3202_Demo.runs/impl_1/top_module.vdi
-# Journal file       : C:/Users/Jing Ting.LENOVO-T14/Downloads/Colab_DSL_Practice25-0865141e546e601a029f7c385b6bd2fd61b6fdb0/Demo_Code/T03_CmodA7_Uart_ADC/p2_cmoda7_MP3202_Demo.runs/impl_1\vivado.jou
-# Running On         : Lenovo-T14
+# Log file           : D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_3/T03_CmodA7_Uart_ADC/p2_cmoda7_MP3202_Demo.runs/impl_1/top_module.vdi
+# Journal file       : D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_3/T03_CmodA7_Uart_ADC/p2_cmoda7_MP3202_Demo.runs/impl_1\vivado.jou
+# Running On         : Suriya
 # Platform           : Windows Server 2016 or Windows 10
-# Operating System   : 22631
-# Processor Detail   : AMD Ryzen 7 PRO 4750U with Radeon Graphics
-# CPU Frequency      : 1697 MHz
-# CPU Physical cores : 8
-# CPU Logical cores  : 16
-# Host memory        : 33528 MB
-# Swap memory        : 4831 MB
-# Total Virtual      : 38360 MB
-# Available Virtual  : 16263 MB
+# Operating System   : 26100
+# Processor Detail   : 11th Gen Intel(R) Core(TM) i7-1185G7 @ 3.00GHz
+# CPU Frequency      : 2995 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 16859 MB
+# Swap memory        : 15136 MB
+# Total Virtual      : 31996 MB
+# Available Virtual  : 7273 MB
 #-----------------------------------------------------------
 source top_module.tcl -notrace
 Command: open_checkpoint top_module_routed.dcp
 
 Starting open_checkpoint Task
 
-Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.088 . Memory (MB): peak = 295.418 ; gain = 5.977
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.066 . Memory (MB): peak = 286.426 ; gain = 2.266
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 526.629 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 489.051 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 11 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-479] Netlist was created with Vivado 2024.2
 INFO: [Project 1-570] Preparing netlist for logic optimization
-Read ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 617.969 ; gain = 0.000
+Read ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 579.684 ; gain = 0.074
 INFO: [Timing 38-478] Restoring timing data from binary archive.
 INFO: [Timing 38-479] Binary timing data restore complete.
 INFO: [Project 1-856] Restoring constraints from binary archive.
 INFO: [Project 1-853] Binary constraint restore complete.
 INFO: [Designutils 20-5722] Start Reading Physical Databases.
 Reading placement.
-Read Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1229.578 ; gain = 0.000
+Read Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1192.273 ; gain = 0.000
 Reading placer database...
-Read Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1229.578 ; gain = 0.000
-Read PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 1229.578 ; gain = 0.000
-Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1229.578 ; gain = 0.000
+Read Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1192.273 ; gain = 0.000
+Read PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 1192.273 ; gain = 0.000
+Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1192.273 ; gain = 0.000
 Reading routing.
-Read RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1229.578 ; gain = 0.000
-Read Physdb Files: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.055 . Memory (MB): peak = 1229.578 ; gain = 0.000
+Read RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1192.273 ; gain = 0.000
+Read Physdb Files: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.056 . Memory (MB): peak = 1192.273 ; gain = 0.000
 Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
-Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.121 . Memory (MB): peak = 1229.578 ; gain = 8.230
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1229.578 ; gain = 0.000
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.128 . Memory (MB): peak = 1192.273 ; gain = 8.844
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1192.273 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Project 1-604] Checkpoint was created with Vivado v2024.2 (64-bit) build 5239630
 WARNING: [Vivado 12-23575] Critical violations of the methodology design rules detected. Critical violations may contribute to timing failures or cause functional issues in hardware. Run report_methodology for more information.
-open_checkpoint: Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1229.578 ; gain = 952.043
+open_checkpoint: Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 1192.273 ; gain = 917.949
 Command: write_bitstream -force top_module.bit
 Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
@@ -80,5 +80,5 @@ INFO: [Project 1-1876] WebTalk data collection is mandatory when using a ULT dev
 INFO: [Common 17-83] Releasing license: Implementation
 23 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
 write_bitstream completed successfully
-write_bitstream: Time (s): cpu = 00:00:14 ; elapsed = 00:00:13 . Memory (MB): peak = 1782.609 ; gain = 553.031
-INFO: [Common 17-206] Exiting Vivado at Thu Mar 27 17:13:25 2025...
+write_bitstream: Time (s): cpu = 00:00:16 ; elapsed = 00:00:13 . Memory (MB): peak = 1749.727 ; gain = 557.453
+INFO: [Common 17-206] Exiting Vivado at Mon Apr 14 21:37:11 2025...

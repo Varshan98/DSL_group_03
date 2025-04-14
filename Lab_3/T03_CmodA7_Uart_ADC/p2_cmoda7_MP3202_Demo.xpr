@@ -4,7 +4,7 @@
 <!-- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.                   -->
 <!-- Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.   -->
 
-<Project Product="Vivado" Version="7" Minor="68" Path="C:/Users/Jing Ting.LENOVO-T14/Downloads/Colab_DSL_Practice25-0865141e546e601a029f7c385b6bd2fd61b6fdb0/Demo_Code/T03_CmodA7_Uart_ADC/p2_cmoda7_MP3202_Demo.xpr">
+<Project Product="Vivado" Version="7" Minor="68" Path="D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_3/T03_CmodA7_Uart_ADC/p2_cmoda7_MP3202_Demo.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="efc90e65c7734bbeb3516c464312592c"/>

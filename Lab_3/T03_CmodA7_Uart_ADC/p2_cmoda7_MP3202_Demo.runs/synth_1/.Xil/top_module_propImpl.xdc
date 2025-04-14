@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:{C:/Users/Jing Ting.LENOVO-T14/Downloads/Colab_DSL_Practice25-0865141e546e601a029f7c385b6bd2fd61b6fdb0/Demo_Code/T03_CmodA7_Uart_ADC/p2_cmoda7_MP3202_Demo.srcs/constrs_1/new/cmoda7.xdc} rfile:../../../p2_cmoda7_MP3202_Demo.srcs/constrs_1/new/cmoda7.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:{D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_3/T03_CmodA7_Uart_ADC/p2_cmoda7_MP3202_Demo.srcs/constrs_1/new/cmoda7.xdc} rfile:../../../p2_cmoda7_MP3202_Demo.srcs/constrs_1/new/cmoda7.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:7 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict {PACKAGE_PIN L17 IOSTANDARD LVCMOS33} [get_ports sysclk]
 set_property src_info {type:XDC file:1 line:11 export:INPUT save:INPUT read:READ} [current_design]

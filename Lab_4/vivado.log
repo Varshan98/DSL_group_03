@@ -3,205 +3,83 @@
 # SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
 # IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
 # SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-# Start of session at: Thu Apr 10 12:09:32 2025
-# Process ID         : 20676
-# Current directory  : C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4
-# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent36932 C:\Users\Jing Ting.LENOVO-T14\Downloads\DSL\Lab4\Lab4.xpr
-# Log file           : C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/vivado.log
-# Journal file       : C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4\vivado.jou
-# Running On         : Lenovo-T14
+# Start of session at: Mon Apr 14 22:51:33 2025
+# Process ID         : 167604
+# Current directory  : D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent141644 D:\SUTD\Term 8\DSL\Projects\DSL_group_03\Lab_4\Lab4.xpr
+# Log file           : D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/vivado.log
+# Journal file       : D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4\vivado.jou
+# Running On         : Suriya
 # Platform           : Windows Server 2016 or Windows 10
-# Operating System   : 22631
-# Processor Detail   : AMD Ryzen 7 PRO 4750U with Radeon Graphics
-# CPU Frequency      : 1697 MHz
-# CPU Physical cores : 8
-# CPU Logical cores  : 16
-# Host memory        : 33528 MB
-# Swap memory        : 4831 MB
-# Total Virtual      : 38360 MB
-# Available Virtual  : 15362 MB
+# Operating System   : 26100
+# Processor Detail   : 11th Gen Intel(R) Core(TM) i7-1185G7 @ 3.00GHz
+# CPU Frequency      : 2995 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 16859 MB
+# Swap memory        : 15136 MB
+# Total Virtual      : 31996 MB
+# Available Virtual  : 9715 MB
 #-----------------------------------------------------------
 start_gui
-WARNING: [Board 49-91] Board repository path 'Ting.LENOVO-T14/Downloads/DSL/Lab4/Ting.LENOVO-T14/AppData/Roaming/Xilinx/Vivado/Ting.LENOVO-T14/AppData/Roaming/Xilinx/Vivado/2024.2/xhub/board_store/xilinx_board_store' does not exist, it will not be used to search board files.
-WARNING: [Board 49-91] Board repository path 'Ting.LENOVO-T14/Downloads/DSL/Lab4/Ting.LENOVO-T14/AppData/Roaming/Xilinx/Vivado/Ting.LENOVO-T14/AppData/Roaming/Xilinx/Vivado/Ting.LENOVO-T14/Downloads/Colab_DSL_Practice25-0865141e546e601a029f7c385b6bd2fd61b6fdb0/Demo_Code/T03_CmodA7_Uart_ADC/Ting.LENOVO-T14/AppData/Roaming/Xilinx/Vivado/Ting.LENOVO-T14/Downloads/Colab_DSL_Practice25-0865141e546e601a029f7c385b6bd2fd61b6fdb0/Demo_Code/T03_CmodA7_Uart_ADC/Ting.LENOVO-T14/Downloads/Colab_DSL_Practice25-0865141e546e601a029f7c385b6bd2fd61b6fdb0/Demo_Code/T03_CmodA7_Uart_ADC/Ting.LENOVO-T14/Downloads/Colab_DSL_Practice25-0865141e546e601a029f7c385b6bd2fd61b6fdb0/Demo_Code/T03_CmodA7_Uart_ADC/Ting.LENOVO-T14/AppData/Roaming/Xilinx/Vivado/2024.2/xhub/board_store/xilinx_board_store' does not exist, it will not be used to search board files.
-WARNING: [Board 49-91] Board repository path 'Ting.LENOVO-T14/Downloads/DSL/Lab4/Ting.LENOVO-T14/AppData/Roaming/Xilinx/Vivado/Ting.LENOVO-T14/AppData/Roaming/Xilinx/Vivado/Ting.LENOVO-T14/Downloads/Colab_DSL_Practice25-0865141e546e601a029f7c385b6bd2fd61b6fdb0/Demo_Code/T03_CmodA7_Uart_ADC/Ting.LENOVO-T14/AppData/Roaming/Xilinx/Vivado/Ting.LENOVO-T14/Downloads/Colab_DSL_Practice25-0865141e546e601a029f7c385b6bd2fd61b6fdb0/Demo_Code/T03_CmodA7_Uart_ADC/Ting.LENOVO-T14/Downloads/Colab_DSL_Practice25-0865141e546e601a029f7c385b6bd2fd61b6fdb0/Demo_Code/T03_CmodA7_Uart_ADC/Ting.LENOVO-T14/Downloads/Colab_DSL_Practice25-0865141e546e601a029f7c385b6bd2fd61b6fdb0/Demo_Code/T03_CmodA7_Uart_ADC/Ting.LENOVO-T14/AppData/Roaming/Xilinx/Vivado/Ting.LENOVO-T14/AppData/Roaming/Xilinx/Vivado/Ting.LENOVO-T14/AppData/Roaming/Xilinx/Vivado/2024.2/xhub/board_store/xilinx_board_store' does not exist, it will not be used to search board files.
-WARNING: [Board 49-91] Board repository path 'Ting.LENOVO-T14/Downloads/DSL/Lab4/Ting.LENOVO-T14/AppData/Roaming/Xilinx/Vivado/Ting.LENOVO-T14/AppData/Roaming/Xilinx/Vivado/Ting.LENOVO-T14/Downloads/Colab_DSL_Practice25-0865141e546e601a029f7c385b6bd2fd61b6fdb0/Demo_Code/T03_CmodA7_Uart_ADC/Ting.LENOVO-T14/AppData/Roaming/Xilinx/Vivado/Ting.LENOVO-T14/Downloads/Colab_DSL_Practice25-0865141e546e601a029f7c385b6bd2fd61b6fdb0/Demo_Code/T03_CmodA7_Uart_ADC/Ting.LENOVO-T14/Downloads/Colab_DSL_Practice25-0865141e546e601a029f7c385b6bd2fd61b6fdb0/Demo_Code/T03_CmodA7_Uart_ADC/Ting.LENOVO-T14/Downloads/Colab_DSL_Practice25-0865141e546e601a029f7c385b6bd2fd61b6fdb0/Demo_Code/T03_CmodA7_Uart_ADC/Ting.LENOVO-T14/AppData/Roaming/Xilinx/Vivado/Ting.LENOVO-T14/AppData/Roaming/Xilinx/Vivado/Ting.LENOVO-T14/AppData/Roaming/Xilinx/Vivado/Ting.LENOVO-T14/AppData/Roaming/Xilinx/Vivado/Ting.LENOVO-T14/AppData/Roaming/Xilinx/Vivado/2024.2/xhub/board_store/xilinx_board_store' does not exist, it will not be used to search board files.
-WARNING: [Board 49-91] Board repository path 'Ting.LENOVO-T14/Downloads/DSL/Lab4/Ting.LENOVO-T14/AppData/Roaming/Xilinx/Vivado/Ting.LENOVO-T14/AppData/Roaming/Xilinx/Vivado/Ting.LENOVO-T14/Downloads/Colab_DSL_Practice25-0865141e546e601a029f7c385b6bd2fd61b6fdb0/Demo_Code/T03_CmodA7_Uart_ADC/Ting.LENOVO-T14/AppData/Roaming/Xilinx/Vivado/Ting.LENOVO-T14/Downloads/Colab_DSL_Practice25-0865141e546e601a029f7c385b6bd2fd61b6fdb0/Demo_Code/T03_CmodA7_Uart_ADC/Ting.LENOVO-T14/Downloads/Colab_DSL_Practice25-0865141e546e601a029f7c385b6bd2fd61b6fdb0/Demo_Code/T03_CmodA7_Uart_ADC/Ting.LENOVO-T14/Downloads/Colab_DSL_Practice25-0865141e546e601a029f7c385b6bd2fd61b6fdb0/Demo_Code/T03_CmodA7_Uart_ADC/Ting.LENOVO-T14/AppData/Roaming/Xilinx/Vivado/Ting.LENOVO-T14/AppData/Roaming/Xilinx/Vivado/Ting.LENOVO-T14/AppData/Roaming/Xilinx/Vivado/Ting.LENOVO-T14/AppData/Roaming/Xilinx/Vivado/Ting.LENOVO-T14/AppData/Roaming/Xilinx/Vivado/Ting.LENOVO-T14/AppData/Roaming/Xilinx/Vivado/2024.2/xhub/board_store/xilinx_board_store' does not exist, it will not be used to search board files.
-open_project {C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.xpr}
-WARNING: [Project 1-1870] Given BoardPartRepoPath C:/Users/Jing in the xpr file is empty or unreadable
-WARNING: [filemgmt 56-3] Board Part Repository Path: Could not find the directory 'C:/Users/Jing Ting.LENOVO-T14/AppData/Roaming/Xilinx/Vivado/Ting.LENOVO-T14/Downloads/Colab_DSL_Practice25-0865141e546e601a029f7c385b6bd2fd61b6fdb0/Demo_Code/T03_CmodA7_Uart_ADC/Ting.LENOVO-T14/AppData/Roaming/Xilinx/Vivado/Ting.LENOVO-T14/Downloads/Colab_DSL_Practice25-0865141e546e601a029f7c385b6bd2fd61b6fdb0/Demo_Code/T03_CmodA7_Uart_ADC/Ting.LENOVO-T14/Downloads/Colab_DSL_Practice25-0865141e546e601a029f7c385b6bd2fd61b6fdb0/Demo_Code/T03_CmodA7_Uart_ADC/Ting.LENOVO-T14/Downloads/Colab_DSL_Practice25-0865141e546e601a029f7c385b6bd2fd61b6fdb0/Demo_Code/T03_CmodA7_Uart_ADC/Ting.LENOVO-T14/AppData/Roaming/Xilinx/Vivado/2024.2/xhub/board_store/xilinx_board_store'.
-WARNING: [filemgmt 56-3] Board Part Repository Path: Could not find the directory 'C:/Users/Jing Ting.LENOVO-T14/AppData/Roaming/Xilinx/Vivado/Ting.LENOVO-T14/Downloads/Colab_DSL_Practice25-0865141e546e601a029f7c385b6bd2fd61b6fdb0/Demo_Code/T03_CmodA7_Uart_ADC/Ting.LENOVO-T14/AppData/Roaming/Xilinx/Vivado/Ting.LENOVO-T14/Downloads/Colab_DSL_Practice25-0865141e546e601a029f7c385b6bd2fd61b6fdb0/Demo_Code/T03_CmodA7_Uart_ADC/Ting.LENOVO-T14/Downloads/Colab_DSL_Practice25-0865141e546e601a029f7c385b6bd2fd61b6fdb0/Demo_Code/T03_CmodA7_Uart_ADC/Ting.LENOVO-T14/Downloads/Colab_DSL_Practice25-0865141e546e601a029f7c385b6bd2fd61b6fdb0/Demo_Code/T03_CmodA7_Uart_ADC/Ting.LENOVO-T14/AppData/Roaming/Xilinx/Vivado/Ting.LENOVO-T14/AppData/Roaming/Xilinx/Vivado/Ting.LENOVO-T14/AppData/Roaming/Xilinx/Vivado/2024.2/xhub/board_store/xilinx_board_store'.
-WARNING: [filemgmt 56-3] Board Part Repository Path: Could not find the directory 'C:/Users/Jing Ting.LENOVO-T14/AppData/Roaming/Xilinx/Vivado/Ting.LENOVO-T14/Downloads/Colab_DSL_Practice25-0865141e546e601a029f7c385b6bd2fd61b6fdb0/Demo_Code/T03_CmodA7_Uart_ADC/Ting.LENOVO-T14/AppData/Roaming/Xilinx/Vivado/Ting.LENOVO-T14/Downloads/Colab_DSL_Practice25-0865141e546e601a029f7c385b6bd2fd61b6fdb0/Demo_Code/T03_CmodA7_Uart_ADC/Ting.LENOVO-T14/Downloads/Colab_DSL_Practice25-0865141e546e601a029f7c385b6bd2fd61b6fdb0/Demo_Code/T03_CmodA7_Uart_ADC/Ting.LENOVO-T14/Downloads/Colab_DSL_Practice25-0865141e546e601a029f7c385b6bd2fd61b6fdb0/Demo_Code/T03_CmodA7_Uart_ADC/Ting.LENOVO-T14/AppData/Roaming/Xilinx/Vivado/Ting.LENOVO-T14/AppData/Roaming/Xilinx/Vivado/Ting.LENOVO-T14/AppData/Roaming/Xilinx/Vivado/Ting.LENOVO-T14/AppData/Roaming/Xilinx/Vivado/Ting.LENOVO-T14/AppData/Roaming/Xilinx/Vivado/2024.2/xhub/board_store/xilinx_board_store'.
-WARNING: [filemgmt 56-3] Board Part Repository Path: Could not find the directory 'C:/Users/Jing Ting.LENOVO-T14/AppData/Roaming/Xilinx/Vivado/Ting.LENOVO-T14/Downloads/Colab_DSL_Practice25-0865141e546e601a029f7c385b6bd2fd61b6fdb0/Demo_Code/T03_CmodA7_Uart_ADC/Ting.LENOVO-T14/AppData/Roaming/Xilinx/Vivado/Ting.LENOVO-T14/Downloads/Colab_DSL_Practice25-0865141e546e601a029f7c385b6bd2fd61b6fdb0/Demo_Code/T03_CmodA7_Uart_ADC/Ting.LENOVO-T14/Downloads/Colab_DSL_Practice25-0865141e546e601a029f7c385b6bd2fd61b6fdb0/Demo_Code/T03_CmodA7_Uart_ADC/Ting.LENOVO-T14/Downloads/Colab_DSL_Practice25-0865141e546e601a029f7c385b6bd2fd61b6fdb0/Demo_Code/T03_CmodA7_Uart_ADC/Ting.LENOVO-T14/AppData/Roaming/Xilinx/Vivado/Ting.LENOVO-T14/AppData/Roaming/Xilinx/Vivado/Ting.LENOVO-T14/AppData/Roaming/Xilinx/Vivado/Ting.LENOVO-T14/AppData/Roaming/Xilinx/Vivado/Ting.LENOVO-T14/AppData/Roaming/Xilinx/Vivado/Ting.LENOVO-T14/AppData/Roaming/Xilinx/Vivado/2024.2/xhub/board_store/xilinx_board_store'.
-INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.gen/sources_1'.
+open_project {D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.xpr}
+INFO: [Project 1-313] Project file moved from 'C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4' since last save.
+WARNING: [filemgmt 56-2] Board Part Repository Path: Could not find the directory 'D:/SUTD/Term 8/DSL/AppData/Roaming/Xilinx/Vivado/2024.2/xhub/board_store/xilinx_board_store', nor could it be found using path 'C:/Users/Jing Ting.LENOVO-T14/AppData/Roaming/Xilinx/Vivado/2024.2/xhub/board_store/xilinx_board_store'.
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.gen/sources_1'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/tb_chua_uart_rng_behav.wcfg', nor could it be found using path 'C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/tb_chua_uart_rng_behav.wcfg'.
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
-INFO: [IP_Flow 19-2update_compile_order -fileset sources_1
-exit
-INFO: [Common 17-206] Exiting Vivado at Thu Apr 10 12:11:35 2025...
-_run synth_1
-INFO: [Project 1-1160] Copying file C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.runs/synth_1/chua_uart_rng.dcp to C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.srcs/utils_1/imports/synth_1 and adding it to utils fileset
-WARNING: [Vivado 12-1017] Problems encountered:
-1. Failed to delete one or more files in run directory C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.runs/synth_1
-
-launch_runs synth_1
-[Thu Apr 10 12:11:23 2025] Launched synth_1...
-Run output will be captured here: C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.runs/synth_1/runme.log
-launch_runs impl_1
-[Thu Apr 10 12:12:47 2025] Launched impl_1...
-Run output will be captured here: C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.runs/impl_1/runme.log
-open_run impl_1
-INFO: [Device 21-403] Loading part xc7a35tcpg236-1
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1365.766 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 295 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
-WARNING: [Netlist 29-101] Netlist 'chua_uart_rng' is not ideal for floorplanning, since the cellview 'chua_rng' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
-INFO: [Project 1-479] Netlist was created with Vivado 2024.2
-INFO: [Project 1-570] Preparing netlist for logic optimization
-Read ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1455.793 ; gain = 0.527
-INFO: [Timing 38-478] Restoring timing data from binary archive.
-INFO: [Timing 38-479] Binary timing data restore complete.
-INFO: [Project 1-856] Restoring constraints from binary archive.
-INFO: [Project 1-853] Binary constraint restore complete.
-INFO: [Designutils 20-5722] Start Reading Physical Databases.
-Reading placement.
-Read Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1994.098 ; gain = 0.000
-Reading placer database...
-Read Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1994.098 ; gain = 0.000
-Read PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.098 . Memory (MB): peak = 1994.098 ; gain = 0.000
-Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1994.098 ; gain = 0.000
-Reading routing.
-Read RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 1994.098 ; gain = 0.000
-Read Physdb Files: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.149 . Memory (MB): peak = 1994.098 ; gain = 0.000
-Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
-Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.149 . Memory (MB): peak = 1994.098 ; gain = 0.000
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1994.098 ; gain = 0.000
-INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
-
-open_run: Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 2300.184 ; gain = 1105.691
-launch_runs impl_1 -to_step write_bitstream
-[Thu Apr 10 12:14:52 2025] Launched impl_1...
-Run output will be captured here: C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.runs/impl_1/runme.log
-reset_run synth_1
-INFO: [Project 1-1161] Replacing file C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.srcs/utils_1/imports/synth_1/chua_uart_rng.dcp with file C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.runs/synth_1/chua_uart_rng.dcp
-launch_runs impl_1 -to_step write_bitstream
-[Thu Apr 10 12:31:06 2025] Launched synth_1...
-Run output will be captured here: C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.runs/synth_1/runme.log
-[Thu Apr 10 12:31:06 2025] Launched impl_1...
-Run output will be captured here: C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.runs/impl_1/runme.log
-open_hw_manager
-connect_hw_server -allow_non_jtag
-INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
-INFO: [Labtools 27-2222] Launching hw_server...
-INFO: [Labtools 27-2221] Launch Output:
-
-****** Xilinx hw_server v2024.2
-  **** Build date : Oct 29 2024 at 10:25:41
-    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-
-
-INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
-INFO: [Labtools 27-3417] Launching cs_server...
-INFO: [Labtools 27-2221] Launch Output:
-
-
-******** Xilinx cs_server v2024.2.0
-  ****** Build date   : Oct 31 2024-02:19:07
-    **** Build number : 2024.2.1730312347
-      ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.
-      ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
-
-
-
-connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 3355.891 ; gain = 0.000
-open_hw_target
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210328B99808A
-set_property PROGRAM.FILE {C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.runs/impl_1/chua_uart_rng.bit} [get_hw_devices xc7a35t_0]
-current_hw_device [get_hw_devices xc7a35t_0]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.runs/impl_1/chua_uart_rng.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-INFO: [Labtools 27-3164] End of startup status: HIGH
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-close_hw_manager
-file mkdir C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.srcs/sim_1/new
-file mkdir C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.srcs/sim_1/new
-file mkdir C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.srcs/sim_1/new
-file mkdir C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.srcs/sim_1/new
-file mkdir C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.srcs/sim_1/new
-set_property SOURCE_SET sources_1 [get_filesets sim_1]
-file mkdir C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.srcs/sim_1/new
-file mkdir {C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.srcs/sim_1/new}
-close [ open {C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.srcs/sim_1/new/testbench.v} w ]
-add_files -fileset sim_1 {{C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.srcs/sim_1/new/testbench.v}}
-update_compile_order -fileset sim_1
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Jing Ting.LENOVO-T14\Downloads\DSL\Lab4\Lab4.srcs\sources_1\new\PRNG.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Jing Ting.LENOVO-T14\Downloads\DSL\Lab4\Lab4.srcs\sim_1\new\testbench.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Jing Ting.LENOVO-T14\Downloads\DSL\Lab4\Lab4.srcs\sim_1\new\testbench.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Jing Ting.LENOVO-T14\Downloads\DSL\Lab4\Lab4.srcs\sim_1\new\testbench.v:]
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
+open_project: Time (s): cpu = 00:00:21 ; elapsed = 00:00:08 . Memory (MB): peak = 1114.211 ; gain = 58.676
+update_compile_order -fileset sources_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\SUTD\Term 8\DSL\Projects\DSL_group_03\Lab_4\Lab4.srcs\sources_1\new\PRNG.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\SUTD\Term 8\DSL\Projects\DSL_group_03\Lab_4\Lab4.srcs\sim_1\new\testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\SUTD\Term 8\DSL\Projects\DSL_group_03\Lab_4\Lab4.srcs\sim_1\new\testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\SUTD\Term 8\DSL\Projects\DSL_group_03\Lab_4\Lab4.srcs\sim_1\new\testbench.v:]
 ERROR: [Common 17-180] Spawn failed: No error
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Jing Ting.LENOVO-T14\Downloads\DSL\Lab4\Lab4.srcs\sources_1\new\PRNG.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Jing Ting.LENOVO-T14\Downloads\DSL\Lab4\Lab4.srcs\sim_1\new\testbench.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Jing Ting.LENOVO-T14\Downloads\DSL\Lab4\Lab4.srcs\sim_1\new\testbench.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Jing Ting.LENOVO-T14\Downloads\DSL\Lab4\Lab4.srcs\sim_1\new\testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\SUTD\Term 8\DSL\Projects\DSL_group_03\Lab_4\Lab4.srcs\sources_1\new\PRNG.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\SUTD\Term 8\DSL\Projects\DSL_group_03\Lab_4\Lab4.srcs\sim_1\new\testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\SUTD\Term 8\DSL\Projects\DSL_group_03\Lab_4\Lab4.srcs\sim_1\new\testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\SUTD\Term 8\DSL\Projects\DSL_group_03\Lab_4\Lab4.srcs\sim_1\new\testbench.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\SUTD\Term 8\DSL\Projects\DSL_group_03\Lab_4\Lab4.srcs\sources_1\new\PRNG.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\SUTD\Term 8\DSL\Projects\DSL_group_03\Lab_4\Lab4.srcs\sim_1\new\testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\SUTD\Term 8\DSL\Projects\DSL_group_03\Lab_4\Lab4.srcs\sim_1\new\testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\SUTD\Term 8\DSL\Projects\DSL_group_03\Lab_4\Lab4.srcs\sim_1\new\testbench.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\SUTD\Term 8\DSL\Projects\DSL_group_03\Lab_4\Lab4.srcs\sources_1\new\PRNG.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\SUTD\Term 8\DSL\Projects\DSL_group_03\Lab_4\Lab4.srcs\sim_1\new\testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\SUTD\Term 8\DSL\Projects\DSL_group_03\Lab_4\Lab4.srcs\sim_1\new\testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\SUTD\Term 8\DSL\Projects\DSL_group_03\Lab_4\Lab4.srcs\sim_1\new\testbench.v:]
 launch_simulation
 Command: launch_simulation 
 INFO: [Vivado 12-12493] Simulation top is 'tb_chua_uart_rng'
 WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.sim/sim_1/behav/xsim'
 INFO: [SIM-utils-51] Simulation object is 'sim_1'
 INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.2/tps/boost_1_72_0'
 INFO: [SIM-utils-54] Inspecting design source files for 'tb_chua_uart_rng' in fileset 'sim_1'...
+ERROR: [Common 17-180] Spawn failed: No error
 INFO: [USF-XSim-97] Finding global include files...
 INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
 INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.sim/sim_1/behav/xsim'
-ERROR: [Common 17-180] Spawn failed: No error
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.sim/sim_1/behav/xsim'
 "xvlog --incr --relax -prj tb_chua_uart_rng_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.srcs/sources_1/new/PRNG.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/sources_1/new/PRNG.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module seed_provider
 INFO: [VRFC 10-311] analyzing module uart_tx
 INFO: [VRFC 10-311] analyzing module chua_rng
 INFO: [VRFC 10-311] analyzing module chua_uart_rng
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.srcs/sim_1/new/testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/sim_1/new/testbench.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module tb_chua_uart_rng
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+WARNING: [VRFC 10-8374] loop variable declaration is not allowed in this mode of Verilog [D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/sim_1/new/testbench.v:50]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module glbl
-run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:13 . Memory (MB): peak = 3355.891 ; gain = 0.000
-INFO: [USF-XSim-69] 'compile' step finished in '12' seconds
-ERROR: [USF-XSim-62] 'compile' step failed with error(s) while executing 'C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.sim/sim_1/behav/xsim/compile.bat' script. Please check that the file has the correct 'read/write/execute' permissions and the Tcl console output for any other possible errors or warnings.
-ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
-launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:13 . Memory (MB): peak = 3355.891 ; gain = 0.000
-ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
-update_compile_order -fileset sim_1
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Jing Ting.LENOVO-T14\Downloads\DSL\Lab4\Lab4.srcs\sources_1\new\PRNG.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Jing Ting.LENOVO-T14\Downloads\DSL\Lab4\Lab4.srcs\sim_1\new\testbench.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Jing Ting.LENOVO-T14\Downloads\DSL\Lab4\Lab4.srcs\sim_1\new\testbench.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Jing Ting.LENOVO-T14\Downloads\DSL\Lab4\Lab4.srcs\sim_1\new\testbench.v:]
-ERROR: [Common 17-180] Spawn failed: No error
-launch_simulation
-Command: launch_simulation 
-INFO: [Vivado 12-12493] Simulation top is 'tb_chua_uart_rng'
-WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.2/tps/boost_1_72_0'
-INFO: [SIM-utils-54] Inspecting design source files for 'tb_chua_uart_rng' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -prj tb_chua_uart_rng_vlog.prj"
-run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:12 . Memory (MB): peak = 3355.891 ; gain = 0.000
-INFO: [USF-XSim-69] 'compile' step finished in '12' seconds
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
 INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.sim/sim_1/behav/xsim'
 "xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_chua_uart_rng_behav xil_defaultlib.tb_chua_uart_rng xil_defaultlib.glbl -log elaborate.log"
 Vivado Simulator v2024.2.0
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
@@ -214,15 +92,16 @@ Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.seed_provider
 Compiling module xil_defaultlib.chua_rng
-Compiling module xil_defaultlib.uart_tx_default
-Compiling module xil_defaultlib.chua_uart_rng
 Compiling module xil_defaultlib.tb_chua_uart_rng
 Compiling module xil_defaultlib.glbl
 Built simulation snapshot tb_chua_uart_rng_behav
 INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
 INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.sim/sim_1/behav/xsim'
+WARNING: [USF-XSim-17] WCFG file does not exist:D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/tb_chua_uart_rng_behav.wcfg
+WARNING: [USF-XSim-17] WCFG file does not exist:D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/tb_chua_uart_rng_behav.wcfg
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.sim/sim_1/behav/xsim'
 INFO: [USF-XSim-98] *** Running xsim
    with args "tb_chua_uart_rng_behav -key {Behavioral:sim_1:Functional:tb_chua_uart_rng} -tclbatch {tb_chua_uart_rng.tcl} -log {simulate.log}"
 INFO: [USF-XSim-8] Loading simulator feature
@@ -238,1077 +117,30 @@ source tb_chua_uart_rng.tcl
 #   }
 # }
 # run 1000ns
+xsim: Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 1157.809 ; gain = 10.293
 INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_chua_uart_rng_behav' loaded.
 INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:19 . Memory (MB): peak = 3355.891 ; gain = 0.000
-close_sim
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Jing Ting.LENOVO-T14\Downloads\DSL\Lab4\Lab4.srcs\sources_1\new\PRNG.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Jing Ting.LENOVO-T14\Downloads\DSL\Lab4\Lab4.srcs\sim_1\new\testbench.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Jing Ting.LENOVO-T14\Downloads\DSL\Lab4\Lab4.srcs\sim_1\new\testbench.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Jing Ting.LENOVO-T14\Downloads\DSL\Lab4\Lab4.srcs\sim_1\new\testbench.v:]
-INFO: [Simtcl 6-16] Simulation closed
-ERROR: [Common 17-180] Spawn failed: No error
-launch_simulation
-Command: launch_simulation 
-INFO: [Vivado 12-12493] Simulation top is 'tb_chua_uart_rng'
-WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.2/tps/boost_1_72_0'
-INFO: [SIM-utils-54] Inspecting design source files for 'tb_chua_uart_rng' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -prj tb_chua_uart_rng_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.srcs/sources_1/new/PRNG.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module uart_tx
-INFO: [VRFC 10-311] analyzing module chua_rng
-INFO: [VRFC 10-311] analyzing module chua_uart_rng
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.srcs/sim_1/new/testbench.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module tb_chua_uart_rng
-INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.sim/sim_1/behav/xsim'
-"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_chua_uart_rng_behav xil_defaultlib.tb_chua_uart_rng xil_defaultlib.glbl -log elaborate.log"
-Vivado Simulator v2024.2.0
-Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_chua_uart_rng_behav xil_defaultlib.tb_chua_uart_rng xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Pass Through NonSizing Optimizer
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.chua_rng
-Compiling module xil_defaultlib.uart_tx_default
-Compiling module xil_defaultlib.chua_uart_rng
-Compiling module xil_defaultlib.tb_chua_uart_rng
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot tb_chua_uart_rng_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "tb_chua_uart_rng_behav -key {Behavioral:sim_1:Functional:tb_chua_uart_rng} -tclbatch {tb_chua_uart_rng.tcl} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Time resolution is 1 ps
-source tb_chua_uart_rng.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_chua_uart_rng_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 3537.141 ; gain = 0.000
-close_sim
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Jing Ting.LENOVO-T14\Downloads\DSL\Lab4\Lab4.srcs\sources_1\new\PRNG.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Jing Ting.LENOVO-T14\Downloads\DSL\Lab4\Lab4.srcs\sim_1\new\testbench.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Jing Ting.LENOVO-T14\Downloads\DSL\Lab4\Lab4.srcs\sim_1\new\testbench.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Jing Ting.LENOVO-T14\Downloads\DSL\Lab4\Lab4.srcs\sim_1\new\testbench.v:]
-INFO: [Simtcl 6-16] Simulation closed
-ERROR: [Common 17-180] Spawn failed: No error
-launch_simulation
-Command: launch_simulation 
-INFO: [Vivado 12-12493] Simulation top is 'tb_chua_uart_rng'
-WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.2/tps/boost_1_72_0'
-INFO: [SIM-utils-54] Inspecting design source files for 'tb_chua_uart_rng' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -prj tb_chua_uart_rng_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.srcs/sources_1/new/PRNG.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module uart_tx
-INFO: [VRFC 10-311] analyzing module chua_rng
-INFO: [VRFC 10-311] analyzing module chua_uart_rng
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.srcs/sim_1/new/testbench.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module tb_chua_uart_rng
-INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.sim/sim_1/behav/xsim'
-"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_chua_uart_rng_behav xil_defaultlib.tb_chua_uart_rng xil_defaultlib.glbl -log elaborate.log"
-Vivado Simulator v2024.2.0
-Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_chua_uart_rng_behav xil_defaultlib.tb_chua_uart_rng xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Pass Through NonSizing Optimizer
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.chua_rng
-Compiling module xil_defaultlib.uart_tx_default
-Compiling module xil_defaultlib.chua_uart_rng
-Compiling module xil_defaultlib.tb_chua_uart_rng
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot tb_chua_uart_rng_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "tb_chua_uart_rng_behav -key {Behavioral:sim_1:Functional:tb_chua_uart_rng} -tclbatch {tb_chua_uart_rng.tcl} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Time resolution is 1 ps
-source tb_chua_uart_rng.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_chua_uart_rng_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 3537.141 ; gain = 0.000
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-launch_simulation
-Command: launch_simulation 
-INFO: [Vivado 12-12493] Simulation top is 'tb_chua_uart_rng'
-WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.2/tps/boost_1_72_0'
-INFO: [SIM-utils-54] Inspecting design source files for 'tb_chua_uart_rng' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -prj tb_chua_uart_rng_vlog.prj"
-INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.sim/sim_1/behav/xsim'
-"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_chua_uart_rng_behav xil_defaultlib.tb_chua_uart_rng xil_defaultlib.glbl -log elaborate.log"
-Vivado Simulator v2024.2.0
-Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_chua_uart_rng_behav xil_defaultlib.tb_chua_uart_rng xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Pass Through NonSizing Optimizer
-Completed static elaboration
-INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
-INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "tb_chua_uart_rng_behav -key {Behavioral:sim_1:Functional:tb_chua_uart_rng} -tclbatch {tb_chua_uart_rng.tcl} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Time resolution is 1 ps
-source tb_chua_uart_rng.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_chua_uart_rng_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 3537.141 ; gain = 0.000
-current_wave_config {Untitled 4}
-Untitled 4
-add_wave {{/tb_chua_uart_rng/uut/rng_inst/rnd}} 
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-launch_simulation
-Command: launch_simulation 
-INFO: [Vivado 12-12493] Simulation top is 'tb_chua_uart_rng'
-WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.2/tps/boost_1_72_0'
-INFO: [SIM-utils-54] Inspecting design source files for 'tb_chua_uart_rng' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -prj tb_chua_uart_rng_vlog.prj"
-INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.sim/sim_1/behav/xsim'
-"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_chua_uart_rng_behav xil_defaultlib.tb_chua_uart_rng xil_defaultlib.glbl -log elaborate.log"
-Vivado Simulator v2024.2.0
-Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_chua_uart_rng_behav xil_defaultlib.tb_chua_uart_rng xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Pass Through NonSizing Optimizer
-Completed static elaboration
-INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
-INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "tb_chua_uart_rng_behav -key {Behavioral:sim_1:Functional:tb_chua_uart_rng} -tclbatch {tb_chua_uart_rng.tcl} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Time resolution is 1 ps
-source tb_chua_uart_rng.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_chua_uart_rng_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 3810.680 ; gain = 0.000
-current_wave_config {Untitled 5}
-Untitled 5
-add_wave {{/tb_chua_uart_rng/uut/rng_inst/rnd}} 
-current_wave_config {Untitled 5}
-Untitled 5
-log_wave {/tb_chua_uart_rng/uut/rng_inst/rnd} 
-current_wave_config {Untitled 5}
-Untitled 5
-add_wave {{/tb_chua_uart_rng/uut/rng_inst/rnd}} 
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Jing Ting.LENOVO-T14\Downloads\DSL\Lab4\Lab4.srcs\sources_1\new\PRNG.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Jing Ting.LENOVO-T14\Downloads\DSL\Lab4\Lab4.srcs\sim_1\new\testbench.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Jing Ting.LENOVO-T14\Downloads\DSL\Lab4\Lab4.srcs\sim_1\new\testbench.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Jing Ting.LENOVO-T14\Downloads\DSL\Lab4\Lab4.srcs\sim_1\new\testbench.v:]
-ERROR: [Common 17-180] Spawn failed: No error
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-launch_simulation
-Command: launch_simulation 
-INFO: [Vivado 12-12493] Simulation top is 'tb_chua_uart_rng'
-WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.2/tps/boost_1_72_0'
-INFO: [SIM-utils-54] Inspecting design source files for 'tb_chua_uart_rng' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -prj tb_chua_uart_rng_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.srcs/sources_1/new/PRNG.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module uart_tx
-INFO: [VRFC 10-311] analyzing module chua_rng
-INFO: [VRFC 10-311] analyzing module chua_uart_rng
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.srcs/sim_1/new/testbench.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module tb_chua_uart_rng
-INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.sim/sim_1/behav/xsim'
-"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_chua_uart_rng_behav xil_defaultlib.tb_chua_uart_rng xil_defaultlib.glbl -log elaborate.log"
-Vivado Simulator v2024.2.0
-Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_chua_uart_rng_behav xil_defaultlib.tb_chua_uart_rng xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Pass Through NonSizing Optimizer
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.chua_rng
-Compiling module xil_defaultlib.uart_tx_default
-Compiling module xil_defaultlib.chua_uart_rng
-Compiling module xil_defaultlib.tb_chua_uart_rng
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot tb_chua_uart_rng_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "tb_chua_uart_rng_behav -key {Behavioral:sim_1:Functional:tb_chua_uart_rng} -tclbatch {tb_chua_uart_rng.tcl} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Time resolution is 1 ps
-source tb_chua_uart_rng.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_chua_uart_rng_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 3812.590 ; gain = 0.000
-current_wave_config {Untitled 6}
-Untitled 6
-add_wave {{/tb_chua_uart_rng/uut/uart_tx_inst/tx_data}} 
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Jing Ting.LENOVO-T14\Downloads\DSL\Lab4\Lab4.srcs\sources_1\new\PRNG.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Jing Ting.LENOVO-T14\Downloads\DSL\Lab4\Lab4.srcs\sim_1\new\testbench.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Jing Ting.LENOVO-T14\Downloads\DSL\Lab4\Lab4.srcs\sim_1\new\testbench.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Jing Ting.LENOVO-T14\Downloads\DSL\Lab4\Lab4.srcs\sim_1\new\testbench.v:]
-ERROR: [Common 17-180] Spawn failed: No error
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-launch_simulation
-Command: launch_simulation 
-INFO: [Vivado 12-12493] Simulation top is 'tb_chua_uart_rng'
-WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.2/tps/boost_1_72_0'
-INFO: [SIM-utils-54] Inspecting design source files for 'tb_chua_uart_rng' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -prj tb_chua_uart_rng_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.srcs/sources_1/new/PRNG.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module uart_tx
-INFO: [VRFC 10-311] analyzing module chua_rng
-INFO: [VRFC 10-311] analyzing module chua_uart_rng
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.srcs/sim_1/new/testbench.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module tb_chua_uart_rng
-INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.sim/sim_1/behav/xsim'
-"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_chua_uart_rng_behav xil_defaultlib.tb_chua_uart_rng xil_defaultlib.glbl -log elaborate.log"
-Vivado Simulator v2024.2.0
-Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_chua_uart_rng_behav xil_defaultlib.tb_chua_uart_rng xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Pass Through NonSizing Optimizer
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.chua_rng
-Compiling module xil_defaultlib.uart_tx_default
-Compiling module xil_defaultlib.chua_uart_rng
-Compiling module xil_defaultlib.tb_chua_uart_rng
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot tb_chua_uart_rng_behav
-run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:12 . Memory (MB): peak = 3812.590 ; gain = 0.000
-INFO: [USF-XSim-69] 'elaborate' step finished in '13' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "tb_chua_uart_rng_behav -key {Behavioral:sim_1:Functional:tb_chua_uart_rng} -tclbatch {tb_chua_uart_rng.tcl} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Time resolution is 1 ps
-source tb_chua_uart_rng.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_chua_uart_rng_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:17 . Memory (MB): peak = 3812.590 ; gain = 0.000
-current_wave_config {Untitled 7}
-Untitled 7
-add_wave {{/tb_chua_uart_rng/uut/rng_inst/rnd}} 
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Jing Ting.LENOVO-T14\Downloads\DSL\Lab4\Lab4.srcs\sources_1\new\PRNG.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Jing Ting.LENOVO-T14\Downloads\DSL\Lab4\Lab4.srcs\sim_1\new\testbench.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Jing Ting.LENOVO-T14\Downloads\DSL\Lab4\Lab4.srcs\sim_1\new\testbench.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Jing Ting.LENOVO-T14\Downloads\DSL\Lab4\Lab4.srcs\sim_1\new\testbench.v:]
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-launch_simulation
-Command: launch_simulation 
-INFO: [Vivado 12-12493] Simulation top is 'tb_chua_uart_rng'
-WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.2/tps/boost_1_72_0'
-INFO: [SIM-utils-54] Inspecting design source files for 'tb_chua_uart_rng' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -prj tb_chua_uart_rng_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.srcs/sources_1/new/PRNG.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module uart_tx
-INFO: [VRFC 10-311] analyzing module chua_rng
-INFO: [VRFC 10-311] analyzing module chua_uart_rng
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.srcs/sim_1/new/testbench.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module tb_chua_uart_rng
-INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.sim/sim_1/behav/xsim'
-"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_chua_uart_rng_behav xil_defaultlib.tb_chua_uart_rng xil_defaultlib.glbl -log elaborate.log"
-Vivado Simulator v2024.2.0
-Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_chua_uart_rng_behav xil_defaultlib.tb_chua_uart_rng xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Pass Through NonSizing Optimizer
-WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 16 for port 'rnd' [C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.srcs/sim_1/new/testbench.v:34]
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.chua_rng
-Compiling module xil_defaultlib.tb_chua_uart_rng
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot tb_chua_uart_rng_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "tb_chua_uart_rng_behav -key {Behavioral:sim_1:Functional:tb_chua_uart_rng} -tclbatch {tb_chua_uart_rng.tcl} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Time resolution is 1 ps
-source tb_chua_uart_rng.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_chua_uart_rng_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 3812.590 ; gain = 0.000
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Jing Ting.LENOVO-T14\Downloads\DSL\Lab4\Lab4.srcs\sources_1\new\PRNG.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Jing Ting.LENOVO-T14\Downloads\DSL\Lab4\Lab4.srcs\sim_1\new\testbench.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Jing Ting.LENOVO-T14\Downloads\DSL\Lab4\Lab4.srcs\sim_1\new\testbench.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Jing Ting.LENOVO-T14\Downloads\DSL\Lab4\Lab4.srcs\sim_1\new\testbench.v:]
-ERROR: [Common 17-180] Spawn failed: No error
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-launch_simulation
-Command: launch_simulation 
-INFO: [Vivado 12-12493] Simulation top is 'tb_chua_uart_rng'
-WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.2/tps/boost_1_72_0'
-INFO: [SIM-utils-54] Inspecting design source files for 'tb_chua_uart_rng' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -prj tb_chua_uart_rng_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.srcs/sources_1/new/PRNG.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module uart_tx
-INFO: [VRFC 10-311] analyzing module chua_rng
-INFO: [VRFC 10-311] analyzing module chua_uart_rng
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.srcs/sim_1/new/testbench.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module tb_chua_uart_rng
-INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.sim/sim_1/behav/xsim'
-"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_chua_uart_rng_behav xil_defaultlib.tb_chua_uart_rng xil_defaultlib.glbl -log elaborate.log"
-Vivado Simulator v2024.2.0
-Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_chua_uart_rng_behav xil_defaultlib.tb_chua_uart_rng xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Pass Through NonSizing Optimizer
-WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 16 for port 'rnd' [C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.srcs/sim_1/new/testbench.v:34]
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.chua_rng
-Compiling module xil_defaultlib.tb_chua_uart_rng
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot tb_chua_uart_rng_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "tb_chua_uart_rng_behav -key {Behavioral:sim_1:Functional:tb_chua_uart_rng} -tclbatch {tb_chua_uart_rng.tcl} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Time resolution is 1 ps
-source tb_chua_uart_rng.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_chua_uart_rng_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 3812.590 ; gain = 0.000
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Jing Ting.LENOVO-T14\Downloads\DSL\Lab4\Lab4.srcs\sources_1\new\PRNG.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Jing Ting.LENOVO-T14\Downloads\DSL\Lab4\Lab4.srcs\sim_1\new\testbench.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Jing Ting.LENOVO-T14\Downloads\DSL\Lab4\Lab4.srcs\sim_1\new\testbench.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Jing Ting.LENOVO-T14\Downloads\DSL\Lab4\Lab4.srcs\sim_1\new\testbench.v:]
-ERROR: [Common 17-180] Spawn failed: No error
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-launch_simulation
-Command: launch_simulation 
-INFO: [Vivado 12-12493] Simulation top is 'tb_chua_uart_rng'
-WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.2/tps/boost_1_72_0'
-INFO: [SIM-utils-54] Inspecting design source files for 'tb_chua_uart_rng' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -prj tb_chua_uart_rng_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.srcs/sources_1/new/PRNG.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module uart_tx
-INFO: [VRFC 10-311] analyzing module chua_rng
-INFO: [VRFC 10-311] analyzing module chua_uart_rng
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.srcs/sim_1/new/testbench.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module tb_chua_uart_rng
-INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.sim/sim_1/behav/xsim'
-"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_chua_uart_rng_behav xil_defaultlib.tb_chua_uart_rng xil_defaultlib.glbl -log elaborate.log"
-Vivado Simulator v2024.2.0
-Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_chua_uart_rng_behav xil_defaultlib.tb_chua_uart_rng xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Pass Through NonSizing Optimizer
-WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 16 for port 'rnd' [C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.srcs/sim_1/new/testbench.v:34]
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.chua_rng
-Compiling module xil_defaultlib.tb_chua_uart_rng
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot tb_chua_uart_rng_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "tb_chua_uart_rng_behav -key {Behavioral:sim_1:Functional:tb_chua_uart_rng} -tclbatch {tb_chua_uart_rng.tcl} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Time resolution is 1 ps
-source tb_chua_uart_rng.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_chua_uart_rng_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 3812.590 ; gain = 0.000
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Jing Ting.LENOVO-T14\Downloads\DSL\Lab4\Lab4.srcs\sources_1\new\PRNG.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Jing Ting.LENOVO-T14\Downloads\DSL\Lab4\Lab4.srcs\sim_1\new\testbench.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Jing Ting.LENOVO-T14\Downloads\DSL\Lab4\Lab4.srcs\sim_1\new\testbench.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Jing Ting.LENOVO-T14\Downloads\DSL\Lab4\Lab4.srcs\sim_1\new\testbench.v:]
-ERROR: [Common 17-180] Spawn failed: No error
-launch_simulation
-Command: launch_simulation 
-INFO: [Vivado 12-12493] Simulation top is 'tb_chua_uart_rng'
-WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.2/tps/boost_1_72_0'
-INFO: [SIM-utils-54] Inspecting design source files for 'tb_chua_uart_rng' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -prj tb_chua_uart_rng_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.srcs/sources_1/new/PRNG.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module uart_tx
-INFO: [VRFC 10-311] analyzing module chua_rng
-INFO: [VRFC 10-311] analyzing module chua_uart_rng
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.srcs/sim_1/new/testbench.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module tb_chua_uart_rng
-INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.sim/sim_1/behav/xsim'
-"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_chua_uart_rng_behav xil_defaultlib.tb_chua_uart_rng xil_defaultlib.glbl -log elaborate.log"
-Vivado Simulator v2024.2.0
-Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_chua_uart_rng_behav xil_defaultlib.tb_chua_uart_rng xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Pass Through NonSizing Optimizer
-WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 16 for port 'rnd' [C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.srcs/sim_1/new/testbench.v:34]
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.chua_rng
-Compiling module xil_defaultlib.tb_chua_uart_rng
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot tb_chua_uart_rng_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "tb_chua_uart_rng_behav -key {Behavioral:sim_1:Functional:tb_chua_uart_rng} -tclbatch {tb_chua_uart_rng.tcl} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Time resolution is 1 ps
-source tb_chua_uart_rng.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_chua_uart_rng_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 3812.590 ; gain = 0.000
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Jing Ting.LENOVO-T14\Downloads\DSL\Lab4\Lab4.srcs\sources_1\new\PRNG.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Jing Ting.LENOVO-T14\Downloads\DSL\Lab4\Lab4.srcs\sim_1\new\testbench.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Jing Ting.LENOVO-T14\Downloads\DSL\Lab4\Lab4.srcs\sim_1\new\testbench.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Jing Ting.LENOVO-T14\Downloads\DSL\Lab4\Lab4.srcs\sim_1\new\testbench.v:]
-ERROR: [Common 17-180] Spawn failed: No error
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Jing Ting.LENOVO-T14\Downloads\DSL\Lab4\Lab4.srcs\sources_1\new\PRNG.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Jing Ting.LENOVO-T14\Downloads\DSL\Lab4\Lab4.srcs\sim_1\new\testbench.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Jing Ting.LENOVO-T14\Downloads\DSL\Lab4\Lab4.srcs\sim_1\new\testbench.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Jing Ting.LENOVO-T14\Downloads\DSL\Lab4\Lab4.srcs\sim_1\new\testbench.v:]
-ERROR: [Common 17-180] Spawn failed: No error
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Jing Ting.LENOVO-T14\Downloads\DSL\Lab4\Lab4.srcs\sources_1\new\PRNG.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Jing Ting.LENOVO-T14\Downloads\DSL\Lab4\Lab4.srcs\sim_1\new\testbench.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Jing Ting.LENOVO-T14\Downloads\DSL\Lab4\Lab4.srcs\sim_1\new\testbench.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Jing Ting.LENOVO-T14\Downloads\DSL\Lab4\Lab4.srcs\sim_1\new\testbench.v:]
-ERROR: [Common 17-180] Spawn failed: No error
-launch_simulation
-Command: launch_simulation 
-INFO: [Vivado 12-12493] Simulation top is 'tb_chua_uart_rng'
-WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.2/tps/boost_1_72_0'
-INFO: [SIM-utils-54] Inspecting design source files for 'tb_chua_uart_rng' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -prj tb_chua_uart_rng_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.srcs/sources_1/new/PRNG.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module uart_tx
-INFO: [VRFC 10-311] analyzing module _chua_rng
-INFO: [VRFC 10-311] analyzing module chua_uart_rng
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.srcs/sim_1/new/testbench.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module tb_chua_uart_rng
-INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.sim/sim_1/behav/xsim'
-"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_chua_uart_rng_behav xil_defaultlib.tb_chua_uart_rng xil_defaultlib.glbl -log elaborate.log"
-Vivado Simulator v2024.2.0
-Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_chua_uart_rng_behav xil_defaultlib.tb_chua_uart_rng xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Pass Through NonSizing Optimizer
-WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 16 for port 'rnd' [C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.srcs/sim_1/new/testbench.v:34]
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib._chua_rng
-Compiling module xil_defaultlib.tb_chua_uart_rng
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot tb_chua_uart_rng_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "tb_chua_uart_rng_behav -key {Behavioral:sim_1:Functional:tb_chua_uart_rng} -tclbatch {tb_chua_uart_rng.tcl} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Time resolution is 1 ps
-source tb_chua_uart_rng.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_chua_uart_rng_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 3812.590 ; gain = 0.000
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Jing Ting.LENOVO-T14\Downloads\DSL\Lab4\Lab4.srcs\sources_1\new\PRNG.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Jing Ting.LENOVO-T14\Downloads\DSL\Lab4\Lab4.srcs\sim_1\new\testbench.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Jing Ting.LENOVO-T14\Downloads\DSL\Lab4\Lab4.srcs\sim_1\new\testbench.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Jing Ting.LENOVO-T14\Downloads\DSL\Lab4\Lab4.srcs\sim_1\new\testbench.v:]
-ERROR: [Common 17-180] Spawn failed: No error
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-launch_simulation
-Command: launch_simulation 
-INFO: [Vivado 12-12493] Simulation top is 'tb_chua_uart_rng'
-WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.2/tps/boost_1_72_0'
-INFO: [SIM-utils-54] Inspecting design source files for 'tb_chua_uart_rng' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -prj tb_chua_uart_rng_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.srcs/sources_1/new/PRNG.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module uart_tx
-INFO: [VRFC 10-311] analyzing module _chua_rng
-INFO: [VRFC 10-311] analyzing module chua_uart_rng
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.srcs/sim_1/new/testbench.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module tb_chua_uart_rng
-INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.sim/sim_1/behav/xsim'
-"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_chua_uart_rng_behav xil_defaultlib.tb_chua_uart_rng xil_defaultlib.glbl -log elaborate.log"
-Vivado Simulator v2024.2.0
-Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_chua_uart_rng_behav xil_defaultlib.tb_chua_uart_rng xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Pass Through NonSizing Optimizer
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib._chua_rng
-Compiling module xil_defaultlib.tb_chua_uart_rng
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot tb_chua_uart_rng_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "tb_chua_uart_rng_behav -key {Behavioral:sim_1:Functional:tb_chua_uart_rng} -tclbatch {tb_chua_uart_rng.tcl} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Time resolution is 1 ps
-source tb_chua_uart_rng.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_chua_uart_rng_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 3812.590 ; gain = 0.000
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Jing Ting.LENOVO-T14\Downloads\DSL\Lab4\Lab4.srcs\sources_1\new\PRNG.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Jing Ting.LENOVO-T14\Downloads\DSL\Lab4\Lab4.srcs\sim_1\new\testbench.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Jing Ting.LENOVO-T14\Downloads\DSL\Lab4\Lab4.srcs\sim_1\new\testbench.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Jing Ting.LENOVO-T14\Downloads\DSL\Lab4\Lab4.srcs\sim_1\new\testbench.v:]
-ERROR: [Common 17-180] Spawn failed: No error
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Jing Ting.LENOVO-T14\Downloads\DSL\Lab4\Lab4.srcs\sources_1\new\PRNG.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Jing Ting.LENOVO-T14\Downloads\DSL\Lab4\Lab4.srcs\sim_1\new\testbench.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Jing Ting.LENOVO-T14\Downloads\DSL\Lab4\Lab4.srcs\sim_1\new\testbench.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Jing Ting.LENOVO-T14\Downloads\DSL\Lab4\Lab4.srcs\sim_1\new\testbench.v:]
-ERROR: [Common 17-180] Spawn failed: No error
-relaunch_sim
-Command: launch_simulation -step compile -simset sim_1 -mode behavioral
-INFO: [Vivado 12-12493] Simulation top is 'tb_chua_uart_rng'
-WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.2/tps/boost_1_72_0'
-INFO: [SIM-utils-54] Inspecting design source files for 'tb_chua_uart_rng' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -prj tb_chua_uart_rng_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.srcs/sources_1/new/PRNG.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module uart_tx
-INFO: [VRFC 10-311] analyzing module _chua_rng
-INFO: [VRFC 10-311] analyzing module chua_uart_rng
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.srcs/sim_1/new/testbench.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module tb_chua_uart_rng
-INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
-Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
-INFO: [Vivado 12-12493] Simulation top is 'tb_chua_uart_rng'
-WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.sim/sim_1/behav/xsim'
-"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_chua_uart_rng_behav xil_defaultlib.tb_chua_uart_rng xil_defaultlib.glbl -log elaborate.log"
-Vivado Simulator v2024.2.0
-Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_chua_uart_rng_behav xil_defaultlib.tb_chua_uart_rng xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Pass Through NonSizing Optimizer
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib._chua_rng
-Compiling module xil_defaultlib.tb_chua_uart_rng
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot tb_chua_uart_rng_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
-Time resolution is 1 ps
-relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 3812.590 ; gain = 0.000
-relaunch_sim
-Command: launch_simulation -step compile -simset sim_1 -mode behavioral
-INFO: [Vivado 12-12493] Simulation top is 'tb_chua_uart_rng'
-WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -prj tb_chua_uart_rng_vlog.prj"
-INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
-Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
-INFO: [Vivado 12-12493] Simulation top is 'tb_chua_uart_rng'
-WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.sim/sim_1/behav/xsim'
-"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_chua_uart_rng_behav xil_defaultlib.tb_chua_uart_rng xil_defaultlib.glbl -log elaborate.log"
-Vivado Simulator v2024.2.0
-Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_chua_uart_rng_behav xil_defaultlib.tb_chua_uart_rng xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Pass Through NonSizing Optimizer
-Completed static elaboration
-INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
-INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
-Time resolution is 1 ps
-relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 3812.590 ; gain = 0.000
-relaunch_sim
-Command: launch_simulation -step compile -simset sim_1 -mode behavioral
-INFO: [Vivado 12-12493] Simulation top is 'tb_chua_uart_rng'
-WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -prj tb_chua_uart_rng_vlog.prj"
-INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
-Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
-INFO: [Vivado 12-12493] Simulation top is 'tb_chua_uart_rng'
-WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.sim/sim_1/behav/xsim'
-"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_chua_uart_rng_behav xil_defaultlib.tb_chua_uart_rng xil_defaultlib.glbl -log elaborate.log"
-Vivado Simulator v2024.2.0
-Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_chua_uart_rng_behav xil_defaultlib.tb_chua_uart_rng xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Pass Through NonSizing Optimizer
-Completed static elaboration
-INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
-INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
-Time resolution is 1 ps
-relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 3812.590 ; gain = 0.000
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Jing Ting.LENOVO-T14\Downloads\DSL\Lab4\Lab4.srcs\sources_1\new\PRNG.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Jing Ting.LENOVO-T14\Downloads\DSL\Lab4\Lab4.srcs\sim_1\new\testbench.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Jing Ting.LENOVO-T14\Downloads\DSL\Lab4\Lab4.srcs\sim_1\new\testbench.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Jing Ting.LENOVO-T14\Downloads\DSL\Lab4\Lab4.srcs\sim_1\new\testbench.v:]
-ERROR: [Common 17-180] Spawn failed: No error
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Jing Ting.LENOVO-T14\Downloads\DSL\Lab4\Lab4.srcs\sources_1\new\PRNG.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Jing Ting.LENOVO-T14\Downloads\DSL\Lab4\Lab4.srcs\sim_1\new\testbench.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Jing Ting.LENOVO-T14\Downloads\DSL\Lab4\Lab4.srcs\sim_1\new\testbench.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Jing Ting.LENOVO-T14\Downloads\DSL\Lab4\Lab4.srcs\sim_1\new\testbench.v:]
-ERROR: [Common 17-180] Spawn failed: No error
-relaunch_sim
-Command: launch_simulation -step compile -simset sim_1 -mode behavioral
-INFO: [Vivado 12-12493] Simulation top is 'tb_chua_uart_rng'
-WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -prj tb_chua_uart_rng_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.srcs/sources_1/new/PRNG.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module uart_tx
-INFO: [VRFC 10-311] analyzing module _chua_rng
-INFO: [VRFC 10-311] analyzing module chua_uart_rng
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.srcs/sim_1/new/testbench.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module tb_chua_uart_rng
-INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
-Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
-INFO: [Vivado 12-12493] Simulation top is 'tb_chua_uart_rng'
-WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.sim/sim_1/behav/xsim'
-"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_chua_uart_rng_behav xil_defaultlib.tb_chua_uart_rng xil_defaultlib.glbl -log elaborate.log"
-Vivado Simulator v2024.2.0
-Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_chua_uart_rng_behav xil_defaultlib.tb_chua_uart_rng xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Pass Through NonSizing Optimizer
-ERROR: [VRFC 10-3180] cannot find port 'c3_seed' on this module [C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.srcs/sim_1/new/testbench.v:35]
-ERROR: [VRFC 10-3180] cannot find port 'c2_seed' on this module [C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.srcs/sim_1/new/testbench.v:34]
-ERROR: [VRFC 10-3180] cannot find port 'c1_seed' on this module [C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.srcs/sim_1/new/testbench.v:33]
-ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
-INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
-INFO: [USF-XSim-99] Step results log file:'C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.sim/sim_1/behav/xsim/elaborate.log'
-ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.sim/sim_1/behav/xsim/elaborate.log' file for more information.
-ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:14 . Memory (MB): peak = 1157.809 ; gain = 27.945
 ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
-ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
-
 close_sim
 INFO: [Simtcl 6-16] Simulation closed
 launch_simulation
 Command: launch_simulation 
 INFO: [Vivado 12-12493] Simulation top is 'tb_chua_uart_rng'
 WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.sim/sim_1/behav/xsim'
 INFO: [SIM-utils-51] Simulation object is 'sim_1'
 INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.2/tps/boost_1_72_0'
 INFO: [SIM-utils-54] Inspecting design source files for 'tb_chua_uart_rng' in fileset 'sim_1'...
 INFO: [USF-XSim-97] Finding global include files...
 INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
 INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.sim/sim_1/behav/xsim'
 "xvlog --incr --relax -prj tb_chua_uart_rng_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.srcs/sources_1/new/PRNG.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module uart_tx
-INFO: [VRFC 10-311] analyzing module _chua_rng
-INFO: [VRFC 10-311] analyzing module chua_uart_rng
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.srcs/sim_1/new/testbench.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module tb_chua_uart_rng
-INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 2257.355 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '7' seconds
 INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.sim/sim_1/behav/xsim'
-"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_chua_uart_rng_behav xil_defaultlib.tb_chua_uart_rng xil_defaultlib.glbl -log elaborate.log"
-Vivado Simulator v2024.2.0
-Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_chua_uart_rng_behav xil_defaultlib.tb_chua_uart_rng xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Pass Through NonSizing Optimizer
-ERROR: [VRFC 10-3180] cannot find port 'c3_seed' on this module [C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.srcs/sim_1/new/testbench.v:35]
-ERROR: [VRFC 10-3180] cannot find port 'c2_seed' on this module [C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.srcs/sim_1/new/testbench.v:34]
-ERROR: [VRFC 10-3180] cannot find port 'c1_seed' on this module [C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.srcs/sim_1/new/testbench.v:33]
-ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
-INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
-INFO: [USF-XSim-99] Step results log file:'C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.sim/sim_1/behav/xsim/elaborate.log'
-ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.sim/sim_1/behav/xsim/elaborate.log' file for more information.
-ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
-ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
-launch_simulation
-Command: launch_simulation 
-INFO: [Vivado 12-12493] Simulation top is 'tb_chua_uart_rng'
-WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.2/tps/boost_1_72_0'
-INFO: [SIM-utils-54] Inspecting design source files for 'tb_chua_uart_rng' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -prj tb_chua_uart_rng_vlog.prj"
-INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.sim/sim_1/behav/xsim'
-"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_chua_uart_rng_behav xil_defaultlib.tb_chua_uart_rng xil_defaultlib.glbl -log elaborate.log"
-Vivado Simulator v2024.2.0
-Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_chua_uart_rng_behav xil_defaultlib.tb_chua_uart_rng xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Pass Through NonSizing Optimizer
-ERROR: [VRFC 10-3180] cannot find port 'c3_seed' on this module [C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.srcs/sim_1/new/testbench.v:35]
-ERROR: [VRFC 10-3180] cannot find port 'c2_seed' on this module [C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.srcs/sim_1/new/testbench.v:34]
-ERROR: [VRFC 10-3180] cannot find port 'c1_seed' on this module [C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.srcs/sim_1/new/testbench.v:33]
-ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
-INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
-INFO: [USF-XSim-99] Step results log file:'C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.sim/sim_1/behav/xsim/elaborate.log'
-ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.sim/sim_1/behav/xsim/elaborate.log' file for more information.
-ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
-ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Jing Ting.LENOVO-T14\Downloads\DSL\Lab4\Lab4.srcs\sources_1\new\PRNG.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Jing Ting.LENOVO-T14\Downloads\DSL\Lab4\Lab4.srcs\sim_1\new\testbench.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Jing Ting.LENOVO-T14\Downloads\DSL\Lab4\Lab4.srcs\sim_1\new\testbench.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\Jing Ting.LENOVO-T14\Downloads\DSL\Lab4\Lab4.srcs\sim_1\new\testbench.v:]
-ERROR: [Common 17-180] Spawn failed: No error
-launch_simulation
-Command: launch_simulation 
-INFO: [Vivado 12-12493] Simulation top is 'tb_chua_uart_rng'
-WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.2/tps/boost_1_72_0'
-INFO: [SIM-utils-54] Inspecting design source files for 'tb_chua_uart_rng' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -prj tb_chua_uart_rng_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.srcs/sources_1/new/PRNG.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module uart_tx
-INFO: [VRFC 10-311] analyzing module _chua_rng
-INFO: [VRFC 10-311] analyzing module chua_uart_rng
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.srcs/sim_1/new/testbench.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module tb_chua_uart_rng
-INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.sim/sim_1/behav/xsim'
 "xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_chua_uart_rng_behav xil_defaultlib.tb_chua_uart_rng xil_defaultlib.glbl -log elaborate.log"
 Vivado Simulator v2024.2.0
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
@@ -1318,16 +150,13 @@ Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
 Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib._chua_rng
-Compiling module xil_defaultlib.tb_chua_uart_rng
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot tb_chua_uart_rng_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 2257.355 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
 INFO: [USF-XSim-4] XSim::Simulate design
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.sim/sim_1/behav/xsim'
+WARNING: [USF-XSim-17] WCFG file does not exist:D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/tb_chua_uart_rng_behav.wcfg
+WARNING: [USF-XSim-17] WCFG file does not exist:D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/tb_chua_uart_rng_behav.wcfg
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.sim/sim_1/behav/xsim'
 INFO: [USF-XSim-98] *** Running xsim
    with args "tb_chua_uart_rng_behav -key {Behavioral:sim_1:Functional:tb_chua_uart_rng} -tclbatch {tb_chua_uart_rng.tcl} -log {simulate.log}"
 INFO: [USF-XSim-8] Loading simulator feature
@@ -1343,10 +172,11 @@ source tb_chua_uart_rng.tcl
 #   }
 # }
 # run 1000ns
+xsim: Time (s): cpu = 00:00:16 ; elapsed = 00:00:07 . Memory (MB): peak = 2257.355 ; gain = 0.000
 INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_chua_uart_rng_behav' loaded.
 INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 3812.590 ; gain = 0.000
+launch_simulation: Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2257.355 ; gain = 0.000
 close_sim
 INFO: [Simtcl 6-16] Simulation closed
 exit
-INFO: [Common 17-206] Exiting Vivado at Thu Apr 10 14:09:34 2025...
+INFO: [Common 17-206] Exiting Vivado at Mon Apr 14 23:04:12 2025...

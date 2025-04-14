@@ -5,6 +5,17 @@
 //   • Clock input renamed to sysclk
 //   • UART TX output renamed to uart_txd_in
 //////////////////////////////////////////////////////////////////////////////////
+module seed_provider (
+    output [31:0] C1_seed,
+    output [31:0] C2_seed,
+    output [31:0] L_seed
+);
+    // Example static assignment or logic to generate seeds
+    assign C1_seed = 32'hA5A5A5A5;
+    assign C2_seed = 32'h5A5A5A5A;
+    assign L_seed  = 32'hDEADBEEF;
+endmodule
+
 module uart_tx (
     input        sysclk,       // was clk
     input        rst,
@@ -65,18 +76,25 @@ endmodule
 // Generates a 16-bit random number by extracting the lower 16 bits of v1.
 // Fixed-point format: Q16 (32-bit signed; 16 integer and 16 fractional bits)
 //////////////////////////////////////////////////////////////////////////////////
-module _chua_rng (
+module chua_rng (
     input              sysclk,   // renamed from clk
     input              rst,      // synchronous reset (active high)
-    input [31:0] C1_seed,
-    input [31:0] C2_seed,
-    input [31:0] L_seed,
     output reg [15:0]  rnd       // 16-bit random number output
 );
   // State registers: Q16 fixed-point (32-bit signed)
   reg signed [31:0] v1;  // voltage across C1
   reg signed [31:0] v2;  // voltage across C2
   reg signed [31:0] iL;  // current through the inductor
+  
+  wire [31:0] C1_seed;
+  wire [31:0] C2_seed;
+  wire [31:0] L_seed;
+  
+  seed_provider seeds (
+        .C1_seed(C1_seed),
+        .C2_seed(C2_seed),
+        .L_seed(L_seed)
+    );
 
   // Parameter definitions (in Q16 format)
 

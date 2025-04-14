@@ -3,22 +3,22 @@
 # SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
 # IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
 # SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-# Start of session at: Thu Mar 27 17:12:54 2025
-# Process ID         : 15572
-# Current directory  : C:/Users/Jing Ting.LENOVO-T14/Downloads/Colab_DSL_Practice25-0865141e546e601a029f7c385b6bd2fd61b6fdb0/Demo_Code/T03_CmodA7_Uart_ADC/p2_cmoda7_MP3202_Demo.runs/impl_1
+# Start of session at: Mon Apr 14 21:36:41 2025
+# Process ID         : 85668
+# Current directory  : D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_3/T03_CmodA7_Uart_ADC/p2_cmoda7_MP3202_Demo.runs/impl_1
 # Command line       : vivado.exe -log top_module.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source top_module.tcl -notrace
-# Log file           : C:/Users/Jing Ting.LENOVO-T14/Downloads/Colab_DSL_Practice25-0865141e546e601a029f7c385b6bd2fd61b6fdb0/Demo_Code/T03_CmodA7_Uart_ADC/p2_cmoda7_MP3202_Demo.runs/impl_1/top_module.vdi
-# Journal file       : C:/Users/Jing Ting.LENOVO-T14/Downloads/Colab_DSL_Practice25-0865141e546e601a029f7c385b6bd2fd61b6fdb0/Demo_Code/T03_CmodA7_Uart_ADC/p2_cmoda7_MP3202_Demo.runs/impl_1\vivado.jou
-# Running On         : Lenovo-T14
+# Log file           : D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_3/T03_CmodA7_Uart_ADC/p2_cmoda7_MP3202_Demo.runs/impl_1/top_module.vdi
+# Journal file       : D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_3/T03_CmodA7_Uart_ADC/p2_cmoda7_MP3202_Demo.runs/impl_1\vivado.jou
+# Running On         : Suriya
 # Platform           : Windows Server 2016 or Windows 10
-# Operating System   : 22631
-# Processor Detail   : AMD Ryzen 7 PRO 4750U with Radeon Graphics
-# CPU Frequency      : 1697 MHz
-# CPU Physical cores : 8
-# CPU Logical cores  : 16
-# Host memory        : 33528 MB
-# Swap memory        : 4831 MB
-# Total Virtual      : 38360 MB
-# Available Virtual  : 16263 MB
+# Operating System   : 26100
+# Processor Detail   : 11th Gen Intel(R) Core(TM) i7-1185G7 @ 3.00GHz
+# CPU Frequency      : 2995 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 16859 MB
+# Swap memory        : 15136 MB
+# Total Virtual      : 31996 MB
+# Available Virtual  : 7273 MB
 #-----------------------------------------------------------
 source top_module.tcl -notrace

@@ -25,7 +25,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/Jing Ting.LENOVO-T14/Downloads/Colab_DSL_Practice25-0865141e546e601a029f7c385b6bd2fd61b6fdb0/Demo_Code/T03_CmodA7_Uart_ADC/p2_cmoda7_MP3202_Demo.runs/synth_1'
+HD_PWD='D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_3/T03_CmodA7_Uart_ADC/p2_cmoda7_MP3202_Demo.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

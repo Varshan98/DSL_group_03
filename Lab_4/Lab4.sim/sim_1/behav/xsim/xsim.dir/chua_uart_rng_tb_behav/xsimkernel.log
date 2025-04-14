@@ -1,0 +1,7 @@
+Running: xsim.dir/chua_uart_rng_tb_behav/xsimk.exe -simmode gui -wdb chua_uart_rng_tb_behav.wdb -simrunnum 0 -socket 57121
+Design successfully loaded
+Design Loading Memory Usage: 28620 KB (Peak: 28620 KB)
+Design Loading CPU Usage: 1124 ms
+Simulation completed
+Simulation Memory Usage: 29760 KB (Peak: 29760 KB)
+Simulation CPU Usage: 1202 ms

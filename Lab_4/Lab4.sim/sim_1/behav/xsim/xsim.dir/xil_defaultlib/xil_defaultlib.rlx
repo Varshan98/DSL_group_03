@@ -2,6 +2,6 @@
 2020.2
 Nov  8 2024
 22:36:57
-C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.sim/sim_1/behav/xsim/glbl.v,1724786425,verilog,,,,glbl,,,,,,,,
-C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.srcs/sim_1/new/testbench.v,1744280170,verilog,,,,tb_chua_uart_rng,,,,,,,,
-C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.srcs/sources_1/new/PRNG.v,1744279437,verilog,,C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.srcs/sim_1/new/testbench.v,,_chua_rng;chua_uart_rng;uart_tx,,,,,,,,
+D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.sim/sim_1/behav/xsim/glbl.v,1744642227,verilog,,,,glbl,,,,,,,,
+D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/sim_1/new/testbench.v,1744642539,verilog,,,,tb_chua_uart_rng,,,,,,,,
+D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/sources_1/new/PRNG.v,1744642512,verilog,,D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/sim_1/new/testbench.v,,chua_rng;chua_uart_rng;seed_provider;uart_tx,,,,,,,,

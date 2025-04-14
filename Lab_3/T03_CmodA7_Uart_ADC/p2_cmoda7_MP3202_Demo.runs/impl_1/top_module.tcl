@@ -1,5 +1,5 @@
 namespace eval ::optrace {
-  variable script "C:/Users/Jing Ting.LENOVO-T14/Downloads/Colab_DSL_Practice25-0865141e546e601a029f7c385b6bd2fd61b6fdb0/Demo_Code/T03_CmodA7_Uart_ADC/p2_cmoda7_MP3202_Demo.runs/impl_1/top_module.tcl"
+  variable script "D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_3/T03_CmodA7_Uart_ADC/p2_cmoda7_MP3202_Demo.runs/impl_1/top_module.tcl"
   variable category "vivado_impl"
 }
 
@@ -105,11 +105,11 @@ start_step write_bitstream
 set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
-  set_param chipscope.maxJobs 4
+  set_param chipscope.maxJobs 1
   set_param xicom.use_bs_reader 1
   set_param runs.launchOptions { -jobs 1  }
   open_checkpoint top_module_routed.dcp
-  set_property webtalk.parent_dir {C:/Users/Jing Ting.LENOVO-T14/Downloads/Colab_DSL_Practice25-0865141e546e601a029f7c385b6bd2fd61b6fdb0/Demo_Code/T03_CmodA7_Uart_ADC/p2_cmoda7_MP3202_Demo.cache/wt} [current_project]
+  set_property webtalk.parent_dir {D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_3/T03_CmodA7_Uart_ADC/p2_cmoda7_MP3202_Demo.cache/wt} [current_project]
 set_property TOP top_module [current_fileset]
 OPTRACE "read constraints: write_bitstream" START { }
 OPTRACE "read constraints: write_bitstream" END { }
