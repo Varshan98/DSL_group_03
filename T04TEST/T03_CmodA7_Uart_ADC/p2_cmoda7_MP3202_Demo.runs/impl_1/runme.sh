@@ -25,7 +25,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/Jing Ting.LENOVO-T14/Desktop/LAB 3.1/DSL_group_03-main/Lab_3/T03_CmodA7_Uart_ADC/p2_cmoda7_MP3202_Demo.runs/impl_1'
+HD_PWD='C:/Users/Jing Ting.LENOVO-T14/Documents/GitHub/DSL_group_03/T04TEST/T03_CmodA7_Uart_ADC/p2_cmoda7_MP3202_Demo.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -42,7 +42,7 @@ EAStep()
 }
 
 # pre-commands:
-/bin/touch .write_bitstream.begin.rst
+/bin/touch .init_design.begin.rst
 EAStep vivado -log top_module.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source top_module.tcl -notrace
 
 

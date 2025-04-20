@@ -1,80 +1,10 @@
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="Jing Ting" Host="LENOVO-T14" Pid="3636" HostCore="16" HostMemory="033528926208">
+    <Process Command="vivado.bat" Owner="Jing Ting" Host="LENOVO-T14" Pid="27640" HostCore="16" HostMemory="033528926208">
     </Process>
 </ProcessHandle>
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="Jing Ting" Host="LENOVO-T14" Pid="4120" HostCore="16" HostMemory="033528926208">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="Jing Ting" Host="LENOVO-T14" Pid="45684" HostCore="16" HostMemory="033528926208">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="Jing Ting" Host="LENOVO-T14" Pid="55840" HostCore="16" HostMemory="033528926208">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="Jing Ting" Host="LENOVO-T14" Pid="39896" HostCore="16" HostMemory="033528926208">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="Jing Ting" Host="LENOVO-T14" Pid="39084" HostCore="16" HostMemory="033528926208">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="Jing Ting" Host="LENOVO-T14" Pid="54264" HostCore="16" HostMemory="033528926208">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="Jing Ting" Host="LENOVO-T14" Pid="41468" HostCore="16" HostMemory="033528926208">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="Jing Ting" Host="LENOVO-T14" Pid="27888" HostCore="16" HostMemory="033528926208">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="Jing Ting" Host="LENOVO-T14" Pid="54664" HostCore="16" HostMemory="033528926208">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="Jing Ting" Host="LENOVO-T14" Pid="39800" HostCore="16" HostMemory="033528926208">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="Jing Ting" Host="LENOVO-T14" Pid="33512" HostCore="16" HostMemory="033528926208">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="Jing Ting" Host="LENOVO-T14" Pid="56724" HostCore="16" HostMemory="033528926208">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="Jing Ting" Host="LENOVO-T14" Pid="21944" HostCore="16" HostMemory="033528926208">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="Jing Ting" Host="LENOVO-T14" Pid="25092" HostCore="16" HostMemory="033528926208">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="Jing Ting" Host="LENOVO-T14" Pid="45152" HostCore="16" HostMemory="033528926208">
+    <Process Command="vivado.bat" Owner="Jing Ting" Host="LENOVO-T14" Pid="25988" HostCore="16" HostMemory="033528926208">
     </Process>
 </ProcessHandle>

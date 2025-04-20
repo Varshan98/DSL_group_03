@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-| Date         : Thu Apr 17 19:26:11 2025
+| Date         : Mon Apr 21 01:25:00 2025
 | Host         : Lenovo-T14 running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file top_module_control_sets_placed.rpt
 | Design       : top_module
@@ -23,11 +23,11 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Total control sets                                       |    85 |
-|    Minimum number of control sets                        |    85 |
+| Total control sets                                       |    49 |
+|    Minimum number of control sets                        |    49 |
 |    Addition due to synthesis replication                 |     0 |
 |    Addition due to physical synthesis replication        |     0 |
-| Unused register locations in slices containing registers |   564 |
+| Unused register locations in slices containing registers |   306 |
 +----------------------------------------------------------+-------+
 * Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
 ** Run report_qor_suggestions for automated merging and remapping suggestions
@@ -39,14 +39,14 @@ Table of Contents
 +--------------------+-------+
 |       Fanout       | Count |
 +--------------------+-------+
-| Total control sets |    85 |
-| >= 0 to < 4        |    79 |
-| >= 4 to < 6        |     2 |
+| Total control sets |    49 |
+| >= 0 to < 4        |    39 |
+| >= 4 to < 6        |     5 |
 | >= 6 to < 8        |     1 |
-| >= 8 to < 10       |     0 |
+| >= 8 to < 10       |     1 |
 | >= 10 to < 12      |     0 |
-| >= 12 to < 14      |     1 |
-| >= 14 to < 16      |     1 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     2 |
 | >= 16              |     1 |
 +--------------------+-------+
 * Control sets can be remapped at either synth_design or opt_design
@@ -59,10 +59,10 @@ Table of Contents
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | No           | No                    | No                     |               0 |            0 |
-| No           | No                    | Yes                    |             147 |           84 |
-| No           | Yes                   | No                     |              27 |           27 |
-| Yes          | No                    | No                     |               0 |            0 |
-| Yes          | No                    | Yes                    |               6 |            3 |
+| No           | No                    | Yes                    |             116 |           51 |
+| No           | Yes                   | No                     |              12 |           12 |
+| Yes          | No                    | No                     |              20 |            8 |
+| Yes          | No                    | Yes                    |              10 |            4 |
 | Yes          | Yes                   | No                     |               0 |            0 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
@@ -70,94 +70,58 @@ Table of Contents
 4. Detailed Control Set Information
 -----------------------------------
 
-+---------------------------------+----------------------------------+--------------------------------+------------------+----------------+--------------+
-|           Clock Signal          |           Enable Signal          |        Set/Reset Signal        | Slice Load Count | Bel Load Count | Bels / Slice |
-+---------------------------------+----------------------------------+--------------------------------+------------------+----------------+--------------+
-| ~clk_div_u5/clkout_r_reg_0      |                                  | drv_uart_u0/ap_vaild_reg_8     |                1 |              1 |         1.00 |
-|  clk_div_u4/CLK_UART            | drv_uart_u0/tx_i_1_n_0           | btn_IBUF[1]                    |                1 |              1 |         1.00 |
-| ~clk_div_u5/clkout_r_reg_0      |                                  | drv_uart_u0/ap_vaild_reg_14    |                1 |              1 |         1.00 |
-| ~clk_div_u5/clkout_r_reg_0      |                                  | drv_uart_u0/ap_vaild_reg_11    |                1 |              1 |         1.00 |
-| ~clk_div_u5/clkout_r_reg_0      |                                  | drv_uart_u0/ap_vaild_reg_4     |                1 |              1 |         1.00 |
-| ~clk_div_u5/clkout_r_reg_0      |                                  | drv_uart_u0/ap_vaild_reg_12    |                1 |              1 |         1.00 |
-| ~clk_div_u5/clkout_r_reg_0      |                                  | drv_uart_u0/ap_vaild_reg_13    |                1 |              1 |         1.00 |
-| ~clk_div_u5/clkout_r_reg_0      |                                  | drv_uart_u0/ap_vaild_reg_15    |                1 |              1 |         1.00 |
-| ~clk_div_u5/clkout_r_reg_0      |                                  | drv_uart_u0/ap_vaild_reg_2     |                1 |              1 |         1.00 |
-| ~clk_div_u5/clkout_r_reg_0      |                                  | drv_uart_u0/ap_vaild_reg_3     |                1 |              1 |         1.00 |
-|  drv_mcp3202_u0/ap_vaild_reg_24 |                                  | drv_mcp3202_u0/ap_vaild_reg_12 |                1 |              1 |         1.00 |
-| ~clk_div_u5/clkout_r_reg_0      |                                  | drv_uart_u0/ap_vaild_reg_5     |                1 |              1 |         1.00 |
-| ~clk_div_u5/clkout_r_reg_0      |                                  | drv_uart_u0/ap_vaild_reg_1     |                1 |              1 |         1.00 |
-| ~clk_div_u5/clkout_r_reg_0      |                                  | drv_uart_u0/ap_vaild_reg_10    |                1 |              1 |         1.00 |
-| ~clk_div_u5/clkout_r_reg_0      |                                  | drv_uart_u0/ap_vaild_reg_16    |                1 |              1 |         1.00 |
-| ~clk_div_u5/clkout_r_reg_0      |                                  | drv_uart_u0/ap_vaild_reg_7     |                1 |              1 |         1.00 |
-| ~clk_div_u5/clkout_r_reg_0      |                                  | drv_uart_u0/ap_vaild_reg_9     |                1 |              1 |         1.00 |
-| ~clk_div_u5/clkout_r_reg_0      |                                  | drv_uart_u0/ap_vaild_reg_6     |                1 |              1 |         1.00 |
-| ~clk_div_u5/clkout_r_reg_0      |                                  | drv_uart_u0/ap_vaild_reg_0     |                1 |              1 |         1.00 |
-| ~clk_div_u5/clkout_r_reg_0      |                                  | btn_IBUF[1]                    |                1 |              1 |         1.00 |
-| ~clk_div_u3/CLK_ADC             | drv_mcp3202_u0/port_dout_i_1_n_0 | btn_IBUF[1]                    |                1 |              1 |         1.00 |
-|  drv_mcp3202_u0/ap_vaild_reg_24 |                                  | drv_mcp3202_u0/ap_vaild_reg_13 |                1 |              1 |         1.00 |
-|  drv_mcp3202_u0/ap_vaild_reg_26 |                                  | drv_mcp3202_u0/ap_vaild_reg_3  |                1 |              1 |         1.00 |
-|  drv_mcp3202_u0/ap_vaild_reg_19 |                                  | drv_mcp3202_u0/ap_vaild_reg_14 |                1 |              1 |         1.00 |
-|  drv_mcp3202_u0/ap_vaild_reg_23 |                                  | drv_mcp3202_u0/ap_vaild_reg_10 |                1 |              1 |         1.00 |
-|  drv_mcp3202_u0/ap_vaild_reg_23 |                                  | drv_mcp3202_u0/ap_vaild_reg_9  |                1 |              1 |         1.00 |
-|  drv_mcp3202_u0/ap_vaild_reg_16 |                                  | drv_mcp3202_u0/ap_vaild_reg_5  |                1 |              1 |         1.00 |
-|  drv_mcp3202_u0/ap_vaild_reg_20 |                                  | drv_mcp3202_u0/ap_vaild_reg_0  |                1 |              1 |         1.00 |
-|  drv_mcp3202_u0/ap_vaild_reg_29 |                                  | drv_mcp3202_u0/ap_vaild_reg_8  |                1 |              1 |         1.00 |
-|  drv_mcp3202_u0/ap_vaild_reg_31 |                                  | drv_mcp3202_u0/ap_vaild_reg_14 |                1 |              1 |         1.00 |
-|  drv_mcp3202_u0/ap_vaild_reg_30 |                                  | drv_mcp3202_u0/ap_vaild_reg_11 |                1 |              1 |         1.00 |
-|  drv_mcp3202_u0/ap_vaild_reg_21 |                                  | drv_mcp3202_u0/ap_vaild_reg_1  |                1 |              1 |         1.00 |
-|  drv_mcp3202_u0/ap_vaild_reg_22 |                                  | drv_mcp3202_u0/ap_vaild_reg_7  |                1 |              1 |         1.00 |
-|  drv_mcp3202_u0/ap_vaild_reg_22 |                                  | drv_mcp3202_u0/ap_vaild_reg_6  |                1 |              1 |         1.00 |
-|  drv_mcp3202_u0/ap_vaild_reg_27 |                                  | drv_mcp3202_u0/ap_vaild_reg_4  |                1 |              1 |         1.00 |
-|  drv_mcp3202_u0/ap_vaild_reg_25 |                                  | drv_mcp3202_u0/ap_vaild_reg_2  |                1 |              1 |         1.00 |
-|  drv_mcp3202_u0/ap_vaild_reg_18 |                                  | drv_mcp3202_u0/ap_vaild_reg_11 |                1 |              1 |         1.00 |
-|  drv_mcp3202_u0/ap_vaild_reg_28 |                                  | drv_mcp3202_u0/ap_vaild_reg_5  |                1 |              1 |         1.00 |
-|  drv_mcp3202_u0/ap_vaild_reg_17 |                                  | drv_mcp3202_u0/ap_vaild_reg_8  |                1 |              1 |         1.00 |
-|  drv_uart_u0/ap_vaild_reg_14    |                                  | drv_uart_u0/ap_vaild_reg_15    |                1 |              1 |         1.00 |
-|  drv_uart_u0/ap_vaild_reg_4     |                                  | drv_uart_u0/ap_vaild_reg_5     |                1 |              1 |         1.00 |
-|  drv_uart_u0/ap_vaild_reg_12    |                                  | drv_uart_u0/ap_vaild_reg_13    |                1 |              1 |         1.00 |
-|  drv_uart_u0/ap_vaild_reg_2     |                                  | drv_uart_u0/ap_vaild_reg_3     |                1 |              1 |         1.00 |
-|  drv_uart_u0/ap_vaild_reg_8     |                                  | drv_uart_u0/ap_vaild_reg_9     |                1 |              1 |         1.00 |
-|  drv_uart_u0/ap_vaild_reg_10    |                                  | drv_uart_u0/ap_vaild_reg_11    |                1 |              1 |         1.00 |
-|  drv_uart_u0/ap_vaild_reg_6     |                                  | drv_uart_u0/ap_vaild_reg_7     |                1 |              1 |         1.00 |
-|  drv_uart_u0/ap_vaild_reg_0     |                                  | drv_uart_u0/ap_vaild_reg_1     |                1 |              1 |         1.00 |
-|  clkout_r_BUFG                  |                                  | drv_mcp3202_u0/ap_vaild_reg_10 |                1 |              1 |         1.00 |
-|  clkout_r_BUFG                  |                                  | drv_mcp3202_u0/ap_vaild_reg_26 |                1 |              1 |         1.00 |
-|  clkout_r_BUFG                  |                                  | drv_mcp3202_u0/ap_vaild_reg_19 |                1 |              1 |         1.00 |
-|  clkout_r_BUFG                  |                                  | drv_mcp3202_u0/ap_vaild_reg_16 |                1 |              1 |         1.00 |
-|  clkout_r_BUFG                  |                                  | drv_mcp3202_u0/ap_vaild_reg_20 |                1 |              1 |         1.00 |
-|  clkout_r_BUFG                  |                                  | drv_mcp3202_u0/ap_vaild_reg_15 |                1 |              1 |         1.00 |
-|  clkout_r_BUFG                  |                                  | drv_mcp3202_u0/ap_vaild_reg_29 |                1 |              1 |         1.00 |
-|  clkout_r_BUFG                  |                                  | drv_mcp3202_u0/ap_vaild_reg_31 |                1 |              1 |         1.00 |
-|  clkout_r_BUFG                  |                                  | drv_mcp3202_u0/ap_vaild_reg_30 |                1 |              1 |         1.00 |
-|  clkout_r_BUFG                  |                                  | drv_mcp3202_u0/ap_vaild_reg_2  |                1 |              1 |         1.00 |
-|  clkout_r_BUFG                  |                                  | drv_mcp3202_u0/ap_vaild_reg_21 |                1 |              1 |         1.00 |
-|  clkout_r_BUFG                  |                                  | drv_mcp3202_u0/ap_vaild_reg_27 |                1 |              1 |         1.00 |
-|  clkout_r_BUFG                  |                                  | drv_mcp3202_u0/ap_vaild_reg_25 |                1 |              1 |         1.00 |
-|  clkout_r_BUFG                  |                                  | drv_mcp3202_u0/ap_vaild_reg_7  |                1 |              1 |         1.00 |
-|  clkout_r_BUFG                  |                                  | drv_mcp3202_u0/ap_vaild_reg_9  |                1 |              1 |         1.00 |
-|  clkout_r_BUFG                  |                                  | drv_mcp3202_u0/ap_vaild_reg_6  |                1 |              1 |         1.00 |
-|  clkout_r_BUFG                  |                                  | drv_mcp3202_u0/ap_vaild_reg_18 |                1 |              1 |         1.00 |
-|  clkout_r_BUFG                  |                                  | drv_mcp3202_u0/ap_vaild_reg_28 |                1 |              1 |         1.00 |
-|  clkout_r_BUFG                  |                                  | drv_mcp3202_u0/ap_vaild_reg_4  |                1 |              1 |         1.00 |
-|  clkout_r_BUFG                  |                                  | drv_mcp3202_u0/ap_vaild_reg_12 |                1 |              1 |         1.00 |
-|  clkout_r_BUFG                  |                                  | drv_mcp3202_u0/ap_vaild_reg_0  |                1 |              1 |         1.00 |
-|  clkout_r_BUFG                  |                                  | drv_mcp3202_u0/ap_vaild_reg_1  |                1 |              1 |         1.00 |
-|  clkout_r_BUFG                  |                                  | drv_mcp3202_u0/ap_vaild_reg_13 |                1 |              1 |         1.00 |
-|  clkout_r_BUFG                  |                                  | drv_mcp3202_u0/ap_vaild_reg_17 |                1 |              1 |         1.00 |
-|  clkout_r_BUFG                  |                                  | drv_mcp3202_u0/ap_vaild_reg_3  |                1 |              1 |         1.00 |
-|  clkout_r_BUFG                  |                                  | drv_mcp3202_u0/ap_vaild_reg_14 |                2 |              2 |         1.00 |
-|  clkout_r_BUFG                  |                                  | drv_mcp3202_u0/ap_vaild_reg_24 |                2 |              2 |         1.00 |
-|  clkout_r_BUFG                  |                                  | drv_mcp3202_u0/ap_vaild_reg_23 |                1 |              2 |         2.00 |
-|  clkout_r_BUFG                  |                                  | drv_mcp3202_u0/ap_vaild_reg_8  |                2 |              2 |         1.00 |
-|  clkout_r_BUFG                  |                                  | drv_mcp3202_u0/ap_vaild_reg_5  |                1 |              2 |         2.00 |
-|  clkout_r_BUFG                  |                                  | drv_mcp3202_u0/ap_vaild_reg_11 |                2 |              2 |         1.00 |
-|  clkout_r_BUFG                  |                                  | drv_mcp3202_u0/ap_vaild_reg_22 |                1 |              2 |         2.00 |
-|  clk_div_u3/CLK_ADC             | drv_mcp3202_u0/fsm_statu[0]      | btn_IBUF[1]                    |                1 |              4 |         4.00 |
-| ~clk_div_u3/CLK_ADC             |                                  | btn_IBUF[1]                    |                1 |              4 |         4.00 |
-|  clk_div_u4/CLK_UART            |                                  | btn_IBUF[1]                    |                2 |              7 |         3.50 |
-|  clk_div_u1/CLK                 |                                  | btn_IBUF[1]                    |                4 |             12 |         3.00 |
-|  clk_div_u3/CLK_ADC             |                                  | btn_IBUF[1]                    |                6 |             15 |         2.50 |
-|  sysclk_IBUF_BUFG               |                                  | btn_IBUF[1]                    |               17 |             52 |         3.06 |
-+---------------------------------+----------------------------------+--------------------------------+------------------+----------------+--------------+
++----------------------------------------+----------------------------------+---------------------------------------+------------------+----------------+--------------+
+|              Clock Signal              |           Enable Signal          |            Set/Reset Signal           | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------------------------------+----------------------------------+---------------------------------------+------------------+----------------+--------------+
+|  drv_mcp3202_u0/ap_vaild_reg_6         |                                  | drv_mcp3202_u0/ap_vaild_reg_9         |                1 |              1 |         1.00 |
+|  drv_mcp3202_u0/ap_vaild_reg_5         |                                  | drv_mcp3202_u0/ap_vaild_reg_10        |                1 |              1 |         1.00 |
+|  drv_mcp3202_u0/ap_vaild_reg_4         |                                  | drv_mcp3202_u0/ap_vaild_reg_11        |                1 |              1 |         1.00 |
+|  drv_mcp3202_u0/ap_vaild_reg_2         |                                  | drv_mcp3202_u0/ap_vaild_reg_13        |                1 |              1 |         1.00 |
+|  drv_mcp3202_u0/ap_vaild_reg_3         |                                  | drv_mcp3202_u0/ap_vaild_reg_12        |                1 |              1 |         1.00 |
+|  drv_mcp3202_u0/ap_vaild_reg_1         |                                  | drv_mcp3202_u0/ap_vaild_reg_14        |                1 |              1 |         1.00 |
+|  drv_mcp3202_u0/ap_vaild_reg_7         |                                  | drv_mcp3202_u0/ap_vaild_reg_8         |                1 |              1 |         1.00 |
+|  drv_mcp3202_u0/Data_Receive_reg[1]_0  |                                  | drv_mcp3202_u0/Data_Receive_reg[1]_1  |                1 |              1 |         1.00 |
+|  drv_mcp3202_u0/Data_Receive_reg[0]_0  |                                  | drv_mcp3202_u0/Data_Receive_reg[0]_1  |                1 |              1 |         1.00 |
+|  drv_mcp3202_u0/Data_Receive_reg[8]_0  |                                  | drv_mcp3202_u0/Data_Receive_reg[8]_1  |                1 |              1 |         1.00 |
+|  drv_mcp3202_u0/Data_Receive_reg[10]_0 |                                  | drv_mcp3202_u0/Data_Receive_reg[10]_1 |                1 |              1 |         1.00 |
+|  drv_mcp3202_u0/Data_Receive_reg[6]_0  |                                  | drv_mcp3202_u0/Data_Receive_reg[6]_1  |                1 |              1 |         1.00 |
+|  clk_div_u4/CLK_UART                   | drv_uart_u0/tx_i_1_n_0           | btn_IBUF[1]                           |                1 |              1 |         1.00 |
+|  clk_div_u2/CLK1Hz                     |                                  | drv_mcp3202_u0/ap_vaild_reg_6         |                1 |              1 |         1.00 |
+|  clk_div_u2/CLK1Hz                     |                                  | drv_mcp3202_u0/ap_vaild_reg_10        |                1 |              1 |         1.00 |
+|  clk_div_u2/CLK1Hz                     |                                  | drv_mcp3202_u0/Data_Receive_reg[6]_1  |                1 |              1 |         1.00 |
+|  clk_div_u2/CLK1Hz                     |                                  | drv_mcp3202_u0/Data_Receive_reg[8]_1  |                1 |              1 |         1.00 |
+|  clk_div_u2/CLK1Hz                     |                                  | drv_mcp3202_u0/ap_vaild_reg_5         |                1 |              1 |         1.00 |
+|  clk_div_u2/CLK1Hz                     |                                  | drv_mcp3202_u0/Data_Receive_reg[1]_1  |                1 |              1 |         1.00 |
+|  clk_div_u2/CLK1Hz                     |                                  | drv_mcp3202_u0/ap_vaild_reg_4         |                1 |              1 |         1.00 |
+|  clk_div_u2/CLK1Hz                     |                                  | drv_mcp3202_u0/ap_vaild_reg_2         |                1 |              1 |         1.00 |
+|  clk_div_u2/CLK1Hz                     |                                  | drv_mcp3202_u0/ap_vaild_reg_3         |                1 |              1 |         1.00 |
+|  clk_div_u2/CLK1Hz                     |                                  | drv_mcp3202_u0/Data_Receive_reg[10]_1 |                1 |              1 |         1.00 |
+|  clk_div_u2/CLK1Hz                     |                                  | drv_mcp3202_u0/ap_vaild_reg_1         |                1 |              1 |         1.00 |
+|  clk_div_u2/CLK1Hz                     |                                  | drv_mcp3202_u0/ap_vaild_reg_12        |                1 |              1 |         1.00 |
+|  clk_div_u2/CLK1Hz                     |                                  | drv_mcp3202_u0/ap_vaild_reg_13        |                1 |              1 |         1.00 |
+|  clk_div_u2/CLK1Hz                     |                                  | drv_mcp3202_u0/ap_vaild_reg_7         |                1 |              1 |         1.00 |
+|  clk_div_u2/CLK1Hz                     |                                  | drv_mcp3202_u0/Data_Receive_reg[1]_0  |                1 |              1 |         1.00 |
+|  clk_div_u2/CLK1Hz                     |                                  | drv_mcp3202_u0/ap_vaild_reg_9         |                1 |              1 |         1.00 |
+|  clk_div_u2/CLK1Hz                     |                                  | drv_mcp3202_u0/ap_vaild_reg_14        |                1 |              1 |         1.00 |
+|  clk_div_u2/CLK1Hz                     |                                  | drv_mcp3202_u0/Data_Receive_reg[0]_1  |                1 |              1 |         1.00 |
+|  clk_div_u2/CLK1Hz                     |                                  | drv_mcp3202_u0/Data_Receive_reg[0]_0  |                1 |              1 |         1.00 |
+|  clk_div_u2/CLK1Hz                     |                                  | drv_mcp3202_u0/Data_Receive_reg[8]_0  |                1 |              1 |         1.00 |
+|  clk_div_u2/CLK1Hz                     |                                  | drv_mcp3202_u0/ap_vaild_reg_11        |                1 |              1 |         1.00 |
+|  clk_div_u2/CLK1Hz                     |                                  | drv_mcp3202_u0/ap_vaild_reg_8         |                1 |              1 |         1.00 |
+|  clk_div_u2/CLK1Hz                     |                                  | drv_mcp3202_u0/Data_Receive_reg[10]_0 |                1 |              1 |         1.00 |
+|  clk_div_u2/CLK1Hz                     |                                  | drv_mcp3202_u0/Data_Receive_reg[6]_0  |                1 |              1 |         1.00 |
+|  clk_div_u2/CLK1Hz                     |                                  | drv_mcp3202_u0/ap_vaild_reg_0         |                1 |              1 |         1.00 |
+| ~clk_div_u3/CLK_ADC                    | drv_mcp3202_u0/port_dout_i_1_n_0 | btn_IBUF[1]                           |                1 |              1 |         1.00 |
+| ~clk_div_u3/CLK_ADC                    |                                  | btn_IBUF[1]                           |                1 |              4 |         4.00 |
+|  clk_div_u3/CLK_ADC                    | drv_mcp3202_u0/fsm_statu[0]      | btn_IBUF[1]                           |                1 |              4 |         4.00 |
+|  clk_div_u5/CLK2Hz                     |                                  | btn_IBUF[1]                           |                1 |              4 |         4.00 |
+|  clk_div_u5/CLK2Hz                     | drv_uart_u0/E[0]                 | btn_IBUF[1]                           |                1 |              4 |         4.00 |
+|  clk_div_u5/CLK2Hz                     | uart_data[4]_i_1_n_0             |                                       |                1 |              5 |         5.00 |
+|  clk_div_u4/CLK_UART                   |                                  | btn_IBUF[1]                           |                4 |              7 |         1.75 |
+|  clk_div_u1/CLK                        |                                  | btn_IBUF[1]                           |                2 |              9 |         4.50 |
+|  clk_div_u3/CLK_ADC                    |                                  | btn_IBUF[1]                           |                5 |             15 |         3.00 |
+|  clk_div_u5/CLK2Hz                     | ascii_digits[0][2]_i_1_n_0       |                                       |                7 |             15 |         2.14 |
+|  sysclk_IBUF_BUFG                      |                                  | btn_IBUF[1]                           |               13 |             52 |         4.00 |
++----------------------------------------+----------------------------------+---------------------------------------+------------------+----------------+--------------+
 
 

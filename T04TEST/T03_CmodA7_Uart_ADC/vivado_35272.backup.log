@@ -1,0 +1,60 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Thu Apr 17 21:41:25 2025
+# Process ID         : 35272
+# Current directory  : C:/Users/Jing Ting.LENOVO-T14/Documents/GitHub/DSL_group_03/T04TEST/T03_CmodA7_Uart_ADC
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent13056 C:\Users\Jing Ting.LENOVO-T14\Documents\GitHub\DSL_group_03\T04TEST\T03_CmodA7_Uart_ADC\p2_cmoda7_MP3202_Demo.xpr
+# Log file           : C:/Users/Jing Ting.LENOVO-T14/Documents/GitHub/DSL_group_03/T04TEST/T03_CmodA7_Uart_ADC/vivado.log
+# Journal file       : C:/Users/Jing Ting.LENOVO-T14/Documents/GitHub/DSL_group_03/T04TEST/T03_CmodA7_Uart_ADC\vivado.jou
+# Running On         : Lenovo-T14
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 22631
+# Processor Detail   : AMD Ryzen 7 PRO 4750U with Radeon Graphics
+# CPU Frequency      : 1697 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 33528 MB
+# Swap memory        : 4831 MB
+# Total Virtual      : 38360 MB
+# Available Virtual  : 13397 MB
+#-----------------------------------------------------------
+start_gui
+WARNING: [Board 49-91] Board repository path 'C:/Windows/System32/Ting.LENOVO-T14/Downloads/suriyaDSL_group_03-main/Lab_3/T03_CmodA7_Uart_ADC/Ting.LENOVO-T14/Downloads/suriyaDSL_group_03-main/Lab_3/T03_CmodA7_Uart_ADC/Ting.LENOVO-T14/AppData/Roaming/Xilinx/Vivado/Ting.LENOVO-T14/AppData/Roaming/Xilinx/Vivado/Ting.LENOVO-T14/AppData/Roaming/Xilinx/Vivado/Ting.LENOVO-T14/AppData/Roaming/Xilinx/Vivado/Ting.LENOVO-T14/AppData/Roaming/Xilinx/Vivado/Ting.LENOVO-T14/Downloads/DSL/Lab4/Ting.LENOVO-T14/Downloads/DSL/Lab4/Ting.LENOVO-T14/AppData/Roaming/Xilinx/Vivado/Ting.LENOVO-T14/AppData/Roaming/Xilinx/Vivado/2024.2/xhub/board_store/xilinx_board_store' does not exist, it will not be used to search board files.
+WARNING: [Board 49-91] Board repository path 'C:/Windows/System32/Ting.LENOVO-T14/Downloads/suriyaDSL_group_03-main/Lab_3/T03_CmodA7_Uart_ADC/Ting.LENOVO-T14/Downloads/suriyaDSL_group_03-main/Lab_3/T03_CmodA7_Uart_ADC/Ting.LENOVO-T14/AppData/Roaming/Xilinx/Vivado/Ting.LENOVO-T14/AppData/Roaming/Xilinx/Vivado/Ting.LENOVO-T14/AppData/Roaming/Xilinx/Vivado/Ting.LENOVO-T14/AppData/Roaming/Xilinx/Vivado/Ting.LENOVO-T14/AppData/Roaming/Xilinx/Vivado/Ting.LENOVO-T14/Downloads/DSL/Lab4/Ting.LENOVO-T14/Downloads/DSL/Lab4/Ting.LENOVO-T14/AppData/Roaming/Xilinx/Vivado/Ting.LENOVO-T14/AppData/Roaming/Xilinx/Vivado/Ting.LENOVO-T14/Downloads/Colab_DSL_Practice25-0865141e546e601a029f7c385b6bd2fd61b6fdb0/Demo_Code/T03_CmodA7_Uart_ADC/Ting.LENOVO-T14/AppData/Roaming/Xilinx/Vivado/Ting.LENOVO-T14/Downloads/Colab_DSL_Practice25-0865141e546e601a029f7c385b6bd2fd61b6fdb0/Demo_Code/T03_CmodA7_Uart_ADC/Ting.LENOVO-T14/Downloads/Colab_DSL_Practice25-0865141e546e601a029f7c385b6bd2fd61b6fdb0/Demo_Code/T03_CmodA7_Uart_ADC/Ting.LENOVO-T14/Downloads/Colab_DSL_Practice25-0865141e546e601a029f7c385b6bd2fd61b6fdb0/Demo_Code/T03_CmodA7_Uart_ADC/Ting.LENOVO-T14/AppData/Roaming/Xilinx/Vivado/2024.2/xhub/board_store/xilinx_board_store' does not exist, it will not be used to search board files.
+WARNING: [Board 49-91] Board repository path 'C:/Windows/System32/Ting.LENOVO-T14/Downloads/suriyaDSL_group_03-main/Lab_3/T03_CmodA7_Uart_ADC/Ting.LENOVO-T14/Downloads/suriyaDSL_group_03-main/Lab_3/T03_CmodA7_Uart_ADC/Ting.LENOVO-T14/AppData/Roaming/Xilinx/Vivado/Ting.LENOVO-T14/AppData/Roaming/Xilinx/Vivado/Ting.LENOVO-T14/AppData/Roaming/Xilinx/Vivado/Ting.LENOVO-T14/AppData/Roaming/Xilinx/Vivado/Ting.LENOVO-T14/AppData/Roaming/Xilinx/Vivado/Ting.LENOVO-T14/Downloads/DSL/Lab4/Ting.LENOVO-T14/Downloads/DSL/Lab4/Ting.LENOVO-T14/AppData/Roaming/Xilinx/Vivado/Ting.LENOVO-T14/AppData/Roaming/Xilinx/Vivado/Ting.LENOVO-T14/Downloads/Colab_DSL_Practice25-0865141e546e601a029f7c385b6bd2fd61b6fdb0/Demo_Code/T03_CmodA7_Uart_ADC/Ting.LENOVO-T14/AppData/Roaming/Xilinx/Vivado/Ting.LENOVO-T14/Downloads/Colab_DSL_Practice25-0865141e546e601a029f7c385b6bd2fd61b6fdb0/Demo_Code/T03_CmodA7_Uart_ADC/Ting.LENOVO-T14/Downloads/Colab_DSL_Practice25-0865141e546e601a029f7c385b6bd2fd61b6fdb0/Demo_Code/T03_CmodA7_Uart_ADC/Ting.LENOVO-T14/Downloads/Colab_DSL_Practice25-0865141e546e601a029f7c385b6bd2fd61b6fdb0/Demo_Code/T03_CmodA7_Uart_ADC/Ting.LENOVO-T14/AppData/Roaming/Xilinx/Vivado/Ting.LENOVO-T14/AppData/Roaming/Xilinx/Vivado/Ting.LENOVO-T14/AppData/Roaming/Xilinx/Vivado/2024.2/xhub/board_store/xilinx_board_store' does not exist, it will not be used to search board files.
+WARNING: [Board 49-91] Board repository path 'C:/Windows/System32/Ting.LENOVO-T14/Downloads/suriyaDSL_group_03-main/Lab_3/T03_CmodA7_Uart_ADC/Ting.LENOVO-T14/Downloads/suriyaDSL_group_03-main/Lab_3/T03_CmodA7_Uart_ADC/Ting.LENOVO-T14/AppData/Roaming/Xilinx/Vivado/Ting.LENOVO-T14/AppData/Roaming/Xilinx/Vivado/Ting.LENOVO-T14/AppData/Roaming/Xilinx/Vivado/Ting.LENOVO-T14/AppData/Roaming/Xilinx/Vivado/Ting.LENOVO-T14/AppData/Roaming/Xilinx/Vivado/Ting.LENOVO-T14/Downloads/DSL/Lab4/Ting.LENOVO-T14/Downloads/DSL/Lab4/Ting.LENOVO-T14/AppData/Roaming/Xilinx/Vivado/Ting.LENOVO-T14/AppData/Roaming/Xilinx/Vivado/Ting.LENOVO-T14/Downloads/Colab_DSL_Practice25-0865141e546e601a029f7c385b6bd2fd61b6fdb0/Demo_Code/T03_CmodA7_Uart_ADC/Ting.LENOVO-T14/AppData/Roaming/Xilinx/Vivado/Ting.LENOVO-T14/Downloads/Colab_DSL_Practice25-0865141e546e601a029f7c385b6bd2fd61b6fdb0/Demo_Code/T03_CmodA7_Uart_ADC/Ting.LENOVO-T14/Downloads/Colab_DSL_Practice25-0865141e546e601a029f7c385b6bd2fd61b6fdb0/Demo_Code/T03_CmodA7_Uart_ADC/Ting.LENOVO-T14/Downloads/Colab_DSL_Practice25-0865141e546e601a029f7c385b6bd2fd61b6fdb0/Demo_Code/T03_CmodA7_Uart_ADC/Ting.LENOVO-T14/AppData/Roaming/Xilinx/Vivado/Ting.LENOVO-T14/AppData/Roaming/Xilinx/Vivado/Ting.LENOVO-T14/AppData/Roaming/Xilinx/Vivado/Ting.LENOVO-T14/AppData/Roaming/Xilinx/Vivado/Ting.LENOVO-T14/AppData/Roaming/Xilinx/Vivado/2024.2/xhub/board_store/xilinx_board_store' does not exist, it will not be used to search board files.
+WARNING: [Board 49-91] Board repository path 'C:/Windows/System32/Ting.LENOVO-T14/Downloads/suriyaDSL_group_03-main/Lab_3/T03_CmodA7_Uart_ADC/Ting.LENOVO-T14/Downloads/suriyaDSL_group_03-main/Lab_3/T03_CmodA7_Uart_ADC/Ting.LENOVO-T14/AppData/Roaming/Xilinx/Vivado/Ting.LENOVO-T14/AppData/Roaming/Xilinx/Vivado/Ting.LENOVO-T14/AppData/Roaming/Xilinx/Vivado/Ting.LENOVO-T14/AppData/Roaming/Xilinx/Vivado/Ting.LENOVO-T14/AppData/Roaming/Xilinx/Vivado/Ting.LENOVO-T14/Downloads/DSL/Lab4/Ting.LENOVO-T14/Downloads/DSL/Lab4/Ting.LENOVO-T14/AppData/Roaming/Xilinx/Vivado/Ting.LENOVO-T14/AppData/Roaming/Xilinx/Vivado/Ting.LENOVO-T14/Downloads/Colab_DSL_Practice25-0865141e546e601a029f7c385b6bd2fd61b6fdb0/Demo_Code/T03_CmodA7_Uart_ADC/Ting.LENOVO-T14/AppData/Roaming/Xilinx/Vivado/Ting.LENOVO-T14/Downloads/Colab_DSL_Practice25-0865141e546e601a029f7c385b6bd2fd61b6fdb0/Demo_Code/T03_CmodA7_Uart_ADC/Ting.LENOVO-T14/Downloads/Colab_DSL_Practice25-0865141e546e601a029f7c385b6bd2fd61b6fdb0/Demo_Code/T03_CmodA7_Uart_ADC/Ting.LENOVO-T14/Downloads/Colab_DSL_Practice25-0865141e546e601a029f7c385b6bd2fd61b6fdb0/Demo_Code/T03_CmodA7_Uart_ADC/Ting.LENOVO-T14/AppData/Roaming/Xilinx/Vivado/Ting.LENOVO-T14/AppData/Roaming/Xilinx/Vivado/Ting.LENOVO-T14/AppData/Roaming/Xilinx/Vivado/Ting.LENOVO-T14/AppData/Roaming/Xilinx/Vivado/Ting.LENOVO-T14/AppData/Roaming/Xilinx/Vivado/Ting.LENOVO-T14/AppData/Roaming/Xilinx/Vivado/2024.2/xhub/board_store/xilinx_board_store' does not exist, it will not be used to search board files.
+open_project {C:/Users/Jing Ting.LENOVO-T14/Documents/GitHub/DSL_group_03/T04TEST/T03_CmodA7_Uart_ADC/p2_cmoda7_MP3202_Demo.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/Jing Ting.LENOVO-T14/Documents/GitHub/DSL_group_03/T04TEST/T03_CmodA7_Uart_ADC'
+INFO: [Project 1-313] Project file moved from 'C:/Users/Jing Ting.LENOVO-T14/Desktop/LAB 3.1/DSL_group_03-main/Lab_3/T03_CmodA7_Uart_ADC' since last save.
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/Jing Ting.LENOVO-T14/Documents/GitHub/DSL_group_03/T04TEST/T03_CmodA7_Uart_ADC/p2_cmoda7_MP3202_Demo.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
+open_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1154.973 ; gain = 66.895
+update_compile_order -fileset sources_1
+WARNING: [Common 17-9] Error reading message records.
+WARNING: [Common 17-9] Error reading message records.
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Apr 17 21:51:52 2025...
+ports/synth_1/top_module.dcp with file C:/Users/Jing Ting.LENOVO-T14/Documents/GitHub/DSL_group_03/T04TEST/T03_CmodA7_Uart_ADC/p2_cmoda7_MP3202_Demo.runs/synth_1/top_module.dcp
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Jing Ting.LENOVO-T14/Documents/GitHub/DSL_group_03/T04TEST/T03_CmodA7_Uart_ADC/p2_cmoda7_MP3202_Demo.runs/synth_1
+
+launch_runs synth_1
+[Thu Apr 17 21:42:06 2025] Launched synth_1...
+Run output will be captured here: C:/Users/Jing Ting.LENOVO-T14/Documents/GitHub/DSL_group_03/T04TEST/T03_CmodA7_Uart_ADC/p2_cmoda7_MP3202_Demo.runs/synth_1/runme.log
+launch_runs impl_1
+[Thu Apr 17 21:43:34 2025] Launched impl_1...
+Run output will be captured here: C:/Users/Jing Ting.LENOVO-T14/Documents/GitHub/DSL_group_03/T04TEST/T03_CmodA7_Uart_ADC/p2_cmoda7_MP3202_Demo.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream
+[Thu Apr 17 21:49:11 2025] Launched impl_1...
+Run output will be captured here: C:/Users/Jing Ting.LENOVO-T14/Documents/GitHub/DSL_group_03/T04TEST/T03_CmodA7_Uart_ADC/p2_cmoda7_MP3202_Demo.runs/impl_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Apr 17 21:51:54 2025...
