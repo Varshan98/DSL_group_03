@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="top_module_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="top_module" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="319,400 ps"></ZoomStartTime>
+      <ZoomEndTime time="319,405 ps"></ZoomEndTime>
+      <Cursor1Time time="0 ps"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="186"></NameColumnWidth>
+      <ValueColumnWidth column_width="127"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="36" />
+   <wvobject fp_name="/top_module/sysclk" type="logic">
+      <obj_property name="ElementShortName">sysclk</obj_property>
+      <obj_property name="ObjectShortName">sysclk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_module/btn" type="array">
+      <obj_property name="ElementShortName">btn[1:0]</obj_property>
+      <obj_property name="ObjectShortName">btn[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_module/pio38" type="logic">
+      <obj_property name="ElementShortName">pio38</obj_property>
+      <obj_property name="ObjectShortName">pio38</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_module/pio39" type="logic">
+      <obj_property name="ElementShortName">pio39</obj_property>
+      <obj_property name="ObjectShortName">pio39</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_module/pio37" type="logic">
+      <obj_property name="ElementShortName">pio37</obj_property>
+      <obj_property name="ObjectShortName">pio37</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_module/pio40" type="logic">
+      <obj_property name="ElementShortName">pio40</obj_property>
+      <obj_property name="ObjectShortName">pio40</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_module/pio41" type="logic">
+      <obj_property name="ElementShortName">pio41</obj_property>
+      <obj_property name="ObjectShortName">pio41</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_module/pio42" type="logic">
+      <obj_property name="ElementShortName">pio42</obj_property>
+      <obj_property name="ObjectShortName">pio42</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_module/pio43" type="logic">
+      <obj_property name="ElementShortName">pio43</obj_property>
+      <obj_property name="ObjectShortName">pio43</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_module/pio44" type="logic">
+      <obj_property name="ElementShortName">pio44</obj_property>
+      <obj_property name="ObjectShortName">pio44</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_module/pio45" type="logic">
+      <obj_property name="ElementShortName">pio45</obj_property>
+      <obj_property name="ObjectShortName">pio45</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_module/pio46" type="logic">
+      <obj_property name="ElementShortName">pio46</obj_property>
+      <obj_property name="ObjectShortName">pio46</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_module/pio47" type="logic">
+      <obj_property name="ElementShortName">pio47</obj_property>
+      <obj_property name="ObjectShortName">pio47</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_module/pio48" type="logic">
+      <obj_property name="ElementShortName">pio48</obj_property>
+      <obj_property name="ObjectShortName">pio48</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_module/led" type="array">
+      <obj_property name="ElementShortName">led[1:0]</obj_property>
+      <obj_property name="ObjectShortName">led[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_module/adc_din" type="logic">
+      <obj_property name="ElementShortName">adc_din</obj_property>
+      <obj_property name="ObjectShortName">adc_din</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_module/adc_clk" type="logic">
+      <obj_property name="ElementShortName">adc_clk</obj_property>
+      <obj_property name="ObjectShortName">adc_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_module/adc_csn" type="logic">
+      <obj_property name="ElementShortName">adc_csn</obj_property>
+      <obj_property name="ObjectShortName">adc_csn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_module/adc_dout" type="logic">
+      <obj_property name="ElementShortName">adc_dout</obj_property>
+      <obj_property name="ObjectShortName">adc_dout</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_module/uart_rxd_out" type="logic">
+      <obj_property name="ElementShortName">uart_rxd_out</obj_property>
+      <obj_property name="ObjectShortName">uart_rxd_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_module/rstn" type="logic">
+      <obj_property name="ElementShortName">rstn</obj_property>
+      <obj_property name="ObjectShortName">rstn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_module/CLK500Hz" type="logic">
+      <obj_property name="ElementShortName">CLK500Hz</obj_property>
+      <obj_property name="ObjectShortName">CLK500Hz</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_module/CLK1Hz" type="logic">
+      <obj_property name="ElementShortName">CLK1Hz</obj_property>
+      <obj_property name="ObjectShortName">CLK1Hz</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_module/CLK_ADC" type="logic">
+      <obj_property name="ElementShortName">CLK_ADC</obj_property>
+      <obj_property name="ObjectShortName">CLK_ADC</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_module/CLK_UART" type="logic">
+      <obj_property name="ElementShortName">CLK_UART</obj_property>
+      <obj_property name="ObjectShortName">CLK_UART</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_module/CLK2Hz" type="logic">
+      <obj_property name="ElementShortName">CLK2Hz</obj_property>
+      <obj_property name="ObjectShortName">CLK2Hz</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_module/Segment_data" type="array">
+      <obj_property name="ElementShortName">Segment_data[11:0]</obj_property>
+      <obj_property name="ObjectShortName">Segment_data[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_module/adc_ready" type="logic">
+      <obj_property name="ElementShortName">adc_ready</obj_property>
+      <obj_property name="ObjectShortName">adc_ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_module/adc_vaild" type="logic">
+      <obj_property name="ElementShortName">adc_vaild</obj_property>
+      <obj_property name="ObjectShortName">adc_vaild</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_module/adc_data" type="array">
+      <obj_property name="ElementShortName">adc_data[11:0]</obj_property>
+      <obj_property name="ObjectShortName">adc_data[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_module/uart_ready" type="logic">
+      <obj_property name="ElementShortName">uart_ready</obj_property>
+      <obj_property name="ObjectShortName">uart_ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_module/uart_vaild" type="logic">
+      <obj_property name="ElementShortName">uart_vaild</obj_property>
+      <obj_property name="ObjectShortName">uart_vaild</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_module/uart_data" type="array">
+      <obj_property name="ElementShortName">uart_data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">uart_data[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_module/hl_sel" type="logic">
+      <obj_property name="ElementShortName">hl_sel</obj_property>
+      <obj_property name="ObjectShortName">hl_sel</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_module/SINGLE_CHAN0" type="array">
+      <obj_property name="ElementShortName">SINGLE_CHAN0[1:0]</obj_property>
+      <obj_property name="ObjectShortName">SINGLE_CHAN0[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_module/SINGLE_CHAN1" type="array">
+      <obj_property name="ElementShortName">SINGLE_CHAN1[1:0]</obj_property>
+      <obj_property name="ObjectShortName">SINGLE_CHAN1[1:0]</obj_property>
+   </wvobject>
+</wave_config>
