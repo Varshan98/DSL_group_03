@@ -1,0 +1,97 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Wed Apr 16 15:23:51 2025
+# Process ID         : 85868
+# Current directory  : D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent71612 D:\SUTD\Term 8\DSL\Projects\DSL_group_03\Lab_4\Lab4.xpr
+# Log file           : D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/vivado.log
+# Journal file       : D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4\vivado.jou
+# Running On         : Suriya
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : 11th Gen Intel(R) Core(TM) i7-1185G7 @ 3.00GHz
+# CPU Frequency      : 2995 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 16859 MB
+# Swap memory        : 15136 MB
+# Total Virtual      : 31996 MB
+# Available Virtual  : 14239 MB
+#-----------------------------------------------------------
+start_gui
+open_project {D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.xpr}
+update_compile_order -fileset sources_1
+open_project {D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Uart_test/Uart_test.xpr}
+update_compile_order -fileset sources_1
+current_project Lab4
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.runs/impl_1/chua_uart_rng.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.runs/impl_1/chua_uart_rng.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+current_project Uart_test
+close_project
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.runs/impl_1/chua_uart_rng.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+open_run impl_1
+close_design
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.runs/impl_1/chua_uart_rng.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw_manager
+close [ open {D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/sources_1/new/uart_tx.v} w ]
+add_files {{D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/sources_1/new/uart_tx.v}}
+close [ open {D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/sources_1/new/chua_uart_rng.v} w ]
+add_files {{D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/sources_1/new/chua_uart_rng.v}}
+close [ open {D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/sources_1/new/chua_rng.v} w ]
+add_files {{D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/sources_1/new/chua_rng.v}}
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files {{D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/sources_1/new/PRNG.v}}] -no_script -reset -force -quiet
+remove_files  {{D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/sources_1/new/PRNG.v}}
+export_ip_user_files -of_objects  [get_files {{D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/sources_1/new/uart_tx.v}}] -no_script -reset -force -quiet
+remove_files  {{D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/sources_1/new/uart_tx.v}}
+export_ip_user_files -of_objects  [get_files {{D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/sources_1/new/chua_rng.v}}] -no_script -reset -force -quiet
+remove_files  {{D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/sources_1/new/chua_rng.v}}
+file delete -force {D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/sources_1/new/chua_rng.v}
+export_ip_user_files -of_objects  [get_files {{D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/sources_1/new/chua_uart_rng.v}}] -no_script -reset -force -quiet
+remove_files  {{D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/sources_1/new/chua_uart_rng.v}}
+file delete -force {D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/sources_1/new/chua_uart_rng.v}
+close [ open {D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/sources_1/new/chua_uart_rng.v} w ]
+add_files {{D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/sources_1/new/chua_uart_rng.v}}
+close [ open {D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/sources_1/new/chua_rng.v} w ]
+add_files {{D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/sources_1/new/chua_rng.v}}
+close [ open {D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/sources_1/new/debouncer.v} w ]
+add_files {{D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/sources_1/new/debouncer.v}}
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files {{D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/sources_1/new/chua_rng.v}}] -no_script -reset -force -quiet
+remove_files  {{D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/sources_1/new/chua_rng.v}}
+file delete -force {D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/sources_1/new/chua_rng.v}
+export_ip_user_files -of_objects  [get_files {{D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/sources_1/new/debouncer.v}}] -no_script -reset -force -quiet
+remove_files  {{D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/sources_1/new/debouncer.v}}
+file delete -force {D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/sources_1/new/debouncer.v}

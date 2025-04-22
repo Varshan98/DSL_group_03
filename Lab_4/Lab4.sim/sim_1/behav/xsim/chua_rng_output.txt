@@ -1,0 +1,8 @@
+Time(ns)	RND	V1	V2	IL
+215 ns	0000	07fefff6	0bfeffe2	3038ff60
+335 ns	07fe	07fefff6	0bfeffe2	3038ff60
+455 ns	07fe	07fefff6	0bfeffe2	3038ff60
+575 ns	07fe	07fefff6	0bfeffe2	3038ff60
+695 ns	07fe	07fefff6	0bfeffe2	3038ff60
+815 ns	07fe	07fefff6	0bfeffe2	3038ff60
+935 ns	07fe	07fefff6	0bfeffe2	3038ff60

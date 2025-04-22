@@ -25,7 +25,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.runs/synth_1'
+HD_PWD='D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -41,4 +41,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log chua_uart_rng.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source chua_uart_rng.tcl
+EAStep vivado -log top_module.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_module.tcl

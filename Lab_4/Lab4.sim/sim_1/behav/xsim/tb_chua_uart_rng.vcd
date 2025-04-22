@@ -1,0 +1,665 @@
+$date
+   Thu Apr 17 12:29:49 2025
+$end
+
+$version
+  2024.2.0
+  $dumpfile ("tb_chua_uart_rng.vcd") 
+$end
+
+$timescale
+  1ps
+$end
+
+$scope module tb_chua_uart_rng $end
+$var reg 1 ! clk $end
+$var reg 1 " rst $end
+$var wire 1 # uart_rxd_out $end
+$var reg 1 $ dummy_uart_rx $end
+$var reg 10 % uart_shift [9:0] $end
+$var integer 32 & i [31:0] $end
+$scope module dut $end
+$var wire 1 ' clk $end
+$var wire 1 ( rst $end
+$var wire 1 # uart_rxd_out $end
+$var wire 1 ) dummy_uart_rx $end
+$var wire 16 * rnd [15:0] $end
+$var reg 16 + random_value [15:0] $end
+$var wire 1 , rst_debounced $end
+$var reg 1 - send $end
+$var reg 8 . data_in [7:0] $end
+$var wire 1 / busy $end
+$var reg 1 0 rst_prev $end
+$var wire 1 1 rst_pulse $end
+$var reg 3 2 state [2:0] $end
+$var wire 1 3 rstn $end
+$var wire 1 4 CLK_ADC $end
+$var wire 1 5 adc_ready $end
+$var wire 1 6 adc_vaild $end
+$var wire 1 7 adc_data $end
+$var wire 1 8 adc_dout $end
+$var wire 1 9 adc_din $end
+$var wire 1 : adc_clk $end
+$var wire 1 ; adc_csn $end
+$var wire 1 < SINGLE_CHAN0 $end
+$scope module debounce_rst $end
+$var wire 1 ' clk $end
+$var wire 1 ( noisy $end
+$var reg 1 = clean $end
+$var reg 20 > counter [19:0] $end
+$var reg 1 ? sync_0 $end
+$var reg 1 @ sync_1 $end
+$var wire 1 A stable_input $end
+$upscope $end
+$scope module drv_mcp3202_u0 $end
+$var wire 1 3 rstn $end
+$var wire 1 4 clk $end
+$var wire 1 5 ap_ready $end
+$var reg 1 B ap_vaild $end
+$var wire 2 C mode [1:0] $end
+$var wire 12 D data [11:0] $end
+$var wire 1 8 port_din $end
+$var reg 1 E port_dout $end
+$var wire 1 : port_clk $end
+$var reg 1 F port_cs $end
+$var wire 4 G Data_Transmit [3:0] $end
+$var reg 13 H Data_Receive [12:0] $end
+$var reg 2 I fsm_statu [1:0] $end
+$var reg 2 J fsm_next [1:0] $end
+$var reg 2 K cnter_writ [1:0] $end
+$var reg 4 L cnter_read [3:0] $end
+$var reg 6 M clk_div [5:0] $end
+$upscope $end
+$scope module rng_inst $end
+$var wire 1 ' sysclk $end
+$var wire 1 1 rst $end
+$var wire 12 N adc_data [11:0] $end
+$var reg 16 O rnd [15:0] $end
+$var reg 32 P v1 [31:0] $end
+$var reg 32 Q v2 [31:0] $end
+$var reg 32 R iL [31:0] $end
+$var reg 32 S dv1 [31:0] $end
+$var reg 32 T dv2 [31:0] $end
+$var reg 32 U diL [31:0] $end
+$var reg 32 V diff [31:0] $end
+$var reg 32 W term [31:0] $end
+$var reg 1 X initialized $end
+$var wire 6 Y seed_c1 [5:0] $end
+$var wire 6 Z seed_c2 [5:0] $end
+$var wire 32 [ C1_seed [31:0] $end
+$var wire 32 \ C2_seed [31:0] $end
+$var wire 32 ] L_seed [31:0] $end
+$scope function nonlinear $end
+$var reg 32 ^ nonlinear [31:0] $end
+$var reg 32 _ x [31:0] $end
+$upscope $end
+$upscope $end
+$scope module uart_tx_inst $end
+$var wire 1 ' clk $end
+$var wire 1 ` rst $end
+$var wire 1 a send $end
+$var wire 8 b data_in [7:0] $end
+$var reg 1 c tx $end
+$var reg 1 d busy $end
+$var reg 16 e clk_count [15:0] $end
+$var reg 4 f bit_index [3:0] $end
+$var reg 10 g shift_reg [9:0] $end
+$var reg 1 h sending $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+
+#0
+$dumpvars
+0!
+1"
+x#
+1$
+b1111111111 %
+bx &
+0'
+1(
+1)
+bx *
+bx +
+x,
+x-
+bx .
+x/
+00
+x1
+b0 2
+z3
+z4
+z5
+x6
+x7
+z8
+x9
+0:
+x;
+z<
+x=
+b0 >
+0?
+0@
+0A
+xB
+bz C
+bx D
+xE
+xF
+b1zz1 G
+bx H
+bx I
+bx J
+bx K
+bx L
+b0 M
+bzx N
+bx O
+bx P
+bx Q
+bx R
+bx S
+bx T
+bx U
+bx V
+bx W
+0X
+bz Y
+bzx Z
+b0zzzzzz [
+b0zzzzzx \
+b11000000111001 ]
+bx ^
+bx _
+0`
+xa
+bx b
+xc
+xd
+b0 e
+b0 f
+b1111111111 g
+0h
+$end
+
+#10000
+1!
+1'
+b0 *
+0-
+x0
+b1 >
+1?
+b0 O
+b0zzzzzz0000000000000000 P
+b0zzzzzx0000000000000000 Q
+b110000001110010000000000000000 R
+1X
+0a
+
+#20000
+0!
+0'
+
+#30000
+1!
+1'
+b10 >
+1@
+1A
+bx P
+bx Q
+bx R
+b0xxxxxxxxxxxxxxxx S
+b0xxxxxxxxxxxxxxxx T
+b0xxxxxxxxxxxxxxxx U
+b0xxxxxxxxxxxxxxxx ^
+b0zzzzzz0000000000000000 _
+
+#40000
+0!
+0'
+
+#50000
+1!
+1'
+bx *
+b11 >
+bx O
+bx _
+
+#60000
+0!
+0'
+
+#70000
+1!
+1'
+b100 >
+
+#80000
+0!
+0'
+
+#90000
+1!
+1'
+b101 >
+
+#100000
+0!
+0"
+0'
+0(
+
+#110000
+1!
+1'
+b110 >
+0?
+
+#120000
+0!
+0'
+
+#130000
+1!
+1'
+b111 >
+0@
+0A
+
+#140000
+0!
+0'
+
+#150000
+1!
+1'
+b1000 >
+
+#160000
+0!
+0'
+
+#170000
+1!
+1'
+b1001 >
+
+#180000
+0!
+0'
+
+#190000
+1!
+1'
+b1010 >
+
+#200000
+0!
+0'
+
+#210000
+1!
+1'
+b1011 >
+
+#220000
+0!
+0'
+
+#230000
+1!
+1'
+b1100 >
+
+#240000
+0!
+0'
+
+#250000
+1!
+1'
+b1101 >
+
+#260000
+0!
+0'
+
+#270000
+1!
+1'
+b1110 >
+
+#280000
+0!
+0'
+
+#290000
+1!
+1'
+b1111 >
+
+#300000
+0!
+0'
+
+#310000
+1!
+1'
+b10000 >
+
+#320000
+0!
+0'
+
+#330000
+1!
+1'
+b10001 >
+
+#340000
+0!
+0'
+
+#350000
+1!
+1'
+b10010 >
+
+#360000
+0!
+0'
+
+#370000
+1!
+1'
+b10011 >
+
+#380000
+0!
+0'
+
+#390000
+1!
+1'
+b10100 >
+
+#400000
+0!
+0'
+
+#410000
+1!
+1'
+b10101 >
+
+#420000
+0!
+0'
+
+#430000
+1!
+1'
+b10110 >
+
+#440000
+0!
+0'
+
+#450000
+1!
+1'
+b10111 >
+
+#460000
+0!
+0'
+
+#470000
+1!
+1'
+b11000 >
+
+#480000
+0!
+0'
+
+#490000
+1!
+1'
+b11001 >
+
+#500000
+0!
+0'
+
+#510000
+1!
+1'
+b11010 >
+
+#520000
+0!
+0'
+
+#530000
+1!
+1'
+b11011 >
+
+#540000
+0!
+0'
+
+#550000
+1!
+1'
+b11100 >
+
+#560000
+0!
+0'
+
+#570000
+1!
+1'
+b11101 >
+
+#580000
+0!
+0'
+
+#590000
+1!
+1'
+b11110 >
+
+#600000
+0!
+0'
+
+#610000
+1!
+1'
+b11111 >
+
+#620000
+0!
+0'
+
+#630000
+1!
+1'
+b100000 >
+
+#640000
+0!
+0'
+
+#650000
+1!
+1'
+b100001 >
+
+#660000
+0!
+0'
+
+#670000
+1!
+1'
+b100010 >
+
+#680000
+0!
+0'
+
+#690000
+1!
+1'
+b100011 >
+
+#700000
+0!
+0'
+
+#710000
+1!
+1'
+b100100 >
+
+#720000
+0!
+0'
+
+#730000
+1!
+1'
+b100101 >
+
+#740000
+0!
+0'
+
+#750000
+1!
+1'
+b100110 >
+
+#760000
+0!
+0'
+
+#770000
+1!
+1'
+b100111 >
+
+#780000
+0!
+0'
+
+#790000
+1!
+1'
+b101000 >
+
+#800000
+0!
+0'
+
+#810000
+1!
+1'
+b101001 >
+
+#820000
+0!
+0'
+
+#830000
+1!
+1'
+b101010 >
+
+#840000
+0!
+0'
+
+#850000
+1!
+1'
+b101011 >
+
+#860000
+0!
+0'
+
+#870000
+1!
+1'
+b101100 >
+
+#880000
+0!
+0'
+
+#890000
+1!
+1'
+b101101 >
+
+#900000
+0!
+0'
+
+#910000
+1!
+1'
+b101110 >
+
+#920000
+0!
+0'
+
+#930000
+1!
+1'
+b101111 >
+
+#940000
+0!
+0'
+
+#950000
+1!
+1'
+b110000 >
+
+#960000
+0!
+0'
+
+#970000
+1!
+1'
+b110001 >
+
+#980000
+0!
+0'
+
+#990000
+1!
+1'
+b110010 >
+
+#1000000
+0!
+0'

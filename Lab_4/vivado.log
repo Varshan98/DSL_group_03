@@ -3,10 +3,10 @@
 # SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
 # IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
 # SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-# Start of session at: Mon Apr 14 22:51:33 2025
-# Process ID         : 167604
+# Start of session at: Fri Apr 18 20:52:25 2025
+# Process ID         : 55984
 # Current directory  : D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4
-# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent141644 D:\SUTD\Term 8\DSL\Projects\DSL_group_03\Lab_4\Lab4.xpr
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent26376 D:\SUTD\Term 8\DSL\Projects\DSL_group_03\Lab_4\Lab4.xpr
 # Log file           : D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/vivado.log
 # Journal file       : D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4\vivado.jou
 # Running On         : Suriya
@@ -19,149 +19,67 @@
 # Host memory        : 16859 MB
 # Swap memory        : 15136 MB
 # Total Virtual      : 31996 MB
-# Available Virtual  : 9715 MB
+# Available Virtual  : 6486 MB
 #-----------------------------------------------------------
 start_gui
 open_project {D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.xpr}
-INFO: [Project 1-313] Project file moved from 'C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4' since last save.
-WARNING: [filemgmt 56-2] Board Part Repository Path: Could not find the directory 'D:/SUTD/Term 8/DSL/AppData/Roaming/Xilinx/Vivado/2024.2/xhub/board_store/xilinx_board_store', nor could it be found using path 'C:/Users/Jing Ting.LENOVO-T14/AppData/Roaming/Xilinx/Vivado/2024.2/xhub/board_store/xilinx_board_store'.
 INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.gen/sources_1'.
-CRITICAL WARNING: [Project 1-311] Could not find the file 'D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/tb_chua_uart_rng_behav.wcfg', nor could it be found using path 'C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/tb_chua_uart_rng_behav.wcfg'.
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
-open_project: Time (s): cpu = 00:00:21 ; elapsed = 00:00:08 . Memory (MB): peak = 1114.211 ; gain = 58.676
-update_compile_order -fileset sources_1
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\SUTD\Term 8\DSL\Projects\DSL_group_03\Lab_4\Lab4.srcs\sources_1\new\PRNG.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\SUTD\Term 8\DSL\Projects\DSL_group_03\Lab_4\Lab4.srcs\sim_1\new\testbench.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\SUTD\Term 8\DSL\Projects\DSL_group_03\Lab_4\Lab4.srcs\sim_1\new\testbench.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\SUTD\Term 8\DSL\Projects\DSL_group_03\Lab_4\Lab4.srcs\sim_1\new\testbench.v:]
-ERROR: [Common 17-180] Spawn failed: No error
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\SUTD\Term 8\DSL\Projects\DSL_group_03\Lab_4\Lab4.srcs\sources_1\new\PRNG.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\SUTD\Term 8\DSL\Projects\DSL_group_03\Lab_4\Lab4.srcs\sim_1\new\testbench.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\SUTD\Term 8\DSL\Projects\DSL_group_03\Lab_4\Lab4.srcs\sim_1\new\testbench.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\SUTD\Term 8\DSL\Projects\DSL_group_03\Lab_4\Lab4.srcs\sim_1\new\testbench.v:]
-ERROR: [Common 17-180] Spawn failed: No error
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\SUTD\Term 8\DSL\Projects\DSL_group_03\Lab_4\Lab4.srcs\sources_1\new\PRNG.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\SUTD\Term 8\DSL\Projects\DSL_group_03\Lab_4\Lab4.srcs\sim_1\new\testbench.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\SUTD\Term 8\DSL\Projects\DSL_group_03\Lab_4\Lab4.srcs\sim_1\new\testbench.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\SUTD\Term 8\DSL\Projects\DSL_group_03\Lab_4\Lab4.srcs\sim_1\new\testbench.v:]
-ERROR: [Common 17-180] Spawn failed: No error
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\SUTD\Term 8\DSL\Projects\DSL_group_03\Lab_4\Lab4.srcs\sources_1\new\PRNG.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\SUTD\Term 8\DSL\Projects\DSL_group_03\Lab_4\Lab4.srcs\sim_1\new\testbench.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\SUTD\Term 8\DSL\Projects\DSL_group_03\Lab_4\Lab4.srcs\sim_1\new\testbench.v:]
-WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\SUTD\Term 8\DSL\Projects\DSL_group_03\Lab_4\Lab4.srcs\sim_1\new\testbench.v:]
-launch_simulation
-Command: launch_simulation 
-INFO: [Vivado 12-12493] Simulation top is 'tb_chua_uart_rng'
-WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.2/tps/boost_1_72_0'
-INFO: [SIM-utils-54] Inspecting design source files for 'tb_chua_uart_rng' in fileset 'sim_1'...
-ERROR: [Common 17-180] Spawn failed: No error
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -prj tb_chua_uart_rng_vlog.prj"
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/sources_1/new/PRNG.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module seed_provider
-INFO: [VRFC 10-311] analyzing module uart_tx
-INFO: [VRFC 10-311] analyzing module chua_rng
-INFO: [VRFC 10-311] analyzing module chua_uart_rng
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/sim_1/new/testbench.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module tb_chua_uart_rng
-WARNING: [VRFC 10-8374] loop variable declaration is not allowed in this mode of Verilog [D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/sim_1/new/testbench.v:50]
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module glbl
-INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.sim/sim_1/behav/xsim'
-"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_chua_uart_rng_behav xil_defaultlib.tb_chua_uart_rng xil_defaultlib.glbl -log elaborate.log"
-Vivado Simulator v2024.2.0
-Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_chua_uart_rng_behav xil_defaultlib.tb_chua_uart_rng xil_defaultlib.glbl -log elaborate.log 
-Using 2 slave threads.
-Starting static elaboration
-Pass Through NonSizing Optimizer
-Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.seed_provider
-Compiling module xil_defaultlib.chua_rng
-Compiling module xil_defaultlib.tb_chua_uart_rng
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot tb_chua_uart_rng_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
-INFO: [USF-XSim-4] XSim::Simulate design
-WARNING: [USF-XSim-17] WCFG file does not exist:D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/tb_chua_uart_rng_behav.wcfg
-WARNING: [USF-XSim-17] WCFG file does not exist:D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/tb_chua_uart_rng_behav.wcfg
-INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.sim/sim_1/behav/xsim'
-INFO: [USF-XSim-98] *** Running xsim
-   with args "tb_chua_uart_rng_behav -key {Behavioral:sim_1:Functional:tb_chua_uart_rng} -tclbatch {tb_chua_uart_rng.tcl} -log {simulate.log}"
-INFO: [USF-XSim-8] Loading simulator feature
-Time resolution is 1 ps
-source tb_chua_uart_rng.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-xsim: Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 1157.809 ; gain = 10.293
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_chua_uart_rng_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:14 . Memory (MB): peak = 1157.809 ; gain = 27.945
-ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-launch_simulation
-Command: launch_simulation 
-INFO: [Vivado 12-12493] Simulation top is 'tb_chua_uart_rng'
-WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
-INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.sim/sim_1/behav/xsim'
-INFO: [SIM-utils-51] Simulation object is 'sim_1'
-INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.2/tps/boost_1_72_0'
-INFO: [SIM-utils-54] Inspecting design source files for 'tb_chua_uart_rng' in fileset 'sim_1'...
-INFO: [USF-XSim-97] Finding global include files...
-INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
-INFO: [USF-XSim-2] XSim::Compile design
-INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.sim/sim_1/behav/xsim'
-"xvlog --incr --relax -prj tb_chua_uart_rng_vlog.prj"
-run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 2257.355 ; gain = 0.000
-INFO: [USF-XSim-69] 'compile' step finished in '7' seconds
-INFO: [USF-XSim-3] XSim::Elaborate design
-INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.sim/sim_1/behav/xsim'
-"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_chua_uart_rng_behav xil_defaultlib.tb_chua_uart_rng xil_defaultlib.glbl -log elaborate.log"
-Vivado Simulator v2024.2.0
-Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_chua_uart_rng_behav xil_defaultlib.tb_chua_uart_rng xil_defaultlib.glbl -log elaborate.log 
+open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:07 . Memory (MB): peak = 1104.879 ; gain = 62.855
+WARNING: [Common 17-9] Error reading message records.
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2024.2
+  **** Build date : Oct 29 2024 at 10:25:41
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2024.2.0
+  ****** Build date   : Oct 31 2024-02:19:07
+    **** Build number : 2024.2.1730312347
+      ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.
+      ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1131.676 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210328B995F7A
+set_property PROGRAM.FILE {D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.runs/impl_1/top_module.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Apr 18 21:01:26 2025...
+d Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_chua_rng_behav xil_defaultlib.tb_chua_rng xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
 Completed static elaboration
 INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
-run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 2257.355 ; gain = 0.000
-INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
 INFO: [USF-XSim-4] XSim::Simulate design
-WARNING: [USF-XSim-17] WCFG file does not exist:D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/tb_chua_uart_rng_behav.wcfg
-WARNING: [USF-XSim-17] WCFG file does not exist:D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/tb_chua_uart_rng_behav.wcfg
 INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.sim/sim_1/behav/xsim'
 INFO: [USF-XSim-98] *** Running xsim
-   with args "tb_chua_uart_rng_behav -key {Behavioral:sim_1:Functional:tb_chua_uart_rng} -tclbatch {tb_chua_uart_rng.tcl} -log {simulate.log}"
+   with args "tb_chua_rng_behav -key {Behavioral:sim_1:Functional:tb_chua_rng} -tclbatch {tb_chua_rng.tcl} -log {simulate.log}"
 INFO: [USF-XSim-8] Loading simulator feature
 Time resolution is 1 ps
-source tb_chua_uart_rng.tcl
+source tb_chua_rng.tcl
 # set curr_wave [current_wave_config]
 # if { [string length $curr_wave] == 0 } {
 #   if { [llength [get_objects]] > 0} {
@@ -172,11 +90,868 @@ source tb_chua_uart_rng.tcl
 #   }
 # }
 # run 1000ns
-xsim: Time (s): cpu = 00:00:16 ; elapsed = 00:00:07 . Memory (MB): peak = 2257.355 ; gain = 0.000
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_chua_uart_rng_behav' loaded.
+At time                    0, seed_C1 = 1000, seed_C2 = 2000, seed_L = 3000, random_num = 0000
+At time               115000, seed_C1 = 1000, seed_C2 = 2000, seed_L = 3000, random_num = f275
+At time               195000, seed_C1 = 1000, seed_C2 = 2000, seed_L = 3000, random_num = f176
+At time               275000, seed_C1 = 1000, seed_C2 = 2000, seed_L = 3000, random_num = f077
+At time               355000, seed_C1 = 1000, seed_C2 = 2000, seed_L = 3000, random_num = f770
+At time               435000, seed_C1 = 1000, seed_C2 = 2000, seed_L = 3000, random_num = f671
+At time               515000, seed_C1 = 1000, seed_C2 = 2000, seed_L = 3000, random_num = f572
+At time               595000, seed_C1 = 1000, seed_C2 = 2000, seed_L = 3000, random_num = f473
+At time               675000, seed_C1 = 1000, seed_C2 = 2000, seed_L = 3000, random_num = fb7c
+At time               755000, seed_C1 = 1000, seed_C2 = 2000, seed_L = 3000, random_num = fa7d
+At time               835000, seed_C1 = 1000, seed_C2 = 2000, seed_L = 3000, random_num = f97e
+At time               915000, seed_C1 = 1000, seed_C2 = 2000, seed_L = 3000, random_num = f87f
+At time               995000, seed_C1 = 1000, seed_C2 = 2000, seed_L = 3000, random_num = ff78
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_chua_rng_behav' loaded.
 INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2257.355 ; gain = 0.000
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 1150.891 ; gain = 14.516
+set_property is_enabled true [get_files  {{D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/sim_1/new/testbench.v}}]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\SUTD\Term 8\DSL\Projects\DSL_group_03\Lab_4\Lab4.srcs\sim_1\new\testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\SUTD\Term 8\DSL\Projects\DSL_group_03\Lab_4\Lab4.srcs\sources_1\new\chua_rng.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\SUTD\Term 8\DSL\Projects\DSL_group_03\Lab_4\Lab4.srcs\sim_1\new\testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\SUTD\Term 8\DSL\Projects\DSL_group_03\Lab_4\Lab4.srcs\sim_1\new\testbench.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\SUTD\Term 8\DSL\Projects\DSL_group_03\Lab_4\Lab4.srcs\sim_1\new\testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\SUTD\Term 8\DSL\Projects\DSL_group_03\Lab_4\Lab4.srcs\sources_1\new\chua_rng.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\SUTD\Term 8\DSL\Projects\DSL_group_03\Lab_4\Lab4.srcs\sim_1\new\testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\SUTD\Term 8\DSL\Projects\DSL_group_03\Lab_4\Lab4.srcs\sim_1\new\testbench.v:]
+ERROR: [Common 17-180] Spawn failed: No error
 close_sim
 INFO: [Simtcl 6-16] Simulation closed
-exit
-INFO: [Common 17-206] Exiting Vivado at Mon Apr 14 23:04:12 2025...
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'tb_chua_rng'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_chua_rng' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_chua_rng_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/sources_1/new/chua_rng.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_module
+INFO: [VRFC 10-311] analyzing module clock_div
+INFO: [VRFC 10-311] analyzing module drv_mcp3202
+INFO: [VRFC 10-311] analyzing module drv_uart_tx
+INFO: [VRFC 10-311] analyzing module chua_rng
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/sim_1/new/testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module chua_rng_tb
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_chua_rng_behav xil_defaultlib.tb_chua_rng xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_chua_rng_behav xil_defaultlib.tb_chua_rng xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.chua_rng
+Compiling module xil_defaultlib.tb_chua_rng
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_chua_rng_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_chua_rng_behav -key {Behavioral:sim_1:Functional:tb_chua_rng} -tclbatch {tb_chua_rng.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source tb_chua_rng.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+At time                    0, seed_C1 = 1000, seed_C2 = 2000, seed_L = 3000, random_num = 0000
+At time               115000, seed_C1 = 1000, seed_C2 = 2000, seed_L = 3000, random_num = f275
+At time               195000, seed_C1 = 1000, seed_C2 = 2000, seed_L = 3000, random_num = f176
+At time               275000, seed_C1 = 1000, seed_C2 = 2000, seed_L = 3000, random_num = f077
+At time               355000, seed_C1 = 1000, seed_C2 = 2000, seed_L = 3000, random_num = f770
+At time               435000, seed_C1 = 1000, seed_C2 = 2000, seed_L = 3000, random_num = f671
+At time               515000, seed_C1 = 1000, seed_C2 = 2000, seed_L = 3000, random_num = f572
+At time               595000, seed_C1 = 1000, seed_C2 = 2000, seed_L = 3000, random_num = f473
+At time               675000, seed_C1 = 1000, seed_C2 = 2000, seed_L = 3000, random_num = fb7c
+At time               755000, seed_C1 = 1000, seed_C2 = 2000, seed_L = 3000, random_num = fa7d
+At time               835000, seed_C1 = 1000, seed_C2 = 2000, seed_L = 3000, random_num = f97e
+At time               915000, seed_C1 = 1000, seed_C2 = 2000, seed_L = 3000, random_num = f87f
+At time               995000, seed_C1 = 1000, seed_C2 = 2000, seed_L = 3000, random_num = ff78
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_chua_rng_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 1166.520 ; gain = 0.000
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\SUTD\Term 8\DSL\Projects\DSL_group_03\Lab_4\Lab4.srcs\sim_1\new\testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\SUTD\Term 8\DSL\Projects\DSL_group_03\Lab_4\Lab4.srcs\sources_1\new\chua_rng.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\SUTD\Term 8\DSL\Projects\DSL_group_03\Lab_4\Lab4.srcs\sim_1\new\testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\SUTD\Term 8\DSL\Projects\DSL_group_03\Lab_4\Lab4.srcs\sim_1\new\testbench.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/utils_1/imports/synth_1/chua_uart_rng.dcp with file D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.runs/synth_1/top_module.dcp
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream
+[Fri Apr 18 20:56:34 2025] Launched synth_1...
+Run output will be captured here: D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.runs/synth_1/runme.log
+[Fri Apr 18 20:56:35 2025] Launched impl_1...
+Run output will be captured here: D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.runs/impl_1/runme.log
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\SUTD\Term 8\DSL\Projects\DSL_group_03\Lab_4\Lab4.srcs\sim_1\new\testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\SUTD\Term 8\DSL\Projects\DSL_group_03\Lab_4\Lab4.srcs\sources_1\new\chua_rng.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\SUTD\Term 8\DSL\Projects\DSL_group_03\Lab_4\Lab4.srcs\sim_1\new\testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\SUTD\Term 8\DSL\Projects\DSL_group_03\Lab_4\Lab4.srcs\sim_1\new\testbench.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\SUTD\Term 8\DSL\Projects\DSL_group_03\Lab_4\Lab4.srcs\sim_1\new\testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\SUTD\Term 8\DSL\Projects\DSL_group_03\Lab_4\Lab4.srcs\sources_1\new\chua_rng.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\SUTD\Term 8\DSL\Projects\DSL_group_03\Lab_4\Lab4.srcs\sim_1\new\testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\SUTD\Term 8\DSL\Projects\DSL_group_03\Lab_4\Lab4.srcs\sim_1\new\testbench.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2024.2
+  **** Build date : Oct 29 2024 at 10:25:41
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2024.2.0
+  ****** Build date   : Oct 31 2024-02:19:07
+    **** Build number : 2024.2.1730312347
+      ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.
+      ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 2205.840 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210328B995F7A
+set_property PROGRAM.FILE {D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.runs/impl_1/top_module.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.runs/impl_1/top_module.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'tb_chua_rng'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+boost::filesystem::remove: The process cannot access the file because it is being used by another process: "D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.sim/sim_1/behav/xsim/simulate.log"
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'tb_chua_rng'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+boost::filesystem::remove: The process cannot access the file because it is being used by another process: "D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.sim/sim_1/behav/xsim/simulate.log"
+close_hw_manager
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'tb_chua_rng'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+boost::filesystem::remove: The process cannot access the file because it is being used by another process: "D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.sim/sim_1/behav/xsim/simulate.log"
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'tb_chua_rng'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_chua_rng' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_chua_rng_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/sources_1/new/chua_rng.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_module
+INFO: [VRFC 10-311] analyzing module clock_div
+INFO: [VRFC 10-311] analyzing module drv_mcp3202
+INFO: [VRFC 10-311] analyzing module drv_uart_tx
+INFO: [VRFC 10-311] analyzing module chua_rng
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/sim_1/new/testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module chua_rng_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_chua_rng_behav xil_defaultlib.tb_chua_rng xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_chua_rng_behav xil_defaultlib.tb_chua_rng xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.chua_rng
+Compiling module xil_defaultlib.tb_chua_rng
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_chua_rng_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_chua_rng_behav -key {Behavioral:sim_1:Functional:tb_chua_rng} -tclbatch {tb_chua_rng.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source tb_chua_rng.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+At time                    0, seed_C1 = 1000, seed_C2 = 2000, seed_L = 3000, random_num = 0000
+At time               115000, seed_C1 = 1000, seed_C2 = 2000, seed_L = 3000, random_num = f275
+At time               195000, seed_C1 = 1000, seed_C2 = 2000, seed_L = 3000, random_num = f176
+At time               275000, seed_C1 = 1000, seed_C2 = 2000, seed_L = 3000, random_num = f077
+At time               355000, seed_C1 = 1000, seed_C2 = 2000, seed_L = 3000, random_num = f770
+At time               435000, seed_C1 = 1000, seed_C2 = 2000, seed_L = 3000, random_num = f671
+At time               515000, seed_C1 = 1000, seed_C2 = 2000, seed_L = 3000, random_num = f572
+At time               595000, seed_C1 = 1000, seed_C2 = 2000, seed_L = 3000, random_num = f473
+At time               675000, seed_C1 = 1000, seed_C2 = 2000, seed_L = 3000, random_num = fb7c
+At time               755000, seed_C1 = 1000, seed_C2 = 2000, seed_L = 3000, random_num = fa7d
+At time               835000, seed_C1 = 1000, seed_C2 = 2000, seed_L = 3000, random_num = f97e
+At time               915000, seed_C1 = 1000, seed_C2 = 2000, seed_L = 3000, random_num = f87f
+At time               995000, seed_C1 = 1000, seed_C2 = 2000, seed_L = 3000, random_num = ff78
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_chua_rng_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 2205.840 ; gain = 0.000
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\SUTD\Term 8\DSL\Projects\DSL_group_03\Lab_4\Lab4.srcs\sim_1\new\testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\SUTD\Term 8\DSL\Projects\DSL_group_03\Lab_4\Lab4.srcs\sources_1\new\chua_rng.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\SUTD\Term 8\DSL\Projects\DSL_group_03\Lab_4\Lab4.srcs\sim_1\new\testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\SUTD\Term 8\DSL\Projects\DSL_group_03\Lab_4\Lab4.srcs\sim_1\new\testbench.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'tb_chua_rng'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_chua_rng' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_chua_rng_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/sources_1/new/chua_rng.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_module
+INFO: [VRFC 10-311] analyzing module clock_div
+INFO: [VRFC 10-311] analyzing module drv_mcp3202
+INFO: [VRFC 10-311] analyzing module drv_uart_tx
+INFO: [VRFC 10-311] analyzing module chua_rng
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/sim_1/new/testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module chua_rng_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'tb_chua_rng'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_chua_rng_behav xil_defaultlib.tb_chua_rng xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_chua_rng_behav xil_defaultlib.tb_chua_rng xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.chua_rng
+Compiling module xil_defaultlib.tb_chua_rng
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_chua_rng_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Time resolution is 1 ps
+At time                    0, seed_C1 = 1000, seed_C2 = 2000, seed_L = 3000, random_num = 0000
+At time               115000, seed_C1 = 1000, seed_C2 = 2000, seed_L = 3000, random_num = f275
+At time               195000, seed_C1 = 1000, seed_C2 = 2000, seed_L = 3000, random_num = f176
+At time               275000, seed_C1 = 1000, seed_C2 = 2000, seed_L = 3000, random_num = f077
+At time               355000, seed_C1 = 1000, seed_C2 = 2000, seed_L = 3000, random_num = f770
+At time               435000, seed_C1 = 1000, seed_C2 = 2000, seed_L = 3000, random_num = f671
+At time               515000, seed_C1 = 1000, seed_C2 = 2000, seed_L = 3000, random_num = f572
+At time               595000, seed_C1 = 1000, seed_C2 = 2000, seed_L = 3000, random_num = f473
+At time               675000, seed_C1 = 1000, seed_C2 = 2000, seed_L = 3000, random_num = fb7c
+At time               755000, seed_C1 = 1000, seed_C2 = 2000, seed_L = 3000, random_num = fa7d
+At time               835000, seed_C1 = 1000, seed_C2 = 2000, seed_L = 3000, random_num = f97e
+At time               915000, seed_C1 = 1000, seed_C2 = 2000, seed_L = 3000, random_num = f87f
+At time               995000, seed_C1 = 1000, seed_C2 = 2000, seed_L = 3000, random_num = ff78
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 2205.840 ; gain = 0.000
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'tb_chua_rng'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_chua_rng_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'tb_chua_rng'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_chua_rng_behav xil_defaultlib.tb_chua_rng xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_chua_rng_behav xil_defaultlib.tb_chua_rng xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Time resolution is 1 ps
+At time                    0, seed_C1 = 1000, seed_C2 = 2000, seed_L = 3000, random_num = 0000
+At time               115000, seed_C1 = 1000, seed_C2 = 2000, seed_L = 3000, random_num = f275
+At time               195000, seed_C1 = 1000, seed_C2 = 2000, seed_L = 3000, random_num = f176
+At time               275000, seed_C1 = 1000, seed_C2 = 2000, seed_L = 3000, random_num = f077
+At time               355000, seed_C1 = 1000, seed_C2 = 2000, seed_L = 3000, random_num = f770
+At time               435000, seed_C1 = 1000, seed_C2 = 2000, seed_L = 3000, random_num = f671
+At time               515000, seed_C1 = 1000, seed_C2 = 2000, seed_L = 3000, random_num = f572
+At time               595000, seed_C1 = 1000, seed_C2 = 2000, seed_L = 3000, random_num = f473
+At time               675000, seed_C1 = 1000, seed_C2 = 2000, seed_L = 3000, random_num = fb7c
+At time               755000, seed_C1 = 1000, seed_C2 = 2000, seed_L = 3000, random_num = fa7d
+At time               835000, seed_C1 = 1000, seed_C2 = 2000, seed_L = 3000, random_num = f97e
+At time               915000, seed_C1 = 1000, seed_C2 = 2000, seed_L = 3000, random_num = f87f
+At time               995000, seed_C1 = 1000, seed_C2 = 2000, seed_L = 3000, random_num = ff78
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 2205.840 ; gain = 0.000
+export_ip_user_files -of_objects  [get_files {{D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/sim_1/new/testbench.v}}] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 {{D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/sim_1/new/testbench.v}}
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'tb_chua_rng'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_chua_rng_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'tb_chua_rng'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_chua_rng_behav xil_defaultlib.tb_chua_rng xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_chua_rng_behav xil_defaultlib.tb_chua_rng xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Time resolution is 1 ps
+At time                    0, seed_C1 = 1000, seed_C2 = 2000, seed_L = 3000, random_num = 0000
+At time               115000, seed_C1 = 1000, seed_C2 = 2000, seed_L = 3000, random_num = f275
+At time               195000, seed_C1 = 1000, seed_C2 = 2000, seed_L = 3000, random_num = f176
+At time               275000, seed_C1 = 1000, seed_C2 = 2000, seed_L = 3000, random_num = f077
+At time               355000, seed_C1 = 1000, seed_C2 = 2000, seed_L = 3000, random_num = f770
+At time               435000, seed_C1 = 1000, seed_C2 = 2000, seed_L = 3000, random_num = f671
+At time               515000, seed_C1 = 1000, seed_C2 = 2000, seed_L = 3000, random_num = f572
+At time               595000, seed_C1 = 1000, seed_C2 = 2000, seed_L = 3000, random_num = f473
+At time               675000, seed_C1 = 1000, seed_C2 = 2000, seed_L = 3000, random_num = fb7c
+At time               755000, seed_C1 = 1000, seed_C2 = 2000, seed_L = 3000, random_num = fa7d
+At time               835000, seed_C1 = 1000, seed_C2 = 2000, seed_L = 3000, random_num = f97e
+At time               915000, seed_C1 = 1000, seed_C2 = 2000, seed_L = 3000, random_num = f87f
+At time               995000, seed_C1 = 1000, seed_C2 = 2000, seed_L = 3000, random_num = ff78
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 2205.840 ; gain = 0.000
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open {D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/sim_1/new/chua_test.v} w ]
+add_files -fileset sim_1 {{D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/sim_1/new/chua_test.v}}
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\SUTD\Term 8\DSL\Projects\DSL_group_03\Lab_4\Lab4.srcs\sim_1\new\testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\SUTD\Term 8\DSL\Projects\DSL_group_03\Lab_4\Lab4.srcs\sim_1\new\chua_test.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\SUTD\Term 8\DSL\Projects\DSL_group_03\Lab_4\Lab4.srcs\sources_1\new\chua_rng.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\SUTD\Term 8\DSL\Projects\DSL_group_03\Lab_4\Lab4.srcs\sim_1\new\chua_test.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\SUTD\Term 8\DSL\Projects\DSL_group_03\Lab_4\Lab4.srcs\sim_1\new\chua_test.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'tb_chua_rng'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_chua_rng' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_chua_rng_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/sim_1/new/chua_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module chua_rng_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_chua_rng_behav xil_defaultlib.tb_chua_rng xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_chua_rng_behav xil_defaultlib.tb_chua_rng xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_chua_rng_behav -key {Behavioral:sim_1:Functional:tb_chua_rng} -tclbatch {tb_chua_rng.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source tb_chua_rng.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+At time                    0, seed_C1 = 1000, seed_C2 = 2000, seed_L = 3000, random_num = 0000
+At time               115000, seed_C1 = 1000, seed_C2 = 2000, seed_L = 3000, random_num = f275
+At time               195000, seed_C1 = 1000, seed_C2 = 2000, seed_L = 3000, random_num = f176
+At time               275000, seed_C1 = 1000, seed_C2 = 2000, seed_L = 3000, random_num = f077
+At time               355000, seed_C1 = 1000, seed_C2 = 2000, seed_L = 3000, random_num = f770
+At time               435000, seed_C1 = 1000, seed_C2 = 2000, seed_L = 3000, random_num = f671
+At time               515000, seed_C1 = 1000, seed_C2 = 2000, seed_L = 3000, random_num = f572
+At time               595000, seed_C1 = 1000, seed_C2 = 2000, seed_L = 3000, random_num = f473
+At time               675000, seed_C1 = 1000, seed_C2 = 2000, seed_L = 3000, random_num = fb7c
+At time               755000, seed_C1 = 1000, seed_C2 = 2000, seed_L = 3000, random_num = fa7d
+At time               835000, seed_C1 = 1000, seed_C2 = 2000, seed_L = 3000, random_num = f97e
+At time               915000, seed_C1 = 1000, seed_C2 = 2000, seed_L = 3000, random_num = f87f
+At time               995000, seed_C1 = 1000, seed_C2 = 2000, seed_L = 3000, random_num = ff78
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_chua_rng_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 2205.840 ; gain = 0.000
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\SUTD\Term 8\DSL\Projects\DSL_group_03\Lab_4\Lab4.srcs\sim_1\new\testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\SUTD\Term 8\DSL\Projects\DSL_group_03\Lab_4\Lab4.srcs\sim_1\new\chua_test.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\SUTD\Term 8\DSL\Projects\DSL_group_03\Lab_4\Lab4.srcs\sources_1\new\chua_rng.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\SUTD\Term 8\DSL\Projects\DSL_group_03\Lab_4\Lab4.srcs\sim_1\new\chua_test.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\SUTD\Term 8\DSL\Projects\DSL_group_03\Lab_4\Lab4.srcs\sim_1\new\chua_test.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+reset_simulation -simset sim_1 -mode post-implementation -type functional
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\SUTD\Term 8\DSL\Projects\DSL_group_03\Lab_4\Lab4.srcs\sim_1\new\testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\SUTD\Term 8\DSL\Projects\DSL_group_03\Lab_4\Lab4.srcs\sim_1\new\chua_test.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\SUTD\Term 8\DSL\Projects\DSL_group_03\Lab_4\Lab4.srcs\sources_1\new\chua_rng.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\SUTD\Term 8\DSL\Projects\DSL_group_03\Lab_4\Lab4.srcs\sim_1\new\chua_test.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\SUTD\Term 8\DSL\Projects\DSL_group_03\Lab_4\Lab4.srcs\sim_1\new\chua_test.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\SUTD\Term 8\DSL\Projects\DSL_group_03\Lab_4\Lab4.srcs\sim_1\new\testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\SUTD\Term 8\DSL\Projects\DSL_group_03\Lab_4\Lab4.srcs\sim_1\new\chua_test.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\SUTD\Term 8\DSL\Projects\DSL_group_03\Lab_4\Lab4.srcs\sources_1\new\chua_rng.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\SUTD\Term 8\DSL\Projects\DSL_group_03\Lab_4\Lab4.srcs\sim_1\new\chua_test.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\SUTD\Term 8\DSL\Projects\DSL_group_03\Lab_4\Lab4.srcs\sim_1\new\chua_test.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'tb_chua_rng'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_chua_rng' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_chua_rng_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_chua_rng_behav xil_defaultlib.tb_chua_rng xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_chua_rng_behav xil_defaultlib.tb_chua_rng xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_chua_rng_behav -key {Behavioral:sim_1:Functional:tb_chua_rng} -tclbatch {tb_chua_rng.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source tb_chua_rng.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+At time                    0, seed_C1 = 1000, seed_C2 = 2000, seed_L = 3000, random_num = 0000
+At time               115000, seed_C1 = 1000, seed_C2 = 2000, seed_L = 3000, random_num = f275
+At time               195000, seed_C1 = 1000, seed_C2 = 2000, seed_L = 3000, random_num = f176
+At time               275000, seed_C1 = 1000, seed_C2 = 2000, seed_L = 3000, random_num = f077
+At time               355000, seed_C1 = 1000, seed_C2 = 2000, seed_L = 3000, random_num = f770
+At time               435000, seed_C1 = 1000, seed_C2 = 2000, seed_L = 3000, random_num = f671
+At time               515000, seed_C1 = 1000, seed_C2 = 2000, seed_L = 3000, random_num = f572
+At time               595000, seed_C1 = 1000, seed_C2 = 2000, seed_L = 3000, random_num = f473
+At time               675000, seed_C1 = 1000, seed_C2 = 2000, seed_L = 3000, random_num = fb7c
+At time               755000, seed_C1 = 1000, seed_C2 = 2000, seed_L = 3000, random_num = fa7d
+At time               835000, seed_C1 = 1000, seed_C2 = 2000, seed_L = 3000, random_num = f97e
+At time               915000, seed_C1 = 1000, seed_C2 = 2000, seed_L = 3000, random_num = f87f
+At time               995000, seed_C1 = 1000, seed_C2 = 2000, seed_L = 3000, random_num = ff78
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_chua_rng_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 2205.840 ; gain = 0.000
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\SUTD\Term 8\DSL\Projects\DSL_group_03\Lab_4\Lab4.srcs\sim_1\new\testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\SUTD\Term 8\DSL\Projects\DSL_group_03\Lab_4\Lab4.srcs\sim_1\new\chua_test.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\SUTD\Term 8\DSL\Projects\DSL_group_03\Lab_4\Lab4.srcs\sources_1\new\chua_rng.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\SUTD\Term 8\DSL\Projects\DSL_group_03\Lab_4\Lab4.srcs\sim_1\new\chua_test.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\SUTD\Term 8\DSL\Projects\DSL_group_03\Lab_4\Lab4.srcs\sim_1\new\chua_test.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'tb_chua_rng'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_chua_rng' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_chua_rng_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/sources_1/new/chua_rng.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_module
+INFO: [VRFC 10-311] analyzing module clock_div
+INFO: [VRFC 10-311] analyzing module drv_mcp3202
+INFO: [VRFC 10-311] analyzing module drv_uart_tx
+INFO: [VRFC 10-311] analyzing module chua_rng
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/sim_1/new/chua_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_chua_rng
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_chua_rng_behav xil_defaultlib.tb_chua_rng xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_chua_rng_behav xil_defaultlib.tb_chua_rng xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/sources_1/new/chua_rng.v" Line 455. Module chua_rng doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/sources_1/new/chua_rng.v" Line 455. Module chua_rng doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.chua_rng
+Compiling module xil_defaultlib.tb_chua_rng
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_chua_rng_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_chua_rng_behav -key {Behavioral:sim_1:Functional:tb_chua_rng} -tclbatch {tb_chua_rng.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source tb_chua_rng.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Time (ns)	Random Output
+-----------------------------
+     150ns	bb1a
+     160ns	bb1a
+     170ns	bb1a
+     180ns	bb1a
+     190ns	bb1a
+     200ns	ba1a
+     210ns	ba1a
+     220ns	ba1a
+     230ns	ba1b
+     240ns	ba1b
+     250ns	ba1b
+     260ns	ba1b
+     270ns	ba1b
+     280ns	ba1b
+     290ns	ba1b
+     300ns	ba1b
+     310ns	ba1b
+     320ns	ba1b
+     330ns	ba1b
+     340ns	ba1b
+     350ns	ba1b
+     360ns	b91b
+     370ns	b91b
+     380ns	b91b
+     390ns	b918
+     400ns	b918
+     410ns	b918
+     420ns	b918
+     430ns	b918
+     440ns	b918
+     450ns	b918
+     460ns	b918
+     470ns	b918
+     480ns	b918
+     490ns	b918
+     500ns	b918
+     510ns	b918
+     520ns	b818
+     530ns	b818
+     540ns	b818
+     550ns	b819
+     560ns	b819
+     570ns	b819
+     580ns	b819
+     590ns	b819
+     600ns	b819
+     610ns	b819
+     620ns	b819
+     630ns	b819
+     640ns	b819
+     650ns	b819
+     660ns	b819
+     670ns	b819
+     680ns	bf19
+     690ns	bf19
+     700ns	bf19
+     710ns	bf1e
+     720ns	bf1e
+     730ns	bf1e
+     740ns	bf1e
+     750ns	bf1e
+     760ns	bf1e
+     770ns	bf1e
+     780ns	bf1e
+     790ns	bf1e
+     800ns	bf1e
+     810ns	bf1e
+     820ns	bf1e
+     830ns	bf1e
+     840ns	be1e
+     850ns	be1e
+     860ns	be1e
+     870ns	be1f
+     880ns	be1f
+     890ns	be1f
+     900ns	be1f
+     910ns	be1f
+     920ns	be1f
+     930ns	be1f
+     940ns	be1f
+     950ns	be1f
+     960ns	be1f
+     970ns	be1f
+     980ns	be1f
+     990ns	be1f
+    1000ns	bd1f
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_chua_rng_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 2205.840 ; gain = 0.000
+current_wave_config {Untitled 6}
+Untitled 6
+add_wave {{/tb_chua_rng/uut/x_reg}} {{/tb_chua_rng/uut/y_reg}} {{/tb_chua_rng/uut/z_reg}} {{/tb_chua_rng/uut/dx}} {{/tb_chua_rng/uut/dy}} {{/tb_chua_rng/uut/dz}} {{/tb_chua_rng/uut/C1}} {{/tb_chua_rng/uut/C2}} {{/tb_chua_rng/uut/L}} {{/tb_chua_rng/uut/iteration_count}} 
+relaunch_sim
+Command: launch_simulation -step compile -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'tb_chua_rng'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_chua_rng_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+Command: launch_simulation -step elaborate -simset sim_1 -mode behavioral
+INFO: [Vivado 12-12493] Simulation top is 'tb_chua_rng'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_chua_rng_behav xil_defaultlib.tb_chua_rng xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_chua_rng_behav xil_defaultlib.tb_chua_rng xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Time resolution is 1 ps
+Time (ns)	Random Output
+-----------------------------
+     150ns	bb1a
+     160ns	bb1a
+     170ns	bb1a
+     180ns	bb1a
+     190ns	bb1a
+     200ns	ba1a
+     210ns	ba1a
+     220ns	ba1a
+     230ns	ba1b
+     240ns	ba1b
+     250ns	ba1b
+     260ns	ba1b
+     270ns	ba1b
+     280ns	ba1b
+     290ns	ba1b
+     300ns	ba1b
+     310ns	ba1b
+     320ns	ba1b
+     330ns	ba1b
+     340ns	ba1b
+     350ns	ba1b
+     360ns	b91b
+     370ns	b91b
+     380ns	b91b
+     390ns	b918
+     400ns	b918
+     410ns	b918
+     420ns	b918
+     430ns	b918
+     440ns	b918
+     450ns	b918
+     460ns	b918
+     470ns	b918
+     480ns	b918
+     490ns	b918
+     500ns	b918
+     510ns	b918
+     520ns	b818
+     530ns	b818
+     540ns	b818
+     550ns	b819
+     560ns	b819
+     570ns	b819
+     580ns	b819
+     590ns	b819
+     600ns	b819
+     610ns	b819
+     620ns	b819
+     630ns	b819
+     640ns	b819
+     650ns	b819
+     660ns	b819
+     670ns	b819
+     680ns	bf19
+     690ns	bf19
+     700ns	bf19
+     710ns	bf1e
+     720ns	bf1e
+     730ns	bf1e
+     740ns	bf1e
+     750ns	bf1e
+     760ns	bf1e
+     770ns	bf1e
+     780ns	bf1e
+     790ns	bf1e
+     800ns	bf1e
+     810ns	bf1e
+     820ns	bf1e
+     830ns	bf1e
+     840ns	be1e
+     850ns	be1e
+     860ns	be1e
+     870ns	be1f
+     880ns	be1f
+     890ns	be1f
+     900ns	be1f
+     910ns	be1f
+     920ns	be1f
+     930ns	be1f
+     940ns	be1f
+     950ns	be1f
+     960ns	be1f
+     970ns	be1f
+     980ns	be1f
+     990ns	be1f
+    1000ns	bd1f
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 2238.922 ; gain = 16.508
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\SUTD\Term 8\DSL\Projects\DSL_group_03\Lab_4\Lab4.srcs\sim_1\new\testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\SUTD\Term 8\DSL\Projects\DSL_group_03\Lab_4\Lab4.srcs\sim_1\new\chua_test.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\SUTD\Term 8\DSL\Projects\DSL_group_03\Lab_4\Lab4.srcs\sources_1\new\chua_rng.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\SUTD\Term 8\DSL\Projects\DSL_group_03\Lab_4\Lab4.srcs\sources_1\new\chua_rng.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [D:\SUTD\Term 8\DSL\Projects\DSL_group_03\Lab_4\Lab4.srcs\sources_1\new\chua_rng.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+relaunch_sim

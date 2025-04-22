@@ -1,6 +1,6 @@
 
 *** Running vivado
-    with args -log chua_uart_rng.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source chua_uart_rng.tcl
+    with args -log top_module.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_module.tcl
 
 
 
@@ -8,15 +8,15 @@
   **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
   **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
   **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-  **** Start of session at: Thu Apr 10 12:31:09 2025
+  **** Start of session at: Tue Apr 22 16:57:31 2025
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
     ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 
-source chua_uart_rng.tcl -notrace
-Command: read_checkpoint -auto_incremental -incremental {C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.srcs/utils_1/imports/synth_1/chua_uart_rng.dcp}
-INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.srcs/utils_1/imports/synth_1/chua_uart_rng.dcp for incremental synthesis
+source top_module.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental {D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/utils_1/imports/synth_1/chua_uart_rng.dcp}
+INFO: [Vivado 12-5825] Read reference checkpoint from D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/utils_1/imports/synth_1/chua_uart_rng.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
-Command: synth_design -top chua_uart_rng -part xc7a35tcpg236-1
+Command: synth_design -top top_module -part xc7a35tcpg236-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
@@ -25,115 +25,223 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 51684
+INFO: [Synth 8-7075] Helper process launched with PID 167384
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 989.734 ; gain = 466.465
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 950.551 ; gain = 467.324
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'chua_uart_rng' [C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.srcs/sources_1/new/PRNG.v:146]
-INFO: [Synth 8-6157] synthesizing module 'chua_rng' [C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.srcs/sources_1/new/PRNG.v:68]
-INFO: [Synth 8-6155] done synthesizing module 'chua_rng' (0#1) [C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.srcs/sources_1/new/PRNG.v:68]
-INFO: [Synth 8-6157] synthesizing module 'uart_tx' [C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.srcs/sources_1/new/PRNG.v:8]
-INFO: [Synth 8-6155] done synthesizing module 'uart_tx' (0#1) [C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.srcs/sources_1/new/PRNG.v:8]
-INFO: [Synth 8-6155] done synthesizing module 'chua_uart_rng' (0#1) [C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.srcs/sources_1/new/PRNG.v:146]
-WARNING: [Synth 8-6014] Unused sequential element diff_reg was removed.  [C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.srcs/sources_1/new/PRNG.v:119]
-WARNING: [Synth 8-6014] Unused sequential element term_reg was removed.  [C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.srcs/sources_1/new/PRNG.v:120]
-WARNING: [Synth 8-6014] Unused sequential element dv1_reg was removed.  [C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.srcs/sources_1/new/PRNG.v:121]
-WARNING: [Synth 8-6014] Unused sequential element dv2_reg was removed.  [C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.srcs/sources_1/new/PRNG.v:122]
-WARNING: [Synth 8-6014] Unused sequential element diL_reg was removed.  [C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.srcs/sources_1/new/PRNG.v:123]
-WARNING: [Synth 8-7129] Port uart_rxd_out in module chua_uart_rng is either unconnected or has no load
+INFO: [Synth 8-6157] synthesizing module 'top_module' [D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/sources_1/new/chua.v:1]
+INFO: [Synth 8-6157] synthesizing module 'clock_div' [D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/sources_1/new/chua.v:215]
+	Parameter FREQ_INPUT bound to: 12000000 - type: integer 
+	Parameter FREQ_OUTPUT bound to: 500 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'clock_div' (0#1) [D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/sources_1/new/chua.v:215]
+INFO: [Synth 8-6157] synthesizing module 'clock_div__parameterized0' [D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/sources_1/new/chua.v:215]
+	Parameter FREQ_INPUT bound to: 500 - type: integer 
+	Parameter FREQ_OUTPUT bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'clock_div__parameterized0' (0#1) [D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/sources_1/new/chua.v:215]
+INFO: [Synth 8-6157] synthesizing module 'clock_div__parameterized1' [D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/sources_1/new/chua.v:215]
+	Parameter FREQ_INPUT bound to: 12000000 - type: integer 
+	Parameter FREQ_OUTPUT bound to: 2000000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'clock_div__parameterized1' (0#1) [D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/sources_1/new/chua.v:215]
+INFO: [Synth 8-6157] synthesizing module 'clock_div__parameterized2' [D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/sources_1/new/chua.v:215]
+	Parameter FREQ_INPUT bound to: 12000000 - type: integer 
+	Parameter FREQ_OUTPUT bound to: 9600 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'clock_div__parameterized2' (0#1) [D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/sources_1/new/chua.v:215]
+INFO: [Synth 8-6157] synthesizing module 'clock_div__parameterized3' [D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/sources_1/new/chua.v:215]
+	Parameter FREQ_INPUT bound to: 12000000 - type: integer 
+	Parameter FREQ_OUTPUT bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'clock_div__parameterized3' (0#1) [D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/sources_1/new/chua.v:215]
+INFO: [Synth 8-6157] synthesizing module 'drv_mcp3202' [D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/sources_1/new/chua.v:287]
+INFO: [Synth 8-226] default block is never used [D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/sources_1/new/chua.v:327]
+INFO: [Synth 8-226] default block is never used [D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/sources_1/new/chua.v:344]
+INFO: [Synth 8-226] default block is never used [D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/sources_1/new/chua.v:372]
+INFO: [Synth 8-6155] done synthesizing module 'drv_mcp3202' (0#1) [D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/sources_1/new/chua.v:287]
+INFO: [Synth 8-6157] synthesizing module 'chua_rng' [D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/sources_1/new/chua.v:524]
+INFO: [Synth 8-6155] done synthesizing module 'chua_rng' (0#1) [D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/sources_1/new/chua.v:524]
+WARNING: [Synth 8-689] width (12) of port connection 'C1_seed' does not match port width (32) of module 'chua_rng' [D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/sources_1/new/chua.v:107]
+WARNING: [Synth 8-689] width (11) of port connection 'C2_seed' does not match port width (32) of module 'chua_rng' [D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/sources_1/new/chua.v:108]
+WARNING: [Synth 8-689] width (6) of port connection 'L_seed' does not match port width (32) of module 'chua_rng' [D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/sources_1/new/chua.v:109]
+INFO: [Synth 8-6157] synthesizing module 'drv_uart_tx' [D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/sources_1/new/chua.v:434]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/sources_1/new/chua.v:492]
+INFO: [Synth 8-6155] done synthesizing module 'drv_uart_tx' (0#1) [D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/sources_1/new/chua.v:434]
+INFO: [Synth 8-6155] done synthesizing module 'top_module' (0#1) [D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/sources_1/new/chua.v:1]
+WARNING: [Synth 8-6014] Unused sequential element diff_reg was removed.  [D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/sources_1/new/chua.v:576]
+WARNING: [Synth 8-6014] Unused sequential element term_reg was removed.  [D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/sources_1/new/chua.v:577]
+WARNING: [Synth 8-6014] Unused sequential element dv1_reg was removed.  [D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/sources_1/new/chua.v:578]
+WARNING: [Synth 8-6014] Unused sequential element dv2_reg was removed.  [D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/sources_1/new/chua.v:579]
+WARNING: [Synth 8-6014] Unused sequential element diL_reg was removed.  [D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/sources_1/new/chua.v:580]
+WARNING: [Synth 8-7137] Register v1_reg in module chua_rng has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/sources_1/new/chua.v:569]
+WARNING: [Synth 8-7137] Register v2_reg in module chua_rng has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/sources_1/new/chua.v:570]
+WARNING: [Synth 8-7137] Register iL_reg in module chua_rng has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/sources_1/new/chua.v:571]
+WARNING: [Synth 8-7137] Register uart_data_reg in module top_module has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/sources_1/new/chua.v:137]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1095.473 ; gain = 572.203
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1057.934 ; gain = 574.707
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1095.473 ; gain = 572.203
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1057.934 ; gain = 574.707
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1095.473 ; gain = 572.203
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1057.934 ; gain = 574.707
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1095.473 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1057.934 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.srcs/constrs_1/imports/Cmod-A7-Constraint/Cmod-A7-Master.xdc]
-Finished Parsing XDC File [C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.srcs/constrs_1/imports/Cmod-A7-Constraint/Cmod-A7-Master.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.srcs/constrs_1/imports/Cmod-A7-Constraint/Cmod-A7-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/chua_uart_rng_propImpl.xdc].
-Resolution: To avoid this warning, move constraints listed in [.Xil/chua_uart_rng_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/constrs_1/imports/Cmod-A7-Constraint/Cmod-A7-Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'led[0]'. [D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/constrs_1/imports/Cmod-A7-Constraint/Cmod-A7-Master.xdc:11]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/constrs_1/imports/Cmod-A7-Constraint/Cmod-A7-Master.xdc:11]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[1]'. [D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/constrs_1/imports/Cmod-A7-Constraint/Cmod-A7-Master.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/constrs_1/imports/Cmod-A7-Constraint/Cmod-A7-Master.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pio20'. [D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/constrs_1/imports/Cmod-A7-Constraint/Cmod-A7-Master.xdc:59]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/constrs_1/imports/Cmod-A7-Constraint/Cmod-A7-Master.xdc:59]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pio37'. [D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/constrs_1/imports/Cmod-A7-Constraint/Cmod-A7-Master.xdc:74]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/constrs_1/imports/Cmod-A7-Constraint/Cmod-A7-Master.xdc:74]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pio38'. [D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/constrs_1/imports/Cmod-A7-Constraint/Cmod-A7-Master.xdc:75]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/constrs_1/imports/Cmod-A7-Constraint/Cmod-A7-Master.xdc:75]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pio39'. [D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/constrs_1/imports/Cmod-A7-Constraint/Cmod-A7-Master.xdc:76]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/constrs_1/imports/Cmod-A7-Constraint/Cmod-A7-Master.xdc:76]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pio40'. [D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/constrs_1/imports/Cmod-A7-Constraint/Cmod-A7-Master.xdc:77]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/constrs_1/imports/Cmod-A7-Constraint/Cmod-A7-Master.xdc:77]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pio41'. [D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/constrs_1/imports/Cmod-A7-Constraint/Cmod-A7-Master.xdc:78]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/constrs_1/imports/Cmod-A7-Constraint/Cmod-A7-Master.xdc:78]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pio42'. [D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/constrs_1/imports/Cmod-A7-Constraint/Cmod-A7-Master.xdc:79]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/constrs_1/imports/Cmod-A7-Constraint/Cmod-A7-Master.xdc:79]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pio43'. [D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/constrs_1/imports/Cmod-A7-Constraint/Cmod-A7-Master.xdc:80]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/constrs_1/imports/Cmod-A7-Constraint/Cmod-A7-Master.xdc:80]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pio44'. [D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/constrs_1/imports/Cmod-A7-Constraint/Cmod-A7-Master.xdc:81]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/constrs_1/imports/Cmod-A7-Constraint/Cmod-A7-Master.xdc:81]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pio45'. [D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/constrs_1/imports/Cmod-A7-Constraint/Cmod-A7-Master.xdc:82]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/constrs_1/imports/Cmod-A7-Constraint/Cmod-A7-Master.xdc:82]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pio46'. [D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/constrs_1/imports/Cmod-A7-Constraint/Cmod-A7-Master.xdc:83]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/constrs_1/imports/Cmod-A7-Constraint/Cmod-A7-Master.xdc:83]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pio47'. [D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/constrs_1/imports/Cmod-A7-Constraint/Cmod-A7-Master.xdc:84]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/constrs_1/imports/Cmod-A7-Constraint/Cmod-A7-Master.xdc:84]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'pio48'. [D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/constrs_1/imports/Cmod-A7-Constraint/Cmod-A7-Master.xdc:85]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/constrs_1/imports/Cmod-A7-Constraint/Cmod-A7-Master.xdc:85]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/constrs_1/imports/Cmod-A7-Constraint/Cmod-A7-Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/constrs_1/imports/Cmod-A7-Constraint/Cmod-A7-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_module_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_module_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1185.516 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1150.234 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1185.516 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1150.234 ; gain = 0.000
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1185.516 ; gain = 662.246
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1150.234 ; gain = 667.008
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1185.516 ; gain = 662.246
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1150.234 ; gain = 667.008
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1185.516 ; gain = 662.246
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 1150.234 ; gain = 667.008
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'chua_uart_rng'
+INFO: [Synth 8-802] inferred FSM for state register 'fsm_statu_reg' in module 'drv_mcp3202'
+INFO: [Synth 8-802] inferred FSM for state register 'fsm_statu_reg' in module 'drv_uart_tx'
+WARNING: [Synth 8-3936] Found unconnected internal register 'datach1_reg' and it is trimmed from '12' to '11' bits. [D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/sources_1/new/chua.v:92]
+INFO: [Synth 8-802] inferred FSM for state register 'adc_ch_reg' in module 'top_module'
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
-              STATE_IDLE |                              000 |                              000
-         STATE_SEND_HIGH |                              001 |                              001
-         STATE_WAIT_HIGH |                              010 |                              010
-          STATE_SEND_LOW |                              011 |                              011
-          STATE_WAIT_LOW |                              100 |                              100
-             STATE_DELAY |                              101 |                              101
+                FSM_IDLE |                               00 |                               00
+                FSM_WRIT |                               01 |                               10
+                FSM_READ |                               10 |                               11
+                FSM_STOP |                               11 |                               01
 ---------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'chua_uart_rng'
+INFO: [Synth 8-3354] encoded FSM with state register 'fsm_statu_reg' using encoding 'sequential' in module 'drv_mcp3202'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                FSM_IDLE |                              000 |                              000
+                FSM_STAR |                              001 |                              001
+                FSM_TRSF |                              010 |                              010
+                FSM_PARI |                              011 |                              011
+                FSM_STOP |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'fsm_statu_reg' using encoding 'sequential' in module 'drv_uart_tx'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1185.516 ; gain = 662.246
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1150.234 ; gain = 667.008
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input   32 Bit       Adders := 5     
-	   3 Input   32 Bit       Adders := 2     
-	   2 Input   23 Bit       Adders := 1     
-	   2 Input    9 Bit       Adders := 1     
+	   2 Input   32 Bit       Adders := 3     
+	   3 Input   32 Bit       Adders := 3     
+	   2 Input   22 Bit       Adders := 1     
+	   2 Input   14 Bit       Adders := 1     
+	   2 Input   10 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 1     
 	   2 Input    4 Bit       Adders := 1     
+	   2 Input    3 Bit       Adders := 1     
+	   2 Input    2 Bit       Adders := 2     
++---XORs : 
+	                8 Bit    Wide XORs := 1     
 +---Registers : 
-	               24 Bit    Registers := 1     
-	               16 Bit    Registers := 3     
+	               32 Bit    Registers := 3     
+	               22 Bit    Registers := 1     
+	               16 Bit    Registers := 2     
+	               14 Bit    Registers := 1     
+	               13 Bit    Registers := 1     
+	               12 Bit    Registers := 2     
+	               11 Bit    Registers := 1     
 	               10 Bit    Registers := 1     
-	                8 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
 	                4 Bit    Registers := 1     
-	                1 Bit    Registers := 4     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 13    
 +---Multipliers : 
-	              17x32  Multipliers := 1     
+	              18x32  Multipliers := 1     
+	              16x32  Multipliers := 1     
 	              13x32  Multipliers := 1     
-	               8x32  Multipliers := 3     
-	              11x32  Multipliers := 1     
-	              14x32  Multipliers := 1     
+	              19x32  Multipliers := 3     
+	               5x32  Multipliers := 1     
+	               7x32  Multipliers := 1     
+	              15x32  Multipliers := 1     
 +---Muxes : 
-	   2 Input   32 Bit        Muxes := 6     
-	   6 Input   24 Bit        Muxes := 1     
-	   2 Input    9 Bit        Muxes := 2     
-	   6 Input    8 Bit        Muxes := 1     
-	   2 Input    4 Bit        Muxes := 1     
-	   6 Input    3 Bit        Muxes := 1     
-	   2 Input    1 Bit        Muxes := 5     
-	   6 Input    1 Bit        Muxes := 6     
+	   2 Input   32 Bit        Muxes := 8     
+	   4 Input   13 Bit        Muxes := 2     
+	   2 Input   12 Bit        Muxes := 4     
+	   2 Input    8 Bit        Muxes := 5     
+	   4 Input    4 Bit        Muxes := 1     
+	   5 Input    3 Bit        Muxes := 1     
+	  11 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 2     
+	   4 Input    2 Bit        Muxes := 1     
+	   9 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 3     
+	   4 Input    1 Bit        Muxes := 5     
+	   5 Input    1 Bit        Muxes := 5     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -150,31 +258,30 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
-DSP Report: Generating DSP iL2, operation Mode is: A*(B:0x42).
+DSP Report: Generating DSP iL2, operation Mode is: (A:0x3ffdc)*B.
 DSP Report: operator iL2 is absorbed into DSP iL2.
-DSP Report: Generating DSP v22, operation Mode is: A*(B:0x42).
+DSP Report: Generating DSP v22, operation Mode is: (A:0x3ffdc)*B.
 DSP Report: operator v22 is absorbed into DSP v22.
-DSP Report: Generating DSP v12, operation Mode is: A*(B:0x42).
+DSP Report: Generating DSP v12, operation Mode is: (A:0x3ffdc)*B.
 DSP Report: operator v12 is absorbed into DSP v12.
-WARNING: [Synth 8-7129] Port uart_rxd_out in module chua_uart_rng is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1198.020 ; gain = 674.750
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1150.234 ; gain = 667.008
 ---------------------------------------------------------------------------------
- Sort Area is  iL2_0 : 0 0 : 226 226 : Used 1 time 0
- Sort Area is  v12_3 : 0 0 : 226 226 : Used 1 time 0
- Sort Area is  v22_2 : 0 0 : 226 226 : Used 1 time 0
+ Sort Area is  iL2_0 : 0 0 : 1460 1460 : Used 1 time 0
+ Sort Area is  v12_3 : 0 0 : 1460 1460 : Used 1 time 0
+ Sort Area is  v22_2 : 0 0 : 1460 1460 : Used 1 time 0
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
 ---------------------------------------------------------------------------------
 
 DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
-+------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
-|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
-+------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
-|chua_rng    | A*(B:0x42)  | 16     | 8      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|chua_rng    | A*(B:0x42)  | 16     | 8      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|chua_rng    | A*(B:0x42)  | 16     | 8      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-+------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
++------------+---------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping   | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+---------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|chua_rng    | (A:0x3ffdc)*B | 19     | 16     | -      | -      | 35     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|chua_rng    | (A:0x3ffdc)*B | 19     | 16     | -      | -      | 35     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|chua_rng    | (A:0x3ffdc)*B | 19     | 16     | -      | -      | 35     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+---------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
 
 Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
 ---------------------------------------------------------------------------------
@@ -184,19 +291,19 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 1338.105 ; gain = 814.836
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1300.371 ; gain = 817.145
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 1413.801 ; gain = 890.531
+Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1320.594 ; gain = 837.367
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 1413.801 ; gain = 890.531
+Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 1320.594 ; gain = 837.367
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -214,37 +321,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 1586.707 ; gain = 1063.438
+Finished IO Insertion : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 1525.688 ; gain = 1042.461
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 1586.707 ; gain = 1063.438
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 1525.688 ; gain = 1042.461
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 1586.707 ; gain = 1063.438
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 1525.688 ; gain = 1042.461
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 1586.707 ; gain = 1063.438
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 1525.688 ; gain = 1042.461
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 1586.707 ; gain = 1063.438
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 1525.688 ; gain = 1042.461
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 1586.707 ; gain = 1063.438
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 1525.688 ; gain = 1042.461
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -254,9 +361,9 @@ DSP Final Report (the ' indicates corresponding REG is set)
 +------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
 |Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
 +------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
-|chua_rng    | A*B         | 30     | 7      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|chua_rng    | A*B         | 30     | 7      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
-|chua_rng    | A*B         | 30     | 7      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|chua_rng    | A*B         | 18     | 18     | -      | -      | 35     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|chua_rng    | A*B         | 18     | 18     | -      | -      | 35     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|chua_rng    | A*B         | 18     | 18     | -      | -      | 35     | 0    | 0    | -    | -    | -     | 0    | 0    | 
 +------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
 
 
@@ -270,43 +377,47 @@ Report Cell Usage:
 +------+--------+------+
 |      |Cell    |Count |
 +------+--------+------+
-|1     |BUFG    |     1|
-|2     |CARRY4  |   292|
+|1     |BUFG    |     3|
+|2     |CARRY4  |   196|
 |3     |DSP48E1 |     3|
-|4     |LUT1    |   123|
-|5     |LUT2    |   394|
-|6     |LUT3    |   405|
-|7     |LUT4    |   247|
-|8     |LUT5    |   189|
-|9     |LUT6    |   485|
-|10    |FDCE    |   163|
-|11    |FDPE    |    17|
-|12    |IBUF    |     2|
-|13    |OBUF    |     1|
+|4     |LUT1    |    50|
+|5     |LUT2    |   537|
+|6     |LUT3    |   170|
+|7     |LUT4    |   111|
+|8     |LUT5    |    95|
+|9     |LUT6    |   169|
+|10    |MUXF7   |     1|
+|11    |FDCE    |   199|
+|12    |FDPE    |    68|
+|13    |FDRE    |    24|
+|14    |LDC     |    49|
+|15    |IBUF    |     4|
+|16    |OBUF    |     4|
 +------+--------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 1586.707 ; gain = 1063.438
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 1525.688 ; gain = 1042.461
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:36 ; elapsed = 00:00:46 . Memory (MB): peak = 1586.707 ; gain = 973.395
-Synthesis Optimization Complete : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 1586.707 ; gain = 1063.438
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:28 . Memory (MB): peak = 1525.688 ; gain = 950.160
+Synthesis Optimization Complete : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 1525.688 ; gain = 1042.461
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 1595.930 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 295 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1525.688 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 249 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-WARNING: [Netlist 29-101] Netlist 'chua_uart_rng' is not ideal for floorplanning, since the cellview 'chua_rng' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1599.602 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1525.688 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
+  A total of 49 instances were transformed.
+  LDC => LDCE: 49 instances
 
-Synth Design complete | Checksum: 823adca5
+Synth Design complete | Checksum: e157df2a
 INFO: [Common 17-83] Releasing license: Synthesis
-29 Infos, 9 Warnings, 0 Critical Warnings and 0 Errors encountered.
+48 Infos, 29 Warnings, 15 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:51 ; elapsed = 00:00:54 . Memory (MB): peak = 1599.602 ; gain = 1268.934
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1599.602 ; gain = 0.000
-INFO: [Common 17-1381] The checkpoint 'C:/Users/Jing Ting.LENOVO-T14/Downloads/DSL/Lab4/Lab4.runs/synth_1/chua_uart_rng.dcp' has been generated.
-INFO: [Vivado 12-24828] Executing command : report_utilization -file chua_uart_rng_utilization_synth.rpt -pb chua_uart_rng_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Apr 10 12:32:07 2025...
+synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:48 . Memory (MB): peak = 1525.688 ; gain = 1234.273
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1525.688 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.runs/synth_1/top_module.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file top_module_utilization_synth.rpt -pb top_module_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Apr 22 16:58:23 2025...

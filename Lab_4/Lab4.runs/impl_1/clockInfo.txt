@@ -1,7 +1,7 @@
 -------------------------------------
 | Tool Version : Vivado v.2024.2
-| Date         : Thu Apr 10 12:32:44 2025
-| Host         : Lenovo-T14
+| Date         : Tue Apr 22 16:58:54 2025
+| Host         : Suriya
 | Design       : design_1
 | Device       : xc7a35t-cpg236-1--
 -------------------------------------

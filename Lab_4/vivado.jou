@@ -3,10 +3,10 @@
 # SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
 # IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
 # SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-# Start of session at: Mon Apr 14 22:51:33 2025
-# Process ID         : 167604
+# Start of session at: Fri Apr 18 20:52:25 2025
+# Process ID         : 55984
 # Current directory  : D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4
-# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent141644 D:\SUTD\Term 8\DSL\Projects\DSL_group_03\Lab_4\Lab4.xpr
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent26376 D:\SUTD\Term 8\DSL\Projects\DSL_group_03\Lab_4\Lab4.xpr
 # Log file           : D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/vivado.log
 # Journal file       : D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4\vivado.jou
 # Running On         : Suriya
@@ -19,14 +19,53 @@
 # Host memory        : 16859 MB
 # Swap memory        : 15136 MB
 # Total Virtual      : 31996 MB
-# Available Virtual  : 9715 MB
+# Available Virtual  : 6486 MB
 #-----------------------------------------------------------
 start_gui
 open_project {D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.xpr}
-update_compile_order -fileset sources_1
-launch_simulation
-source tb_chua_uart_rng.tcl
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.runs/impl_1/top_module.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw_manager
+n_jtag
+open_hw_target
+set_property PROGRAM.FILE {D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.runs/impl_1/top_module.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.runs/impl_1/top_module.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
 close_sim
 launch_simulation
-source tb_chua_uart_rng.tcl
+launch_simulation
+close_hw_manager
+launch_simulation
+launch_simulation
+source tb_chua_rng.tcl
+relaunch_sim
+relaunch_sim
+export_ip_user_files -of_objects  [get_files {{D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/sim_1/new/testbench.v}}] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 {{D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/sim_1/new/testbench.v}}
+relaunch_sim
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open {D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/sim_1/new/chua_test.v} w ]
+add_files -fileset sim_1 {{D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/sim_1/new/chua_test.v}}
 close_sim
+launch_simulation
+source tb_chua_rng.tcl
+reset_simulation -simset sim_1 -mode post-implementation -type functional
+close_sim
+launch_simulation
+source tb_chua_rng.tcl
+close_sim
+launch_simulation
+source tb_chua_rng.tcl
+current_wave_config {Untitled 6}
+add_wave {{/tb_chua_rng/uut/x_reg}} {{/tb_chua_rng/uut/y_reg}} {{/tb_chua_rng/uut/z_reg}} {{/tb_chua_rng/uut/dx}} {{/tb_chua_rng/uut/dy}} {{/tb_chua_rng/uut/dz}} {{/tb_chua_rng/uut/C1}} {{/tb_chua_rng/uut/C2}} {{/tb_chua_rng/uut/L}} {{/tb_chua_rng/uut/iteration_count}} 
+relaunch_sim
+relaunch_sim
