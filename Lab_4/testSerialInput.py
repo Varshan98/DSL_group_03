@@ -23,6 +23,7 @@ import time
 
 # Adjust this to match your serial port
 SERIAL_PORT = 'COM13'  
+
 BAUD_RATE = 9600
 
 def read_16bit_random(ser):

@@ -8,7 +8,8 @@ module top_module(
         output adc_csn,
         input  adc_dout,
         //UART Tx Pin;
-        output uart_rxd_out
+        output uart_rxd_out,
+        output pio38
 );
 
 //RESET SYSTEM CONFIG;
@@ -16,7 +17,7 @@ wire rstn;
 wire rst;
 assign rstn = ~btn0;
 assign rst = btn1;
-
+assign pio38 = uart_rxd_out;
 //CLOCK TREE CONFIG;
 wire CLK500Hz,CLK1Hz,CLK_ADC,CLK_UART,CLK2Hz;
 
@@ -47,7 +48,6 @@ wire [15:0] Send_data;
         
 //EXTERNAL ADC MCP3202 CONFIG;
 // DRV FREQ : 2MHZ;
-
 // CHANNEL : ONLY CHANNEL 0; 
 localparam  SINGLE_CHAN0  = 2'b10;
 localparam  SINGLE_CHAN1  = 2'b11;

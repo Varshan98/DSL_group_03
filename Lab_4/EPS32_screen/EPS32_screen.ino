@@ -49,7 +49,7 @@ void loop() {
     uint16_t value = (highByte << 8) | lowByte;
 
     // Convert to string
-    String receivedMessage = String(value);
+    receivedMessage = String(value);
 
     // Print to Serial Monitor
     Serial.print("Received 16-bit value: ");
@@ -65,6 +65,5 @@ void loop() {
     oled.println(receivedMessage);
     oled.display();
   }
-
 }
 
