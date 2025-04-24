@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-| Date         : Wed Apr 23 14:59:01 2025
+| Date         : Thu Apr 24 16:22:21 2025
 | Host         : Suriya running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file top_module_control_sets_placed.rpt
 | Design       : top_module
@@ -23,11 +23,11 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Total control sets                                       |   143 |
-|    Minimum number of control sets                        |   143 |
+| Total control sets                                       |   147 |
+|    Minimum number of control sets                        |   147 |
 |    Addition due to synthesis replication                 |     0 |
 |    Addition due to physical synthesis replication        |     0 |
-| Unused register locations in slices containing registers |   954 |
+| Unused register locations in slices containing registers |   975 |
 +----------------------------------------------------------+-------+
 * Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
 ** Run report_qor_suggestions for automated merging and remapping suggestions
@@ -39,15 +39,15 @@ Table of Contents
 +--------------------+-------+
 |       Fanout       | Count |
 +--------------------+-------+
-| Total control sets |   143 |
-| >= 0 to < 4        |   135 |
+| Total control sets |   147 |
+| >= 0 to < 4        |   136 |
 | >= 4 to < 6        |     2 |
-| >= 6 to < 8        |     0 |
-| >= 8 to < 10       |     0 |
+| >= 6 to < 8        |     1 |
+| >= 8 to < 10       |     1 |
 | >= 10 to < 12      |     1 |
 | >= 12 to < 14      |     1 |
 | >= 14 to < 16      |     1 |
-| >= 16              |     3 |
+| >= 16              |     4 |
 +--------------------+-------+
 * Control sets can be remapped at either synth_design or opt_design
 
@@ -58,11 +58,11 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |               1 |            1 |
-| No           | No                    | Yes                    |             262 |          154 |
-| No           | Yes                   | No                     |              49 |           49 |
-| Yes          | No                    | No                     |              23 |           19 |
-| Yes          | No                    | Yes                    |               7 |            4 |
+| No           | No                    | No                     |               2 |            2 |
+| No           | No                    | Yes                    |             123 |           69 |
+| No           | Yes                   | No                     |              49 |           48 |
+| Yes          | No                    | No                     |              23 |           13 |
+| Yes          | No                    | Yes                    |             164 |           91 |
 | Yes          | Yes                   | No                     |               0 |            0 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
@@ -73,149 +73,153 @@ Table of Contents
 +---------------------------------------+----------------------------------+--------------------------------------+------------------+----------------+--------------+
 |              Clock Signal             |           Enable Signal          |           Set/Reset Signal           | Slice Load Count | Bel Load Count | Bels / Slice |
 +---------------------------------------+----------------------------------+--------------------------------------+------------------+----------------+--------------+
-|  CLK_ADC_BUFG                         |                                  |                                      |                1 |              1 |         1.00 |
+| ~clk_div_u5/clkout_r_reg_0            |                                  | drv_uart_u0/ap_vaild_reg_1           |                1 |              1 |         1.00 |
+|  chua_rng_data/v1_reg[9]_LDC_i_1_n_0  |                                  | chua_rng_data/v1_reg[9]_LDC_i_2_n_0  |                1 |              1 |         1.00 |
+|  chua_rng_data/v1_reg[8]_LDC_i_1_n_0  |                                  | chua_rng_data/v1_reg[8]_LDC_i_2_n_0  |                1 |              1 |         1.00 |
+|  chua_rng_data/v2_reg[9]_LDC_i_1_n_0  |                                  | chua_rng_data/v2_reg[9]_LDC_i_2_n_0  |                1 |              1 |         1.00 |
+|  chua_rng_data/v2_reg[8]_LDC_i_1_n_0  |                                  | chua_rng_data/v2_reg[8]_LDC_i_2_n_0  |                1 |              1 |         1.00 |
+|  chua_rng_data/v2_reg[10]_LDC_i_1_n_0 |                                  | chua_rng_data/v2_reg[10]_LDC_i_2_n_0 |                1 |              1 |         1.00 |
+| ~clk_div_u5/clkout_r_reg_0            |                                  | drv_uart_u0/ap_vaild_reg_0           |                1 |              1 |         1.00 |
+| ~clk_div_u5/clkout_r_reg_0            |                                  | drv_uart_u0/ap_vaild_reg_15          |                1 |              1 |         1.00 |
+| ~clk_div_u5/clkout_r_reg_0            |                                  | drv_uart_u0/ap_vaild_reg_16          |                1 |              1 |         1.00 |
+| ~clk_div_u5/clkout_r_reg_0            |                                  | drv_uart_u0/ap_vaild_reg_4           |                1 |              1 |         1.00 |
+| ~clk_div_u5/clkout_r_reg_0            |                                  | drv_uart_u0/ap_vaild_reg_2           |                1 |              1 |         1.00 |
+| ~clk_div_u5/clkout_r_reg_0            |                                  | drv_uart_u0/ap_vaild_reg_14          |                1 |              1 |         1.00 |
+| ~clk_div_u5/clkout_r_reg_0            |                                  | drv_uart_u0/ap_vaild_reg_12          |                1 |              1 |         1.00 |
+| ~clk_div_u5/clkout_r_reg_0            |                                  | drv_uart_u0/ap_vaild_reg_6           |                1 |              1 |         1.00 |
+| ~clk_div_u5/clkout_r_reg_0            |                                  | drv_uart_u0/ap_vaild_reg_5           |                1 |              1 |         1.00 |
+| ~clk_div_u5/clkout_r_reg_0            |                                  | drv_uart_u0/ap_vaild_reg_7           |                1 |              1 |         1.00 |
+| ~clk_div_u5/clkout_r_reg_0            |                                  | drv_uart_u0/ap_vaild_reg_9           |                1 |              1 |         1.00 |
+| ~clk_div_u5/clkout_r_reg_0            |                                  | drv_uart_u0/ap_vaild_reg_8           |                1 |              1 |         1.00 |
+|  drv_uart_u0/ap_vaild_reg_0           |                                  | drv_uart_u0/ap_vaild_reg_1           |                1 |              1 |         1.00 |
+| ~clk_div_u5/clkout_r_reg_0            |                                  | drv_uart_u0/ap_vaild_reg_10          |                1 |              1 |         1.00 |
+| ~clk_div_u5/clkout_r_reg_0            |                                  | drv_uart_u0/ap_vaild_reg_13          |                1 |              1 |         1.00 |
+| ~clk_div_u5/clkout_r_reg_0            |                                  | drv_uart_u0/ap_vaild_reg_3           |                1 |              1 |         1.00 |
+| ~clk_div_u5/clkout_r_reg_0            |                                  | drv_uart_u0/ap_vaild_reg_11          |                1 |              1 |         1.00 |
+| ~clk_div_u5/clkout_r_reg_0            |                                  | btn0_IBUF                            |                1 |              1 |         1.00 |
+|  drv_mcp3202_u0/ap_vaild_reg_15       |                                  | drv_mcp3202_u0/ap_vaild_reg_8        |                1 |              1 |         1.00 |
+|  drv_mcp3202_u0/ap_vaild_reg_16       |                                  | drv_mcp3202_u0/ap_vaild_reg_7        |                1 |              1 |         1.00 |
+|  drv_mcp3202_u0/ap_vaild_reg_17       |                                  | drv_mcp3202_u0/ap_vaild_reg_6        |                1 |              1 |         1.00 |
+|  drv_mcp3202_u0/ap_vaild_reg_18       |                                  | drv_mcp3202_u0/ap_vaild_reg_5        |                1 |              1 |         1.00 |
 |  drv_mcp3202_u0/ap_vaild_reg_19       |                                  | drv_mcp3202_u0/ap_vaild_reg_4        |                1 |              1 |         1.00 |
-|  CLK_ADC_BUFG                         |                                  | drv_mcp3202_u0/ap_vaild_reg_1        |                1 |              1 |         1.00 |
-|  CLK_ADC_BUFG                         |                                  | drv_mcp3202_u0/ap_vaild_reg_11       |                1 |              1 |         1.00 |
-|  CLK_ADC_BUFG                         |                                  | drv_mcp3202_u0/ap_vaild_reg_6        |                1 |              1 |         1.00 |
-|  CLK_ADC_BUFG                         |                                  | drv_mcp3202_u0/ap_vaild_reg_7        |                1 |              1 |         1.00 |
-|  CLK_ADC_BUFG                         |                                  | drv_mcp3202_u0/ap_vaild_reg_18       |                1 |              1 |         1.00 |
-|  CLK_ADC_BUFG                         |                                  | drv_mcp3202_u0/ap_vaild_reg_21       |                1 |              1 |         1.00 |
-|  CLK_ADC_BUFG                         |                                  | drv_mcp3202_u0/ap_vaild_reg_0        |                1 |              1 |         1.00 |
-|  CLK_ADC_BUFG                         |                                  | drv_mcp3202_u0/ap_vaild_reg_10       |                1 |              1 |         1.00 |
-|  CLK_ADC_BUFG                         |                                  | drv_mcp3202_u0/ap_vaild_reg_16       |                1 |              1 |         1.00 |
-|  CLK_ADC_BUFG                         |                                  | drv_mcp3202_u0/ap_vaild_reg_23       |                1 |              1 |         1.00 |
-|  CLK_ADC_BUFG                         |                                  | drv_mcp3202_u0/ap_vaild_reg_14       |                1 |              1 |         1.00 |
-|  CLK_ADC_BUFG                         |                                  | drv_mcp3202_u0/ap_vaild_reg_22       |                1 |              1 |         1.00 |
-|  CLK_ADC_BUFG                         |                                  | drv_mcp3202_u0/ap_vaild_reg_8        |                1 |              1 |         1.00 |
-|  CLK_ADC_BUFG                         |                                  | drv_mcp3202_u0/ap_vaild_reg_17       |                1 |              1 |         1.00 |
-|  CLK_ADC_BUFG                         |                                  | drv_mcp3202_u0/ap_vaild_reg_9        |                1 |              1 |         1.00 |
-|  CLK_ADC_BUFG                         |                                  | drv_mcp3202_u0/ap_vaild_reg_13       |                1 |              1 |         1.00 |
-|  CLK_ADC_BUFG                         |                                  | drv_mcp3202_u0/ap_vaild_reg_4        |                1 |              1 |         1.00 |
-|  CLK_ADC_BUFG                         |                                  | drv_mcp3202_u0/ap_vaild_reg_24       |                1 |              1 |         1.00 |
-|  CLK_ADC_BUFG                         |                                  | drv_mcp3202_u0/ap_vaild_reg_2        |                1 |              1 |         1.00 |
-|  CLK_ADC_BUFG                         |                                  | drv_mcp3202_u0/ap_vaild_reg_5        |                1 |              1 |         1.00 |
-|  CLK_ADC_BUFG                         |                                  | drv_mcp3202_u0/ap_vaild_reg_15       |                1 |              1 |         1.00 |
-|  CLK_ADC_BUFG                         |                                  | drv_mcp3202_u0/ap_vaild_reg_20       |                1 |              1 |         1.00 |
-|  CLK_ADC_BUFG                         |                                  | drv_mcp3202_u0/ap_vaild_reg_3        |                1 |              1 |         1.00 |
-|  CLK_ADC_BUFG                         |                                  | drv_mcp3202_u0/ap_vaild_reg_19       |                1 |              1 |         1.00 |
-|  CLK_ADC_BUFG                         |                                  | drv_mcp3202_u0/ap_vaild_reg_12       |                1 |              1 |         1.00 |
+|  drv_mcp3202_u0/ap_vaild_reg_21       |                                  | drv_mcp3202_u0/ap_vaild_reg_2        |                1 |              1 |         1.00 |
+|  drv_mcp3202_u0/ap_vaild_reg_22       |                                  | drv_mcp3202_u0/ap_vaild_reg_1        |                1 |              1 |         1.00 |
+|  drv_mcp3202_u0/ap_vaild_reg_23       |                                  | drv_mcp3202_u0/ap_vaild_reg_0        |                1 |              1 |         1.00 |
+|  drv_mcp3202_u0/ap_vaild_reg_13       |                                  | drv_mcp3202_u0/ap_vaild_reg_10       |                1 |              1 |         1.00 |
+|  drv_mcp3202_u0/ap_vaild_reg_20       |                                  | drv_mcp3202_u0/ap_vaild_reg_3        |                1 |              1 |         1.00 |
 |  drv_mcp3202_u0/ap_vaild_reg_12       |                                  | drv_mcp3202_u0/ap_vaild_reg_11       |                1 |              1 |         1.00 |
+|  drv_mcp3202_u0/ap_vaild_reg_14       |                                  | drv_mcp3202_u0/ap_vaild_reg_9        |                1 |              1 |         1.00 |
+|  chua_rng_data/v2_reg[3]_LDC_i_1_n_0  |                                  | chua_rng_data/v2_reg[3]_LDC_i_2_n_0  |                1 |              1 |         1.00 |
+|  drv_uart_u0/ap_vaild_reg_4           |                                  | drv_uart_u0/ap_vaild_reg_5           |                1 |              1 |         1.00 |
+|  drv_uart_u0/ap_vaild_reg_2           |                                  | drv_uart_u0/ap_vaild_reg_3           |                1 |              1 |         1.00 |
+|  drv_uart_u0/ap_vaild_reg_14          |                                  | drv_uart_u0/ap_vaild_reg_15          |                1 |              1 |         1.00 |
+|  drv_uart_u0/ap_vaild_reg_12          |                                  | drv_uart_u0/ap_vaild_reg_13          |                1 |              1 |         1.00 |
+|  drv_uart_u0/ap_vaild_reg_6           |                                  | drv_uart_u0/ap_vaild_reg_7           |                1 |              1 |         1.00 |
 |  drv_uart_u0/ap_vaild_reg_8           |                                  | drv_uart_u0/ap_vaild_reg_9           |                1 |              1 |         1.00 |
 |  drv_uart_u0/ap_vaild_reg_10          |                                  | drv_uart_u0/ap_vaild_reg_11          |                1 |              1 |         1.00 |
-|  drv_uart_u0/ap_vaild_reg_2           |                                  | drv_uart_u0/ap_vaild_reg_3           |                1 |              1 |         1.00 |
-| ~CLK_ADC_BUFG                         | drv_mcp3202_u0/port_dout_i_1_n_0 | btn0_IBUF                            |                1 |              1 |         1.00 |
-|  drv_uart_u0/ap_vaild_reg_0           |                                  | drv_uart_u0/ap_vaild_reg_1           |                1 |              1 |         1.00 |
-|  drv_uart_u0/ap_vaild_reg_12          |                                  | drv_uart_u0/ap_vaild_reg_13          |                1 |              1 |         1.00 |
-|  CLK_UART_BUFG                        |                                  | chua_rng_data/v1_reg[11]_LDC_i_1_n_0 |                1 |              1 |         1.00 |
-|  CLK_UART_BUFG                        |                                  | chua_rng_data/v1_reg[11]_LDC_i_2_n_0 |                1 |              1 |         1.00 |
-|  CLK_UART_BUFG                        |                                  | chua_rng_data/v1_reg[10]_LDC_i_2_n_0 |                1 |              1 |         1.00 |
-|  CLK_UART_BUFG                        |                                  | chua_rng_data/v1_reg[10]_LDC_i_1_n_0 |                1 |              1 |         1.00 |
-|  CLK_UART_BUFG                        |                                  | chua_rng_data/v1_reg[5]_LDC_i_1_n_0  |                1 |              1 |         1.00 |
-|  CLK_UART_BUFG                        |                                  | chua_rng_data/v1_reg[7]_LDC_i_2_n_0  |                1 |              1 |         1.00 |
-|  CLK_UART_BUFG                        |                                  | chua_rng_data/v1_reg[8]_LDC_i_2_n_0  |                1 |              1 |         1.00 |
-|  CLK_UART_BUFG                        |                                  | chua_rng_data/v1_reg[5]_LDC_i_2_n_0  |                1 |              1 |         1.00 |
-|  CLK_UART_BUFG                        |                                  | chua_rng_data/v1_reg[9]_LDC_i_2_n_0  |                1 |              1 |         1.00 |
-|  CLK_UART_BUFG                        |                                  | chua_rng_data/v1_reg[8]_LDC_i_1_n_0  |                1 |              1 |         1.00 |
-|  CLK_UART_BUFG                        |                                  | chua_rng_data/v1_reg[7]_LDC_i_1_n_0  |                1 |              1 |         1.00 |
-|  CLK_UART_BUFG                        |                                  | chua_rng_data/v1_reg[6]_LDC_i_1_n_0  |                1 |              1 |         1.00 |
-|  CLK_UART_BUFG                        |                                  | chua_rng_data/v1_reg[6]_LDC_i_2_n_0  |                1 |              1 |         1.00 |
-|  CLK_UART_BUFG                        |                                  | chua_rng_data/v1_reg[3]_LDC_i_2_n_0  |                1 |              1 |         1.00 |
-|  CLK_UART_BUFG                        |                                  | chua_rng_data/v1_reg[4]_LDC_i_2_n_0  |                1 |              1 |         1.00 |
-|  CLK_UART_BUFG                        |                                  | chua_rng_data/v1_reg[9]_LDC_i_1_n_0  |                1 |              1 |         1.00 |
-|  CLK_UART_BUFG                        |                                  | chua_rng_data/v1_reg[3]_LDC_i_1_n_0  |                1 |              1 |         1.00 |
-|  CLK_UART_BUFG                        |                                  | chua_rng_data/v1_reg[4]_LDC_i_1_n_0  |                1 |              1 |         1.00 |
-|  CLK_UART_BUFG                        |                                  | chua_rng_data/v2_reg[3]_LDC_i_1_n_0  |                1 |              1 |         1.00 |
-|  CLK_UART_BUFG                        |                                  | chua_rng_data/v2_reg[3]_LDC_i_2_n_0  |                1 |              1 |         1.00 |
-|  CLK_UART_BUFG                        |                                  | chua_rng_data/v2_reg[4]_LDC_i_1_n_0  |                1 |              1 |         1.00 |
-|  CLK_UART_BUFG                        |                                  | chua_rng_data/v2_reg[4]_LDC_i_2_n_0  |                1 |              1 |         1.00 |
-|  CLK_UART_BUFG                        |                                  | chua_rng_data/v2_reg[10]_LDC_i_2_n_0 |                1 |              1 |         1.00 |
-|  CLK_UART_BUFG                        |                                  | chua_rng_data/v2_reg[10]_LDC_i_1_n_0 |                1 |              1 |         1.00 |
-|  CLK_UART_BUFG                        |                                  | chua_rng_data/v2_reg[7]_LDC_i_1_n_0  |                1 |              1 |         1.00 |
-|  CLK_UART_BUFG                        |                                  | chua_rng_data/v2_reg[8]_LDC_i_1_n_0  |                1 |              1 |         1.00 |
-|  CLK_UART_BUFG                        |                                  | chua_rng_data/v2_reg[6]_LDC_i_1_n_0  |                1 |              1 |         1.00 |
-|  CLK_UART_BUFG                        |                                  | chua_rng_data/v2_reg[9]_LDC_i_1_n_0  |                1 |              1 |         1.00 |
-|  CLK_UART_BUFG                        |                                  | chua_rng_data/v2_reg[6]_LDC_i_2_n_0  |                1 |              1 |         1.00 |
-|  CLK_UART_BUFG                        |                                  | chua_rng_data/v2_reg[7]_LDC_i_2_n_0  |                1 |              1 |         1.00 |
-|  CLK_UART_BUFG                        |                                  | chua_rng_data/v2_reg[5]_LDC_i_1_n_0  |                1 |              1 |         1.00 |
-|  CLK_UART_BUFG                        |                                  | chua_rng_data/v2_reg[5]_LDC_i_2_n_0  |                1 |              1 |         1.00 |
-|  CLK_UART_BUFG                        |                                  | chua_rng_data/v2_reg[8]_LDC_i_2_n_0  |                1 |              1 |         1.00 |
-|  CLK_UART_BUFG                        |                                  | chua_rng_data/v2_reg[9]_LDC_i_2_n_0  |                1 |              1 |         1.00 |
-|  drv_uart_u0/ap_vaild_reg_14          |                                  | drv_uart_u0/ap_vaild_reg_15          |                1 |              1 |         1.00 |
-|  drv_uart_u0/ap_vaild_reg_4           |                                  | drv_uart_u0/ap_vaild_reg_5           |                1 |              1 |         1.00 |
-|  drv_uart_u0/ap_vaild_reg_6           |                                  | drv_uart_u0/ap_vaild_reg_7           |                1 |              1 |         1.00 |
-|  chua_rng_data/v1_reg[3]_LDC_i_1_n_0  |                                  | chua_rng_data/v1_reg[3]_LDC_i_2_n_0  |                1 |              1 |         1.00 |
-|  chua_rng_data/v1_reg[11]_LDC_i_1_n_0 |                                  | chua_rng_data/v1_reg[11]_LDC_i_2_n_0 |                1 |              1 |         1.00 |
-|  chua_rng_data/v1_reg[10]_LDC_i_1_n_0 |                                  | chua_rng_data/v1_reg[10]_LDC_i_2_n_0 |                1 |              1 |         1.00 |
-|  chua_rng_data/v1_reg[5]_LDC_i_1_n_0  |                                  | chua_rng_data/v1_reg[5]_LDC_i_2_n_0  |                1 |              1 |         1.00 |
-|  chua_rng_data/v1_reg[8]_LDC_i_1_n_0  |                                  | chua_rng_data/v1_reg[8]_LDC_i_2_n_0  |                1 |              1 |         1.00 |
-|  chua_rng_data/v1_reg[7]_LDC_i_1_n_0  |                                  | chua_rng_data/v1_reg[7]_LDC_i_2_n_0  |                1 |              1 |         1.00 |
-|  chua_rng_data/v1_reg[6]_LDC_i_1_n_0  |                                  | chua_rng_data/v1_reg[6]_LDC_i_2_n_0  |                1 |              1 |         1.00 |
-|  chua_rng_data/v1_reg[9]_LDC_i_1_n_0  |                                  | chua_rng_data/v1_reg[9]_LDC_i_2_n_0  |                1 |              1 |         1.00 |
-|  chua_rng_data/v1_reg[4]_LDC_i_1_n_0  |                                  | chua_rng_data/v1_reg[4]_LDC_i_2_n_0  |                1 |              1 |         1.00 |
-|  chua_rng_data/v2_reg[3]_LDC_i_1_n_0  |                                  | chua_rng_data/v2_reg[3]_LDC_i_2_n_0  |                1 |              1 |         1.00 |
+|  CLK_ADC_BUFG                         |                                  |                                      |                1 |              1 |         1.00 |
+|  CLK_ADC_BUFG                         |                                  | drv_mcp3202_u0/ap_vaild_reg_15       |                1 |              1 |         1.00 |
+|  CLK_ADC_BUFG                         |                                  | drv_mcp3202_u0/ap_vaild_reg_16       |                1 |              1 |         1.00 |
+|  CLK_ADC_BUFG                         |                                  | drv_mcp3202_u0/ap_vaild_reg_17       |                1 |              1 |         1.00 |
+|  CLK_ADC_BUFG                         |                                  | drv_mcp3202_u0/ap_vaild_reg_18       |                1 |              1 |         1.00 |
+|  CLK_ADC_BUFG                         |                                  | drv_mcp3202_u0/ap_vaild_reg_19       |                1 |              1 |         1.00 |
+|  CLK_ADC_BUFG                         |                                  | drv_mcp3202_u0/ap_vaild_reg_21       |                1 |              1 |         1.00 |
+|  CLK_ADC_BUFG                         |                                  | drv_mcp3202_u0/ap_vaild_reg_22       |                1 |              1 |         1.00 |
+|  CLK_ADC_BUFG                         |                                  | drv_mcp3202_u0/ap_vaild_reg_23       |                1 |              1 |         1.00 |
+|  CLK_ADC_BUFG                         |                                  | drv_mcp3202_u0/ap_vaild_reg_13       |                1 |              1 |         1.00 |
+|  CLK_ADC_BUFG                         |                                  | drv_mcp3202_u0/ap_vaild_reg_3        |                1 |              1 |         1.00 |
+|  CLK_ADC_BUFG                         |                                  | drv_mcp3202_u0/ap_vaild_reg_4        |                1 |              1 |         1.00 |
+|  CLK_ADC_BUFG                         |                                  | drv_mcp3202_u0/ap_vaild_reg_6        |                1 |              1 |         1.00 |
+|  CLK_ADC_BUFG                         |                                  | drv_mcp3202_u0/ap_vaild_reg_8        |                1 |              1 |         1.00 |
+|  CLK_ADC_BUFG                         |                                  | drv_mcp3202_u0/ap_vaild_reg_11       |                1 |              1 |         1.00 |
+|  CLK_ADC_BUFG                         |                                  | drv_mcp3202_u0/ap_vaild_reg_24       |                1 |              1 |         1.00 |
+|  CLK_ADC_BUFG                         |                                  | drv_mcp3202_u0/ap_vaild_reg_10       |                1 |              1 |         1.00 |
+|  CLK_ADC_BUFG                         |                                  | drv_mcp3202_u0/ap_vaild_reg_2        |                1 |              1 |         1.00 |
+|  CLK_ADC_BUFG                         |                                  | drv_mcp3202_u0/ap_vaild_reg_5        |                1 |              1 |         1.00 |
+|  CLK_ADC_BUFG                         |                                  | drv_mcp3202_u0/ap_vaild_reg_7        |                1 |              1 |         1.00 |
+|  CLK_ADC_BUFG                         |                                  | drv_mcp3202_u0/ap_vaild_reg_0        |                1 |              1 |         1.00 |
+|  CLK_ADC_BUFG                         |                                  | drv_mcp3202_u0/ap_vaild_reg_20       |                1 |              1 |         1.00 |
+|  CLK_ADC_BUFG                         |                                  | drv_mcp3202_u0/ap_vaild_reg_1        |                1 |              1 |         1.00 |
+|  CLK_ADC_BUFG                         |                                  | drv_mcp3202_u0/ap_vaild_reg_12       |                1 |              1 |         1.00 |
+|  CLK_ADC_BUFG                         |                                  | drv_mcp3202_u0/ap_vaild_reg_14       |                1 |              1 |         1.00 |
+|  CLK_ADC_BUFG                         |                                  | drv_mcp3202_u0/ap_vaild_reg_9        |                1 |              1 |         1.00 |
 |  chua_rng_data/v2_reg[4]_LDC_i_1_n_0  |                                  | chua_rng_data/v2_reg[4]_LDC_i_2_n_0  |                1 |              1 |         1.00 |
-|  chua_rng_data/v2_reg[10]_LDC_i_1_n_0 |                                  | chua_rng_data/v2_reg[10]_LDC_i_2_n_0 |                1 |              1 |         1.00 |
-|  chua_rng_data/v2_reg[7]_LDC_i_1_n_0  |                                  | chua_rng_data/v2_reg[7]_LDC_i_2_n_0  |                1 |              1 |         1.00 |
-|  chua_rng_data/v2_reg[8]_LDC_i_1_n_0  |                                  | chua_rng_data/v2_reg[8]_LDC_i_2_n_0  |                1 |              1 |         1.00 |
 |  chua_rng_data/v2_reg[6]_LDC_i_1_n_0  |                                  | chua_rng_data/v2_reg[6]_LDC_i_2_n_0  |                1 |              1 |         1.00 |
-|  chua_rng_data/v2_reg[9]_LDC_i_1_n_0  |                                  | chua_rng_data/v2_reg[9]_LDC_i_2_n_0  |                1 |              1 |         1.00 |
+|  chua_rng_data/v2_reg[7]_LDC_i_1_n_0  |                                  | chua_rng_data/v2_reg[7]_LDC_i_2_n_0  |                1 |              1 |         1.00 |
+|  sysclk_IBUF_BUFG                     | chua_rng_data/counter            | chua_rng_data/v1_reg[5]_LDC_i_1_n_0  |                1 |              1 |         1.00 |
+| ~CLK_ADC_BUFG                         | drv_mcp3202_u0/port_dout_i_1_n_0 | btn0_IBUF                            |                1 |              1 |         1.00 |
+|  sysclk_IBUF_BUFG                     | chua_rng_data/counter            | chua_rng_data/v1_reg[4]_LDC_i_1_n_0  |                1 |              1 |         1.00 |
+|  sysclk_IBUF_BUFG                     | chua_rng_data/counter            | chua_rng_data/v1_reg[6]_LDC_i_2_n_0  |                1 |              1 |         1.00 |
+|  sysclk_IBUF_BUFG                     | chua_rng_data/counter            | chua_rng_data/v1_reg[11]_LDC_i_2_n_0 |                1 |              1 |         1.00 |
+|  sysclk_IBUF_BUFG                     | chua_rng_data/counter            | chua_rng_data/v1_reg[7]_LDC_i_1_n_0  |                1 |              1 |         1.00 |
+|  sysclk_IBUF_BUFG                     | chua_rng_data/counter            | chua_rng_data/v1_reg[10]_LDC_i_1_n_0 |                1 |              1 |         1.00 |
+|  sysclk_IBUF_BUFG                     | chua_rng_data/counter            | chua_rng_data/v1_reg[4]_LDC_i_2_n_0  |                1 |              1 |         1.00 |
+|  sysclk_IBUF_BUFG                     | chua_rng_data/counter            | chua_rng_data/v1_reg[10]_LDC_i_2_n_0 |                1 |              1 |         1.00 |
+|  sysclk_IBUF_BUFG                     | chua_rng_data/counter            | chua_rng_data/v1_reg[6]_LDC_i_1_n_0  |                1 |              1 |         1.00 |
+|  sysclk_IBUF_BUFG                     | chua_rng_data/counter            | chua_rng_data/v1_reg[7]_LDC_i_2_n_0  |                1 |              1 |         1.00 |
+|  sysclk_IBUF_BUFG                     | chua_rng_data/counter            | chua_rng_data/v1_reg[11]_LDC_i_1_n_0 |                1 |              1 |         1.00 |
+|  sysclk_IBUF_BUFG                     | chua_rng_data/counter            | chua_rng_data/v1_reg[3]_LDC_i_1_n_0  |                1 |              1 |         1.00 |
+|  sysclk_IBUF_BUFG                     | chua_rng_data/counter            | chua_rng_data/v1_reg[3]_LDC_i_2_n_0  |                1 |              1 |         1.00 |
+|  sysclk_IBUF_BUFG                     | chua_rng_data/counter            | chua_rng_data/v1_reg[5]_LDC_i_2_n_0  |                1 |              1 |         1.00 |
+|  sysclk_IBUF_BUFG                     | chua_rng_data/counter            | chua_rng_data/v1_reg[9]_LDC_i_1_n_0  |                1 |              1 |         1.00 |
+|  sysclk_IBUF_BUFG                     | chua_rng_data/counter            | chua_rng_data/v1_reg[8]_LDC_i_1_n_0  |                1 |              1 |         1.00 |
+|  sysclk_IBUF_BUFG                     | chua_rng_data/counter            | chua_rng_data/v1_reg[8]_LDC_i_2_n_0  |                1 |              1 |         1.00 |
+|  sysclk_IBUF_BUFG                     | chua_rng_data/counter            | chua_rng_data/v1_reg[9]_LDC_i_2_n_0  |                1 |              1 |         1.00 |
+|  sysclk_IBUF_BUFG                     | chua_rng_data/counter            | chua_rng_data/v2_reg[7]_LDC_i_2_n_0  |                1 |              1 |         1.00 |
+|  sysclk_IBUF_BUFG                     | chua_rng_data/counter            | chua_rng_data/v2_reg[9]_LDC_i_1_n_0  |                1 |              1 |         1.00 |
+|  sysclk_IBUF_BUFG                     | chua_rng_data/counter            | chua_rng_data/v2_reg[3]_LDC_i_2_n_0  |                1 |              1 |         1.00 |
+|  sysclk_IBUF_BUFG                     | chua_rng_data/counter            | chua_rng_data/v2_reg[5]_LDC_i_2_n_0  |                1 |              1 |         1.00 |
+|  sysclk_IBUF_BUFG                     | chua_rng_data/counter            | chua_rng_data/v2_reg[8]_LDC_i_1_n_0  |                1 |              1 |         1.00 |
+|  sysclk_IBUF_BUFG                     | chua_rng_data/counter            | chua_rng_data/v2_reg[8]_LDC_i_2_n_0  |                1 |              1 |         1.00 |
+|  sysclk_IBUF_BUFG                     | chua_rng_data/counter            | chua_rng_data/v2_reg[9]_LDC_i_2_n_0  |                1 |              1 |         1.00 |
+|  sysclk_IBUF_BUFG                     | chua_rng_data/counter            | chua_rng_data/v2_reg[10]_LDC_i_1_n_0 |                1 |              1 |         1.00 |
+|  sysclk_IBUF_BUFG                     | chua_rng_data/counter            | chua_rng_data/v2_reg[4]_LDC_i_2_n_0  |                1 |              1 |         1.00 |
+|  sysclk_IBUF_BUFG                     | chua_rng_data/counter            | chua_rng_data/v2_reg[10]_LDC_i_2_n_0 |                1 |              1 |         1.00 |
+|  sysclk_IBUF_BUFG                     | chua_rng_data/counter            | chua_rng_data/v2_reg[3]_LDC_i_1_n_0  |                1 |              1 |         1.00 |
+|  sysclk_IBUF_BUFG                     | chua_rng_data/counter            | chua_rng_data/v2_reg[4]_LDC_i_1_n_0  |                1 |              1 |         1.00 |
+|  sysclk_IBUF_BUFG                     | chua_rng_data/counter            | chua_rng_data/v2_reg[6]_LDC_i_1_n_0  |                1 |              1 |         1.00 |
+|  sysclk_IBUF_BUFG                     | chua_rng_data/counter            | chua_rng_data/v2_reg[7]_LDC_i_1_n_0  |                1 |              1 |         1.00 |
+|  sysclk_IBUF_BUFG                     | chua_rng_data/counter            | chua_rng_data/v2_reg[6]_LDC_i_2_n_0  |                1 |              1 |         1.00 |
+|  sysclk_IBUF_BUFG                     | chua_rng_data/counter            | chua_rng_data/v2_reg[5]_LDC_i_1_n_0  |                1 |              1 |         1.00 |
+|  clk_div_u1/clkout_r                  |                                  |                                      |                1 |              1 |         1.00 |
 |  chua_rng_data/v2_reg[5]_LDC_i_1_n_0  |                                  | chua_rng_data/v2_reg[5]_LDC_i_2_n_0  |                1 |              1 |         1.00 |
-| ~clk_div_u5/clkout_r                  |                                  | btn0_IBUF                            |                1 |              1 |         1.00 |
-| ~clk_div_u5/clkout_r                  |                                  | drv_uart_u0/ap_vaild_reg_8           |                1 |              1 |         1.00 |
-| ~clk_div_u5/clkout_r                  |                                  | drv_uart_u0/ap_vaild_reg_5           |                1 |              1 |         1.00 |
-| ~clk_div_u5/clkout_r                  |                                  | drv_uart_u0/ap_vaild_reg_11          |                1 |              1 |         1.00 |
-| ~clk_div_u5/clkout_r                  |                                  | drv_uart_u0/ap_vaild_reg_13          |                1 |              1 |         1.00 |
-| ~clk_div_u5/clkout_r                  |                                  | drv_uart_u0/ap_vaild_reg_10          |                1 |              1 |         1.00 |
-| ~clk_div_u5/clkout_r                  |                                  | drv_uart_u0/ap_vaild_reg_3           |                1 |              1 |         1.00 |
-| ~clk_div_u5/clkout_r                  |                                  | drv_uart_u0/ap_vaild_reg_9           |                1 |              1 |         1.00 |
-| ~clk_div_u5/clkout_r                  |                                  | drv_uart_u0/ap_vaild_reg_2           |                1 |              1 |         1.00 |
-| ~clk_div_u5/clkout_r                  |                                  | drv_uart_u0/ap_vaild_reg_0           |                1 |              1 |         1.00 |
-| ~clk_div_u5/clkout_r                  |                                  | drv_uart_u0/ap_vaild_reg_1           |                1 |              1 |         1.00 |
-| ~clk_div_u5/clkout_r                  |                                  | drv_uart_u0/ap_vaild_reg_12          |                1 |              1 |         1.00 |
-| ~clk_div_u5/clkout_r                  |                                  | drv_uart_u0/ap_vaild_reg_14          |                1 |              1 |         1.00 |
-| ~clk_div_u5/clkout_r                  |                                  | drv_uart_u0/ap_vaild_reg_16          |                1 |              1 |         1.00 |
-| ~clk_div_u5/clkout_r                  |                                  | drv_uart_u0/ap_vaild_reg_15          |                1 |              1 |         1.00 |
-| ~clk_div_u5/clkout_r                  |                                  | drv_uart_u0/ap_vaild_reg_4           |                1 |              1 |         1.00 |
-| ~clk_div_u5/clkout_r                  |                                  | drv_uart_u0/ap_vaild_reg_6           |                1 |              1 |         1.00 |
-| ~clk_div_u5/clkout_r                  |                                  | drv_uart_u0/ap_vaild_reg_7           |                1 |              1 |         1.00 |
-|  drv_mcp3202_u0/ap_vaild_reg_18       |                                  | drv_mcp3202_u0/ap_vaild_reg_5        |                1 |              1 |         1.00 |
-|  drv_mcp3202_u0/ap_vaild_reg_21       |                                  | drv_mcp3202_u0/ap_vaild_reg_2        |                1 |              1 |         1.00 |
-|  drv_mcp3202_u0/ap_vaild_reg_16       |                                  | drv_mcp3202_u0/ap_vaild_reg_7        |                1 |              1 |         1.00 |
-|  drv_mcp3202_u0/ap_vaild_reg_23       |                                  | drv_mcp3202_u0/ap_vaild_reg_0        |                1 |              1 |         1.00 |
-|  drv_mcp3202_u0/ap_vaild_reg_14       |                                  | drv_mcp3202_u0/ap_vaild_reg_9        |                1 |              1 |         1.00 |
-|  drv_mcp3202_u0/ap_vaild_reg_22       |                                  | drv_mcp3202_u0/ap_vaild_reg_1        |                1 |              1 |         1.00 |
-|  drv_mcp3202_u0/ap_vaild_reg_17       |                                  | drv_mcp3202_u0/ap_vaild_reg_6        |                1 |              1 |         1.00 |
-|  drv_mcp3202_u0/ap_vaild_reg_13       |                                  | drv_mcp3202_u0/ap_vaild_reg_10       |                1 |              1 |         1.00 |
-|  drv_mcp3202_u0/ap_vaild_reg_15       |                                  | drv_mcp3202_u0/ap_vaild_reg_8        |                1 |              1 |         1.00 |
-|  drv_mcp3202_u0/ap_vaild_reg_20       |                                  | drv_mcp3202_u0/ap_vaild_reg_3        |                1 |              1 |         1.00 |
-|  CLK_UART_BUFG                        |                                  | chua_rng_data/iL_reg[5]_LDC_i_1_n_0  |                2 |              2 |         1.00 |
-|  CLK_UART_BUFG                        |                                  | chua_rng_data/iL_reg[1]_LDC_i_1_n_0  |                2 |              2 |         1.00 |
-|  CLK_UART_BUFG                        |                                  | chua_rng_data/iL_reg[3]_LDC_i_2_n_0  |                2 |              2 |         1.00 |
-|  CLK_UART_BUFG                        |                                  | chua_rng_data/iL_reg[0]_LDC_i_1_n_0  |                2 |              2 |         1.00 |
-|  CLK_UART_BUFG                        |                                  | chua_rng_data/iL_reg[2]_LDC_i_2_n_0  |                2 |              2 |         1.00 |
-|  CLK_UART_BUFG                        |                                  | chua_rng_data/iL_reg[1]_LDC_i_2_n_0  |                2 |              2 |         1.00 |
-|  CLK_UART_BUFG                        |                                  | chua_rng_data/iL_reg[4]_LDC_i_2_n_0  |                2 |              2 |         1.00 |
-|  CLK_UART_BUFG                        |                                  | chua_rng_data/iL_reg[2]_LDC_i_1_n_0  |                2 |              2 |         1.00 |
-|  CLK_UART_BUFG                        | drv_uart_u0/tx_i_1_n_0           | btn0_IBUF                            |                1 |              2 |         2.00 |
-|  CLK_UART_BUFG                        |                                  | chua_rng_data/iL_reg[5]_LDC_i_2_n_0  |                2 |              2 |         1.00 |
-|  CLK_UART_BUFG                        |                                  | chua_rng_data/iL_reg[3]_LDC_i_1_n_0  |                2 |              2 |         1.00 |
-|  CLK_UART_BUFG                        |                                  | chua_rng_data/iL_reg[0]_LDC_i_2_n_0  |                2 |              2 |         1.00 |
-|  CLK_UART_BUFG                        |                                  | chua_rng_data/iL_reg[4]_LDC_i_1_n_0  |                2 |              2 |         1.00 |
-|  chua_rng_data/iL_reg[5]_LDC_i_1_n_0  |                                  | chua_rng_data/iL_reg[5]_LDC_i_2_n_0  |                2 |              2 |         1.00 |
-|  chua_rng_data/iL_reg[1]_LDC_i_1_n_0  |                                  | chua_rng_data/iL_reg[1]_LDC_i_2_n_0  |                2 |              2 |         1.00 |
+|  chua_rng_data/v1_reg[4]_LDC_i_1_n_0  |                                  | chua_rng_data/v1_reg[4]_LDC_i_2_n_0  |                1 |              1 |         1.00 |
+|  chua_rng_data/v1_reg[5]_LDC_i_1_n_0  |                                  | chua_rng_data/v1_reg[5]_LDC_i_2_n_0  |                1 |              1 |         1.00 |
+|  chua_rng_data/v1_reg[7]_LDC_i_1_n_0  |                                  | chua_rng_data/v1_reg[7]_LDC_i_2_n_0  |                1 |              1 |         1.00 |
+|  chua_rng_data/v1_reg[10]_LDC_i_1_n_0 |                                  | chua_rng_data/v1_reg[10]_LDC_i_2_n_0 |                1 |              1 |         1.00 |
+|  chua_rng_data/v1_reg[6]_LDC_i_1_n_0  |                                  | chua_rng_data/v1_reg[6]_LDC_i_2_n_0  |                1 |              1 |         1.00 |
+|  chua_rng_data/v1_reg[11]_LDC_i_1_n_0 |                                  | chua_rng_data/v1_reg[11]_LDC_i_2_n_0 |                1 |              1 |         1.00 |
+|  chua_rng_data/v1_reg[3]_LDC_i_1_n_0  |                                  | chua_rng_data/v1_reg[3]_LDC_i_2_n_0  |                1 |              1 |         1.00 |
 |  chua_rng_data/iL_reg[3]_LDC_i_1_n_0  |                                  | chua_rng_data/iL_reg[3]_LDC_i_2_n_0  |                2 |              2 |         1.00 |
 |  chua_rng_data/iL_reg[4]_LDC_i_1_n_0  |                                  | chua_rng_data/iL_reg[4]_LDC_i_2_n_0  |                2 |              2 |         1.00 |
 |  chua_rng_data/iL_reg[0]_LDC_i_1_n_0  |                                  | chua_rng_data/iL_reg[0]_LDC_i_2_n_0  |                2 |              2 |         1.00 |
-|  chua_rng_data/iL_reg[2]_LDC_i_1_n_0  |                                  | chua_rng_data/iL_reg[2]_LDC_i_2_n_0  |                2 |              2 |         1.00 |
-|  CLK_ADC_BUFG                         | drv_mcp3202_u0/fsm_statu[0]      | btn0_IBUF                            |                2 |              4 |         2.00 |
+|  chua_rng_data/iL_reg[1]_LDC_i_1_n_0  |                                  | chua_rng_data/iL_reg[1]_LDC_i_2_n_0  |                2 |              2 |         1.00 |
+|  chua_rng_data/iL_reg[5]_LDC_i_1_n_0  |                                  | chua_rng_data/iL_reg[5]_LDC_i_2_n_0  |                2 |              2 |         1.00 |
+|  chua_rng_data/iL_reg[2]_LDC_i_1_n_0  |                                  | chua_rng_data/iL_reg[2]_LDC_i_2_n_0  |                1 |              2 |         2.00 |
+|  sysclk_IBUF_BUFG                     | chua_rng_data/counter            | chua_rng_data/iL_reg[2]_LDC_i_1_n_0  |                2 |              2 |         1.00 |
+|  clk_div_u4/CLK_UART                  | drv_uart_u0/tx_i_1_n_0           | btn0_IBUF                            |                1 |              2 |         2.00 |
+|  sysclk_IBUF_BUFG                     | chua_rng_data/counter            | chua_rng_data/iL_reg[3]_LDC_i_1_n_0  |                2 |              2 |         1.00 |
+|  sysclk_IBUF_BUFG                     | chua_rng_data/counter            | chua_rng_data/iL_reg[3]_LDC_i_2_n_0  |                2 |              2 |         1.00 |
+|  sysclk_IBUF_BUFG                     | chua_rng_data/counter            | chua_rng_data/iL_reg[4]_LDC_i_1_n_0  |                2 |              2 |         1.00 |
+|  sysclk_IBUF_BUFG                     | chua_rng_data/counter            | chua_rng_data/iL_reg[4]_LDC_i_2_n_0  |                2 |              2 |         1.00 |
+|  sysclk_IBUF_BUFG                     | chua_rng_data/counter            | chua_rng_data/iL_reg[0]_LDC_i_2_n_0  |                2 |              2 |         1.00 |
+|  sysclk_IBUF_BUFG                     | chua_rng_data/counter            | chua_rng_data/iL_reg[2]_LDC_i_2_n_0  |                2 |              2 |         1.00 |
+|  sysclk_IBUF_BUFG                     | chua_rng_data/counter            | chua_rng_data/iL_reg[1]_LDC_i_2_n_0  |                2 |              2 |         1.00 |
+|  sysclk_IBUF_BUFG                     | chua_rng_data/counter            | chua_rng_data/iL_reg[0]_LDC_i_1_n_0  |                2 |              2 |         1.00 |
+|  sysclk_IBUF_BUFG                     | chua_rng_data/counter            | chua_rng_data/iL_reg[1]_LDC_i_1_n_0  |                2 |              2 |         1.00 |
+|  sysclk_IBUF_BUFG                     | chua_rng_data/counter            | chua_rng_data/iL_reg[5]_LDC_i_2_n_0  |                2 |              2 |         1.00 |
+|  sysclk_IBUF_BUFG                     | chua_rng_data/counter            | chua_rng_data/iL_reg[5]_LDC_i_1_n_0  |                2 |              2 |         1.00 |
+|  CLK_ADC_BUFG                         | drv_mcp3202_u0/fsm_statu[0]      | btn0_IBUF                            |                3 |              4 |         1.33 |
 | ~CLK_ADC_BUFG                         |                                  | btn0_IBUF                            |                3 |              4 |         1.33 |
-|  CLK_ADC_BUFG                         | adc_ch_reg[0]                    |                                      |                9 |             11 |         1.22 |
-|  CLK_ADC_BUFG                         | p_0_in[0]                        |                                      |               10 |             12 |         1.20 |
-|  CLK_ADC_BUFG                         |                                  | btn0_IBUF                            |                5 |             15 |         3.00 |
-|  CLK_UART_BUFG                        |                                  | btn0_IBUF                            |                9 |             23 |         2.56 |
-|  sysclk_IBUF_BUFG                     |                                  | btn0_IBUF                            |               10 |             37 |         3.70 |
-|  CLK_UART_BUFG                        |                                  | btn1_IBUF                            |               26 |             82 |         3.15 |
+|  clk_div_u4/CLK_UART                  |                                  | btn0_IBUF                            |                2 |              7 |         3.50 |
+|  clk_div_u1/clkout_r                  |                                  | btn0_IBUF                            |                2 |              9 |         4.50 |
+|  CLK_ADC_BUFG                         | adc_ch_reg[0]                    |                                      |                6 |             11 |         1.83 |
+|  CLK_ADC_BUFG                         | p_0_in[0]                        |                                      |                7 |             12 |         1.71 |
+|  CLK_ADC_BUFG                         |                                  | btn0_IBUF                            |                7 |             15 |         2.14 |
+|  clk_div_u2/clkout_r_reg_0            |                                  | btn0_IBUF                            |                4 |             16 |         4.00 |
+|  sysclk_IBUF_BUFG                     | chua_rng_data/valid[0]_i_1_n_0   | rst                                  |                5 |             17 |         3.40 |
+|  sysclk_IBUF_BUFG                     |                                  | btn0_IBUF                            |                8 |             29 |         3.62 |
+|  sysclk_IBUF_BUFG                     | chua_rng_data/counter            | rst                                  |               23 |             82 |         3.57 |
 +---------------------------------------+----------------------------------+--------------------------------------+------------------+----------------+--------------+
 
 

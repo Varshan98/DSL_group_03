@@ -50,20 +50,48 @@ void loop() {
 
     // Convert to string
     receivedMessage = String(value);
+    if (receivedMessage == "65535"){
+      // Print to Serial Monitor
+        Serial.print("Button Pressed");
+      
 
-    // Print to Serial Monitor
-    Serial.print("Received 16-bit value: ");
-    Serial.println(receivedMessage);
+      oled.clearDisplay();
+      oled.setTextSize(2);
+      oled.setTextColor(WHITE);
+      oled.setCursor(10, 10);
+      oled.println("Button");
+      oled.setCursor(10, 30);
+      oled.println("Pressed");
+      oled.display();
+    }
+    else if (receivedMessage == "61166"){
+      // Print to Serial Monitor
+        Serial.print("Button Pressed");
+      
 
-    // Display on OLED
-    oled.clearDisplay();
-    oled.setTextSize(2);
-    oled.setTextColor(WHITE);
-    oled.setCursor(0, 10);
-    oled.println("Value:");
-    oled.setCursor(0, 30);
-    oled.println(receivedMessage);
-    oled.display();
+      oled.clearDisplay();
+      oled.setTextSize(2);
+      oled.setTextColor(WHITE);
+      oled.setCursor(0, 30);
+      oled.println("Processing");
+      oled.display();
+    }
+    else{
+        // Print to Serial Monitor
+        Serial.print("Received 16-bit value: ");
+        Serial.println(receivedMessage);
+
+        // Display on OLED
+        oled.clearDisplay();
+        oled.setTextSize(2);
+        oled.setTextColor(WHITE);
+        oled.setCursor(0, 10);
+        oled.println("New Rnd No");
+        oled.setCursor(20, 40);
+        oled.println(receivedMessage);
+        oled.display();
+    }
+
   }
 }
 

@@ -14,9 +14,11 @@ module top_module(
 
 //RESET SYSTEM CONFIG;
 wire rstn;
-wire rst;
+reg rst;
 assign rstn = ~btn0;
-assign rst = btn1;
+//if (btn1 == 1)begin
+//assign rst = btn1;
+
 assign pio38 = uart_rxd_out;
 //CLOCK TREE CONFIG;
 wire CLK500Hz,CLK1Hz,CLK_ADC,CLK_UART,CLK2Hz;
@@ -25,18 +27,23 @@ clock_div clk_div_u1(rstn,sysclk,CLK500Hz);
 clock_div clk_div_u2(rstn,CLK500Hz,CLK1Hz);
 clock_div clk_div_u3(rstn,sysclk,CLK_ADC);
 clock_div clk_div_u4(rstn,sysclk,CLK_UART);
-clock_div clk_div_u5(rstn,sysclk,CLK2Hz);
+clock_div clk_div_u5(rstn,CLK500Hz,CLK2Hz);
+
+always @(posedge CLK500Hz) begin
+    rst <= btn1;
+end
 
 defparam clk_div_u1.FREQ_INPUT  = 12_000_000;
 defparam clk_div_u1.FREQ_OUTPUT = 500;
 defparam clk_div_u2.FREQ_INPUT  = 500;
-defparam clk_div_u2.FREQ_OUTPUT = 1;
+defparam clk_div_u2.FREQ_OUTPUT = 16;
 defparam clk_div_u3.FREQ_INPUT  = 12_000_000;
 defparam clk_div_u3.FREQ_OUTPUT = 2_000_000;
 defparam clk_div_u4.FREQ_INPUT  = 12_000_000;
 defparam clk_div_u4.FREQ_OUTPUT = 9600;
-defparam clk_div_u5.FREQ_INPUT  = 12_000_000;
-defparam clk_div_u5.FREQ_OUTPUT = 2;
+defparam clk_div_u5.FREQ_INPUT  = 500;
+defparam clk_div_u5.FREQ_OUTPUT = 32;
+
 
 //7SEGMENT DISPLAY CONFIG;
 reg adc_ready;
@@ -102,7 +109,7 @@ wire [10:0] seed_C2_sanitized = datach1[10:0];
 wire [5:0] seed_L_sanitized  = {{datach0[2:0], datach1[2:0]}};
 
 chua_rng chua_rng_data(
-    .sysclk(CLK_UART),
+    .sysclk(sysclk),
     .rst(rst),
     .C1_seed(seed_C1_sanitized),
     .C2_seed(seed_C2_sanitized),
@@ -110,12 +117,11 @@ chua_rng chua_rng_data(
     .rnd(Send_data)
 ); 
   
- always @(negedge rstn, posedge CLK_UART) begin
+ always @(posedge CLK1Hz or negedge rstn) begin
     if(!rstn) begin
         Save_data <= 16'h123;
     end 
     else begin
-       
             Save_data <= Send_data;
     end
 end
@@ -143,7 +149,7 @@ always @(negedge rstn, posedge uart_vaild, negedge CLK2Hz) begin
         hl_sel <= 1'b0;
     end else begin
         if(uart_vaild) begin
-            uart_data <= (hl_sel)? Save_data[7:0]: Save_data[15:8];
+            uart_data <= (hl_sel)? Save_data[15:8]: Save_data[7:0];
             uart_ready   <= 1'b0;
         end
         else begin
@@ -160,45 +166,45 @@ endmodule
 
 
 
-module debounce_rst (
-    input wire clk,          // system clock
-    input wire noisy_btn,    // raw button signal (active-low preferred)
-    output reg rst_pulse     // clean one-cycle-wide pulse
-);
+//module debounce_rst (
+//    input wire clk,          // system clock
+//    input wire noisy_btn,    // raw button signal (active-low preferred)
+//    output reg rst_pulse     // clean one-cycle-wide pulse
+//);
 
-    // 2-stage synchronizer
-    reg sync_0 = 0, sync_1 = 0;
-    always @(posedge clk) begin
-        sync_0 <= ~noisy_btn;  // invert if button is active-low
-        sync_1 <= sync_0;
-    end
+//    // 2-stage synchronizer
+//    reg sync_0 = 0, sync_1 = 0;
+//    always @(posedge clk) begin
+//        sync_0 <= ~noisy_btn;  // invert if button is active-low
+//        sync_1 <= sync_0;
+//    end
 
-    // Debounce counter
-    reg [15:0] debounce_cnt = 0;
-    reg debounced = 0;
+//    // Debounce counter
+//    reg [15:0] debounce_cnt = 0;
+//    reg debounced = 0;
 
-    parameter DEBOUNCE_THRESHOLD = 16'd50000; // adjust for clock speed
+//    parameter DEBOUNCE_THRESHOLD = 16'd50000; // adjust for clock speed
 
-    always @(posedge clk) begin
-        if (sync_1 != debounced) begin
-            debounce_cnt <= debounce_cnt + 1;
-            if (debounce_cnt > DEBOUNCE_THRESHOLD) begin
-                debounced <= sync_1;
-                debounce_cnt <= 0;
-            end
-        end else begin
-            debounce_cnt <= 0;
-        end
-    end
+//    always @(posedge clk) begin
+//        if (sync_1 != debounced) begin
+//            debounce_cnt <= debounce_cnt + 1;
+//            if (debounce_cnt > DEBOUNCE_THRESHOLD) begin
+//                debounced <= sync_1;
+//                debounce_cnt <= 0;
+//            end
+//        end else begin
+//            debounce_cnt <= 0;
+//        end
+//    end
 
-    // Generate pulse on rising edge of debounced signal
-    reg debounced_prev = 0;
-    always @(posedge clk) begin
-        debounced_prev <= debounced;
-        rst_pulse <= (debounced && !debounced_prev);  // rising edge
-    end
+//    // Generate pulse on rising edge of debounced signal
+//    reg debounced_prev = 0;
+//    always @(posedge clk) begin
+//        debounced_prev <= debounced;
+//        rst_pulse <= (debounced && !debounced_prev);  // rising edge
+//    end
 
-endmodule
+//endmodule
 
 
     
@@ -535,6 +541,8 @@ module chua_rng (
   reg signed [31:0] iL;  // current through the inductor
   reg signed [31:0] v1;
   reg signed [31:0] v2;
+  reg [32:0] counter;
+  reg [32:0] valid;
   // Parameter definitions (in Q16 format) 6554
   parameter signed [31:0] inv_C1 = 32'd10910; //10910 10906 (0.28, -1.15) 10910 (0.11 1.01) 
   parameter signed [31:0] inv_C2 = 32'd10; //10 65536/100=655
@@ -569,25 +577,30 @@ module chua_rng (
       v1  <= C1_seed;
       v2  <= C2_seed;
       iL  <= L_seed;
-      rnd <= 16'd123;
-    end 
-    
-    else begin
+      rnd <= 16'hFFFF;
+      counter <= 32'd0;
+      valid <= 32'd0;
+    end else begin
+    if (valid == 0) begin  
       diff = v1 - v2;
       term = ($signed(diff) * $signed(inv_R)) >>> 16; 
       dv1 = ($signed(inv_C1) * $signed(term - nonlinear(v1))) >>> 16;
       dv2  = ($signed(inv_C2) * $signed((-term) + iL)) >>> 16;
       diL = ($signed(inv_L) * $signed(-v2)) >>> 16;
-
       // Euler integration update
       v1 <= $signed(v1) + ($signed(dt) * $signed(dv1) >>> 16);
       v2 <= $signed(v2) + ($signed(dt) * $signed(dv2) >>> 16);
-      iL <= $signed(iL) + ($signed(dt) * $signed(diL) >>> 16);
-
-
+      iL <= $signed(iL) + ($signed(dt) * $signed(diL) >>> 16);     
+        if (counter < 150000) begin
+            counter <= counter + 1;
+        end else begin
       // Use lower 16 bits of v1 as random output
-      rnd <= v1[15:0];
+            rnd <= v1[15:0];
+            counter <= 32'd0;
+            valid <= 32'd1;
       //rnd <= v1[31:16];
+        end
+      end
     end
   end
 endmodule

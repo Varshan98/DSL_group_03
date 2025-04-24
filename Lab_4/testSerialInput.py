@@ -22,7 +22,7 @@ import serial
 import time
 
 # Adjust this to match your serial port
-SERIAL_PORT = 'COM13'  
+SERIAL_PORT = 'COM10'  
 
 BAUD_RATE = 9600
 

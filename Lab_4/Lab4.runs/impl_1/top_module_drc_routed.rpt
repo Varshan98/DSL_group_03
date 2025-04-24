@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-| Date         : Wed Apr 23 14:59:57 2025
+| Date         : Thu Apr 24 16:22:43 2025
 | Host         : Suriya running 64-bit major release  (build 9200)
 | Command      : report_drc -file top_module_drc_routed.rpt -pb top_module_drc_routed.pb -rpx top_module_drc_routed.rpx
 | Design       : top_module
@@ -24,7 +24,7 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max checks: <unlimited>
-             Checks found: 53
+             Checks found: 54
 +----------+----------+-----------------------------------------------------+--------+
 | Rule     | Severity | Description                                         | Checks |
 +----------+----------+-----------------------------------------------------+--------+
@@ -32,6 +32,7 @@ Table of Contents
 | DPIP-1   | Warning  | Input pipelining                                    | 3      |
 | DPOP-1   | Warning  | PREG Output pipelining                              | 3      |
 | DPOP-2   | Warning  | MREG Output pipelining                              | 3      |
+| PDRC-140 | Warning  | SLICE_PairEqSame_A6A5_WARN                          | 1      |
 | PDRC-153 | Warning  | Gated clock check                                   | 43     |
 +----------+----------+-----------------------------------------------------+--------+
 
@@ -93,6 +94,11 @@ Related violations: <none>
 DPOP-2#3 Warning
 MREG Output pipelining  
 DSP chua_rng_data/v22 multiplier stage chua_rng_data/v22/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+PDRC-140#1 Warning
+SLICE_PairEqSame_A6A5_WARN  
+Luts A6LUT and A5LUT in use in site SLICE_X42Y23 with different equations without A6 pin connected to Global Logic High.
 Related violations: <none>
 
 PDRC-153#1 Warning
