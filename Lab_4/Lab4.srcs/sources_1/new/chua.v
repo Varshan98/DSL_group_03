@@ -61,6 +61,7 @@ localparam  SINGLE_CHAN1  = 2'b11;
 reg [1:0] adc_ch;
 reg [11:0] datach0,datach1;
 reg [11:0] Segment_data;
+wire data_received;
 reg [15:0] Save_data;
  
 drv_mcp3202 drv_mcp3202_u0(
@@ -104,17 +105,30 @@ always @(posedge CLK_ADC)begin
     end
   end
   // SANITIZED SEED VALUES
-wire [11:0] seed_C1_sanitized = datach0;
-wire [10:0] seed_C2_sanitized = datach1[10:0];
-wire [5:0] seed_L_sanitized  = {{datach0[2:0], datach1[2:0]}};
+  
+wire [15:0] lfsr_out;
+
+lfsr16 my_lfsr (
+    .clk(CLK_UART),
+    .rstn(rstn),
+    .random(lfsr_out)
+);
+
+reg [16:0] ran_num;
+
+always @(posedge sysclk) begin 
+ran_num = lfsr_out;
+end
+wire [31:0] seed_sanitized = {ran_num[7:4],datach0[7:4],ran_num[3:0],datach0[3:0],ran_num[15:12],datach1[7:4],ran_num[13:8],datach1[3:0]};
+
 
 chua_rng chua_rng_data(
-    .sysclk(sysclk),
-    .rst(rst),
-    .C1_seed(seed_C1_sanitized),
-    .C2_seed(seed_C2_sanitized),
-    .L_seed(seed_L_sanitized),
-    .rnd(Send_data)
+    .clk(sysclk),
+    .rstn(rstn),
+    .start(rst),
+    .seed(seed_sanitized),
+    .done(data_received),
+    .rand_val(Send_data)
 ); 
   
  always @(posedge CLK1Hz or negedge rstn) begin
@@ -122,7 +136,12 @@ chua_rng chua_rng_data(
         Save_data <= 16'h123;
     end 
     else begin
+        if (data_received == 1'd1) begin
             Save_data <= Send_data;
+           end
+          else begin
+            Save_data <= 16'hFFFF;
+          end
     end
 end
 
@@ -528,79 +547,96 @@ endmodule
 // Fixed-point format: Q16 (32-bit signed; 16 integer and 16 fractional bits)
 //////////////////////////////////////////////////////////////////////////////////
 module chua_rng (
-    input sysclk,
-    input rst,
-    input [31:0] C1_seed,
-    input [31:0] C2_seed,
-    input [31:0] L_seed,
-    output reg [15:0] rnd
-//    output reg signed [31:0] v1,
-//    output reg signed [31:0] v2
+    input wire clk,
+    input wire rstn,
+    input wire start,
+    input wire [31:0] seed,
+    output reg done,
+    output reg [15:0] rand_val
 );
-  // State registers: Q16 fixed-point (32-bit signed)
-  reg signed [31:0] iL;  // current through the inductor
-  reg signed [31:0] v1;
-  reg signed [31:0] v2;
-  reg [32:0] counter;
-  reg [32:0] valid;
-  // Parameter definitions (in Q16 format) 6554
-  parameter signed [31:0] inv_C1 = 32'd10910; //10910 10906 (0.28, -1.15) 10910 (0.11 1.01) 
-  parameter signed [31:0] inv_C2 = 32'd10; //10 65536/100=655
-  parameter signed [31:0] inv_L  = 32'd3661; //3661 (0.58 44.48) 3641
-  parameter signed [31:0] inv_R = 32'd50; //50
-  parameter signed [31:0] dt = 32'd262108;
-  parameter signed [31:0] Ga = -32'sd108000; //108 (0.58 44.48) 105 (0.62 45.17)
-  parameter signed [31:0] Gb = -32'sd31700; //317 (0.11 44.59) 316 (0.26 48.51)
-  parameter signed [31:0] B  =  32'sd7900; //7900
 
-  // Nonlinear function for Chua's diode (piecewise-linear)
-  function signed [31:0] nonlinear;
-    input signed [31:0] x;
-    begin
-      if (x > B)
-        nonlinear = (Gb * x) >>> 16;
-      else if (x < -B)
-        nonlinear = (Gb * x) >>> 16;
-      else
-        nonlinear = (Ga * x) >>> 16;
-    end
-  endfunction
+    // --- Parameters ---
+    reg [31:0] STEPS;
 
-  reg signed [31:0] dv1, dv2, diL;
-  reg signed [31:0] diff; // (v1 - v2)
-  reg signed [31:0] term; // temporary term
+    // --- Fixed-point constants (Q16.16 format) ---
+    reg signed [31:0] alpha = 32'd1027606;  // ~15.6 << 16
+    reg signed [31:0] beta  = 32'd1835008;  // ~28.0 << 16
+    reg signed [31:0] m0    = -32'd74865;   // ~-1.143 << 16
+    reg signed [31:0] m1    = -32'd46721;   // ~-0.714 << 16
 
-  always @(posedge sysclk or posedge rst) begin
-  
-    if (rst) begin
-      // Initialize state registers: seed values scaled to Q16.
-      v1  <= C1_seed;
-      v2  <= C2_seed;
-      iL  <= L_seed;
-      rnd <= 16'hFFFF;
-      counter <= 32'd0;
-      valid <= 32'd0;
-    end else begin
-    if (valid == 0) begin  
-      diff = v1 - v2;
-      term = ($signed(diff) * $signed(inv_R)) >>> 16; 
-      dv1 = ($signed(inv_C1) * $signed(term - nonlinear(v1))) >>> 16;
-      dv2  = ($signed(inv_C2) * $signed((-term) + iL)) >>> 16;
-      diL = ($signed(inv_L) * $signed(-v2)) >>> 16;
-      // Euler integration update
-      v1 <= $signed(v1) + ($signed(dt) * $signed(dv1) >>> 16);
-      v2 <= $signed(v2) + ($signed(dt) * $signed(dv2) >>> 16);
-      iL <= $signed(iL) + ($signed(dt) * $signed(diL) >>> 16);     
-        if (counter < 150000) begin
-            counter <= counter + 1;
-        end else begin
-      // Use lower 16 bits of v1 as random output
-            rnd <= v1[15:0];
-            counter <= 32'd0;
-            valid <= 32'd1;
-      //rnd <= v1[31:16];
+    // --- State ---
+    reg signed [31:0] x, y, z;
+    reg signed [31:0] dx, dy, dz;
+    reg [15:0] step_count;
+    reg running;
+
+    // --- Chua f(x) ---
+    function signed [31:0] chua_f;
+        input signed [31:0] xin;
+        begin
+            if (xin < -32'd65536)  // -1 in Q16.16
+                chua_f = m1 * xin + ((m0 - m1) <<< 15);
+            else if (xin > 32'd65536) // +1 in Q16.16
+                chua_f = m1 * xin - ((m0 - m1) <<< 15);
+            else
+                chua_f = m0 * xin;
         end
-      end
+    endfunction
+
+    // --- Main Logic ---
+    always @(posedge clk or negedge rstn) begin
+        if (!rstn) begin
+            x <= 0;
+            y <= 0;
+            z <= 0;
+            step_count <= 0;
+            running <= 0;
+            done <= 0;
+            rand_val <= 0;
+        end else begin
+            if (start && !running) begin
+                // Initialize with seed
+                x <= {seed[15:0], 16'd0}; // Convert to Q16.16
+                y <= {seed[31:16], 16'd0};
+                z <= {seed[15:0] ^ seed[31:16], 16'd0};
+                STEPS <= 16384 + (seed[7:0]<<4);
+                step_count <= 0;
+                running <= 1;
+                done <= 0;
+            end else if (running) begin
+                dx = (alpha * (y - x - chua_f(x))) >>> 16;
+                dy = (x - y + z);
+                dz = (-beta * y) >>> 16;
+
+                x <= x + (dx >>> 10);  // dt ~ 1/1024
+                y <= y + (dy >>> 10);
+                z <= z + (dz >>> 10);
+
+                step_count <= step_count + 1;
+                if (step_count == STEPS) begin
+                    running <= 0;
+                    done <= 1;
+                    rand_val <= x[24:8];  // output top 16 bits
+                end
+            end
+        end
     end
-  end
+
+endmodule
+
+module lfsr16 (
+    input wire clk,
+    input wire rstn,
+    output reg [15:0] random
+);
+
+    always @(posedge clk or negedge rstn) begin
+        if (!rstn)
+            random <= 16'hACE1;  // Initial non-zero seed (any non-zero value)
+        else begin
+            // Feedback taps for 16-bit maximal LFSR: x^16 + x^14 + x^13 + x^11 + 1
+            random <= {random[14:0], random[15] ^ random[13] ^ random[12] ^ random[10]};
+        end
+    end
+
 endmodule

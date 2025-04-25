@@ -1,0 +1,6 @@
+Time resolution is 1 ps
+Starting Chua RNG test...
+Done signal received!
+Random Value: 30721 (0x7801)
+$finish called at time : 5065 ns : File "D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/sim_1/new/chua_test.v" Line 55
+INFO: xsimkernel Simulation Memory Usage: 37300 KB (Peak: 37300 KB), Simulation CPU Usage: 40062 ms

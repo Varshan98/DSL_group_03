@@ -1,63 +1,58 @@
 `timescale 1ns / 1ps
 
-module chua_rng_tb;
+module testb_chua_rng;
 
-    // Parameters
-    localparam CLOCK_PERIOD = 10;    // Clock period in time units
-    localparam TOTAL_STEPS = 200000; // Total number of simulation steps
-    localparam SKIP_STEPS = 30000;   // Number of initial steps to skip
+    // DUT I/O
+    reg clk;
+    reg rstn;
+    reg start;
+    reg [31:0] seed;
+    wire done;
+    wire [15:0] rand_val;
 
-    // Signals
-    reg clk = 0;
-    reg reset = 0;
-    wire [15:0] random_bits;
-    integer file_handle;
-    reg [31:0] step_counter = 0;
-
-    // Clock generation
-    always #(CLOCK_PERIOD / 2) clk = ~clk;
-
-    // Instantiate the Device Under Test (DUT)
-    chua_rng dut (
+    // Instantiate the DUT (Device Under Test)
+    chua_rng uut (
         .clk(clk),
-        .reset(reset),
-        .random_bits(random_bits)
+        .rstn(rstn),
+        .start(start),
+        .seed(seed),
+        .done(done),
+        .rand_val(rand_val)
     );
 
-    // Simulation control
+    // Clock generation (100 MHz)
     initial begin
-        // Open file for writing binary data
-        file_handle = $fopen("random_output.bin", "wb");
-        if (file_handle == 0) begin
-            $display("Error: Unable to open file 'random_output.bin' for writing.");
-            $finish;
-        end
-
-        // Apply reset
-        reset = 1;
-        # (CLOCK_PERIOD * 2);
-        reset = 0;
-
-        // Run simulation for TOTAL_STEPS clock cycles
-        # (CLOCK_PERIOD * TOTAL_STEPS);
-
-        // Close the file
-        $fclose(file_handle);
-        $display("Simulation completed. Random bits saved to 'random_output.bin'");
-        $finish;
+        clk = 0;
+        forever #5 clk = ~clk;
     end
 
-    // Step counter and file writing
-    always @(posedge clk) begin
-        if (reset) begin
-            step_counter <= 0;
-        end else begin
-            step_counter <= step_counter + 1;
-            if (step_counter >= SKIP_STEPS) begin
-                // Write 16-bit random_bits as two bytes (big-endian)
-                $fwrite(file_handle, "%c%c", random_bits[15:8], random_bits[7:0]);
-            end
-        end
+    // Main test sequence
+    initial begin
+        $display("Starting Chua RNG test...");
+
+        // Initial state
+        rstn = 0;
+        start = 0;
+        seed = 32'h12345678;  // You can change this to test other seeds
+
+        // Reset pulse
+        #20;
+        rstn = 1;
+
+        // Wait then send start pulse
+        #20;
+        start = 1;
+        #10;
+        start = 0;
+
+        // Wait for done
+        wait(done);
+        $display("Done signal received!");
+        $display("Random Value: %d (0x%04X)", rand_val, rand_val);
+
+        // Finish
+        #10;
+        $finish;
     end
 
 endmodule

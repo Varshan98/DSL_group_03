@@ -1,1 +1,0 @@
---incr --debug "typical" --relax --mt "2" -L "secureip" --snapshot "chua_uart_rng_behav" "xil_defaultlib.chua_uart_rng" -log "elaborate.log" 

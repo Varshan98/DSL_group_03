@@ -1,4 +1,0 @@
-Breakpoint File Version 1.0
-11,true,"D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/sources_1/new/chua_rng.v"
-15,true,"D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/sources_1/new/chua_rng.v"
-20,true,"D:/SUTD/Term 8/DSL/Projects/DSL_group_03/Lab_4/Lab4.srcs/sources_1/new/chua_rng.v"

@@ -1,65 +1,51 @@
 import numpy as np
-import matplotlib.pyplot as plt
-import pandas as pd
 from numba import njit
 
-# Parameters for Chua's circuit
-alpha = 15.6
-beta = 28.0
+# Chua parameters
 m0 = -1.143
 m1 = -0.714
+default_alpha = 15.6
+default_beta = 28.0
+dt = 0.005
+n_steps = 100_000
 
-# Simulation parameters
-dt = 0.01
-n_steps = 5_000_000  # You can change this if needed
-
-# Define the nonlinear function f(x)
 @njit
 def chua_f(x):
     return m1 * x + 0.5 * (m0 - m1) * (abs(x + 1) - abs(x - 1))
 
-# Simulation function using Euler's method
 @njit
-def simulate_chua(n_steps, dt, alpha, beta):
-    x, y, z = 0.1, 0.0, 0.0
-    xs = np.empty(n_steps, dtype=np.float32)
-    ys = np.empty(n_steps, dtype=np.float32)
-    zs = np.empty(n_steps, dtype=np.float32)
-
-    for i in range(n_steps):
+def simulate_chua(alpha, beta, x0, y0, z0, dt, n_steps):
+    x, y, z = x0, y0, z0
+    for _ in range(n_steps):
         dx = alpha * (y - x - chua_f(x))
         dy = x - y + z
         dz = -beta * y
-
         x += dx * dt
         y += dy * dt
         z += dz * dt
+        if abs(x) > 1e4 or abs(y) > 1e4 or abs(z) > 1e4:
+            break
+    return x, y, z
 
-        xs[i] = x
-        ys[i] = y
-        zs[i] = z
+def chua_rng_16bit(seed: int) -> int:
+    rng = np.random.default_rng(seed)
+    x0 = rng.uniform(-1, 1)
+    y0 = rng.uniform(-1, 1)
+    z0 = rng.uniform(-1, 1)
+    alpha = default_alpha + rng.uniform(-0.05, 0.05)
+    beta = default_beta
 
-    return xs, ys, zs
+    x, _, _ = simulate_chua(alpha, beta, x0, y0, z0, dt, n_steps)
 
-# Run simulation
-xs, ys, zs = simulate_chua(n_steps, dt, alpha, beta)
+    # Clip x to expected range and normalize to avoid 0 or 65535
+    x = np.clip(x, -20, 20)
+    norm_x = (x + 20) / 40  # [0,1]
+    norm_x = np.clip(norm_x, 1e-5, 1 - 1e-5)  # avoid exact 0 or 1
+    rand16 = int(norm_x * 65534) + 1         # final range: [1, 65534]
 
-# Plotting (downsampled)
-plt.figure(figsize=(10, 6))
-plt.plot(xs[::100], zs[::100], linewidth=0.5)
-plt.xlabel("x")
-plt.ylabel("z")
-plt.title("Chua's Circuit Phase Portrait")
-plt.grid(True)
-plt.tight_layout()
-plt.show()
+    print(f"[DEBUG] Final x = {x:.6f}, normalized = {norm_x:.6f} → {rand16}")
+    return rand16
 
-# Save data as CSV
-print("Saving to CSV...")
-df = pd.DataFrame({
-    'x': xs,
-    'y': ys,
-    'z': zs
-})
-df.to_csv('chua_simulation_data.csv', index=False)
-print("Saved as chua_simulation_data.csv")
+# Example usage
+your_seed = int(input("Enter your seed: "))
+print(f"🎲 16-bit random number for seed {your_seed}: {chua_rng_16bit(your_seed)}")

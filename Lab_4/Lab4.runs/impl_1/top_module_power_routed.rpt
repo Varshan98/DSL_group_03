@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-| Date             : Thu Apr 24 16:22:46 2025
+| Date             : Fri Apr 25 20:41:33 2025
 | Host             : Suriya running 64-bit major release  (build 9200)
 | Command          : report_power -file top_module_power_routed.rpt -pb top_module_power_summary_routed.pb -rpx top_module_power_routed.rpx
 | Design           : top_module
@@ -30,7 +30,7 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.073        |
+| Total On-Chip Power (W)  | 0.074        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
 | Dynamic (W)              | 0.002        |
@@ -53,18 +53,18 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |    <0.001 |        3 |       --- |             --- |
-| Slice Logic    |    <0.001 |     1727 |       --- |             --- |
-|   LUT as Logic |    <0.001 |      938 |     20800 |            4.51 |
-|   CARRY4       |    <0.001 |      198 |      8150 |            2.43 |
-|   Register     |    <0.001 |      361 |     41600 |            0.87 |
+| Slice Logic    |    <0.001 |     1181 |       --- |             --- |
+|   LUT as Logic |    <0.001 |      509 |     20800 |            2.45 |
+|   CARRY4       |    <0.001 |       93 |      8150 |            1.14 |
+|   Register     |    <0.001 |      322 |     41600 |            0.77 |
 |   BUFG         |    <0.001 |        1 |        32 |            3.13 |
-|   Others       |     0.000 |       15 |       --- |             --- |
-|   F7/F8 Muxes  |     0.000 |        1 |     32600 |           <0.01 |
-| Signals        |    <0.001 |     1451 |       --- |             --- |
-| DSPs           |    <0.001 |        3 |        90 |            3.33 |
+|   F7/F8 Muxes  |    <0.001 |        1 |     32600 |           <0.01 |
+|   Others       |     0.000 |       16 |       --- |             --- |
+| Signals        |    <0.001 |     1050 |       --- |             --- |
+| DSPs           |    <0.001 |        4 |        90 |            4.44 |
 | I/O            |    <0.001 |        9 |       106 |            8.49 |
 | Static Power   |     0.072 |          |           |                 |
-| Total          |     0.073 |          |           |                 |
+| Total          |     0.074 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -74,7 +74,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.011 |       0.001 |      0.010 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.011 |       0.002 |      0.010 |       NA    | Unspecified | NA         |
 | Vccaux    |       1.800 |     0.013 |       0.000 |      0.013 |       NA    | Unspecified | NA         |
 | Vcco33    |       3.300 |     0.001 |       0.000 |      0.001 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -140,10 +140,11 @@ Table of Contents
 3.1 By Hierarchy
 ----------------
 
-+------------+-----------+
-| Name       | Power (W) |
-+------------+-----------+
-| top_module |     0.002 |
-+------------+-----------+
++-----------------+-----------+
+| Name            | Power (W) |
++-----------------+-----------+
+| top_module      |     0.002 |
+|   chua_rng_data |     0.002 |
++-----------------+-----------+
 
 
